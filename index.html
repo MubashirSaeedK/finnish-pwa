@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b3d91" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0a0f1f" media="(prefers-color-scheme: dark)" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Suomi 200" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Suomi 200 — Finnish Words</title>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-row">
+      <h1>Suomi 200 <span class="flag" aria-hidden="true">🇫🇮</span></h1>
+      <span class="count-badge" id="totalCount"></span>
+    </div>
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="search" type="search" inputmode="search" placeholder="Search word, meaning, or #…" autocomplete="off" />
+      <button id="clearSearch" class="clear-search" type="button" aria-label="Clear search" hidden>×</button>
+    </div>
+  </header>
+
+  <main>
+    <ul id="list" class="word-list" aria-live="polite"></ul>
+    <p id="empty" class="empty-state" hidden>No matches.</p>
+  </main>
+
+  <footer class="selection-bar" id="selectionBar">
+    <div class="sel-info">
+      <strong id="selCount">0</strong> selected
+    </div>
+    <div class="sel-actions">
+      <button id="selectAll" type="button" class="btn-ghost">Select all</button>
+      <button id="clearSel" type="button" class="btn-ghost">Clear</button>
+      <button id="play" type="button" class="btn-play" disabled title="Audio coming in Phase 2">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        Play
+      </button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
