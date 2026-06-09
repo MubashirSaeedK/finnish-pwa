@@ -21,6 +21,7 @@ let hasRendered = false;
 
 const CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const CHEV_SVG = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const SPEAKER_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5H4z" fill="currentColor"/><path d="M15.5 8.5a4 4 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 
 init();
 
@@ -33,7 +34,9 @@ async function init() {
     els.empty.textContent = 'Could not load words.json';
     return;
   }
-  els.total.textContent = `${words.length} words`;
+  const audioCount = words.filter(w => w.hasAudio).length;
+  els.total.textContent = `${audioCount}/${words.length} 🔊`;
+  els.total.title = `${audioCount} of ${words.length} words have audio`;
   render();
   updateSelectionUI();
   bindEvents();
@@ -65,6 +68,7 @@ function rowHTML(w, q) {
     <div class="row-main" role="button" tabindex="0" aria-pressed="${isSel}" aria-label="Select ${esc(w.fi)}">
       <span class="idx">${esc(w.index)}</span>
       <span class="fi-word">${highlight(w.fi, q)}</span>
+      ${w.hasAudio ? `<span class="has-audio" title="Audio ready" aria-label="Audio ready">${SPEAKER_SVG}</span>` : ''}
       <button class="expand-btn" type="button" aria-expanded="false" aria-label="Show details" tabindex="0">
         ${CHEV_SVG}
       </button>
@@ -162,9 +166,10 @@ function bindEvents() {
     updateSelectionUI();
   });
 
-  // Phase 2 placeholder
+  // Play / Stop
   els.play.addEventListener('click', () => {
-    // Audio playback will be implemented in Phase 2 (ElevenLabs).
+    if (player.playing) stopPlayback();
+    else startPlayback();
   });
 }
 
@@ -181,10 +186,126 @@ function visibleWords() {
 function updateSelectionUI() {
   const n = selected.size;
   els.selCount.textContent = n;
-  els.play.disabled = n === 0; // stays effectively disabled until Phase 2 too
-  els.play.title = n === 0 ? 'Select words first' : 'Audio coming in Phase 2';
-  // In Phase 1 keep Play visually inert even when items are selected:
-  els.play.disabled = true;
+  const playable = selectedAudioWords().length;
+  els.play.disabled = playable === 0 && !player.playing;
+  els.play.title = playable === 0 ? 'Select words that have audio' : 'Play selected words';
+}
+
+/* ---------- Audio playback (Phase 2) ---------- */
+const PART_ORDER = ['word', 'meaning', 'fi', 'en'];
+const GAP_PART = 600;   // ms between parts of the same word
+const GAP_WORD = 1200;  // ms between words
+
+const player = { playing: false, queue: [], i: 0, audio: new Audio(), timer: null, currentIndex: null, autoOpened: null };
+
+function audioSrc(index, part) {
+  const safe = index.replace(/[^\w.-]/g, '_');
+  return `audio/${safe}-${part}.mp3`;
+}
+
+// Selected words that have audio, kept in list order.
+function selectedAudioWords() {
+  return words.filter(w => selected.has(w.index) && w.hasAudio);
+}
+
+function buildQueue() {
+  const q = [];
+  const list = selectedAudioWords();
+  list.forEach((w, wi) => {
+    PART_ORDER.forEach((part, pi) => {
+      const lastPartOfWord = pi === PART_ORDER.length - 1;
+      const lastWord = wi === list.length - 1;
+      let gapAfter = GAP_PART;
+      if (lastPartOfWord) gapAfter = lastWord ? 0 : GAP_WORD;
+      q.push({ index: w.index, fi: w.fi, part, src: audioSrc(w.index, part), gapAfter });
+    });
+  });
+  return q;
+}
+
+function startPlayback() {
+  player.queue = buildQueue();
+  if (player.queue.length === 0) return;
+  player.playing = true;
+  player.i = 0;
+  player.currentIndex = null;
+  document.body.classList.add('is-playing');
+  setPlayButton(true);
+  playNext();
+}
+
+function playNext() {
+  if (!player.playing) return;
+  if (player.i >= player.queue.length) { stopPlayback(); return; }
+
+  const item = player.queue[player.i];
+  if (item.index !== player.currentIndex) {
+    player.currentIndex = item.index;
+    highlightPlaying(item.index);
+  }
+
+  const a = player.audio;
+  a.src = item.src;
+  a.onended = () => {
+    if (!player.playing) return;
+    player.timer = setTimeout(() => { player.i++; playNext(); }, item.gapAfter);
+  };
+  a.onerror = () => {
+    if (!player.playing) return;
+    player.i++; playNext(); // skip a missing/broken clip
+  };
+  a.play().catch(() => { /* autoplay blocked or interrupted */ if (player.playing) { player.i++; playNext(); } });
+}
+
+function stopPlayback() {
+  player.playing = false;
+  clearTimeout(player.timer);
+  try { player.audio.pause(); } catch {}
+  player.audio.onended = null;
+  player.audio.onerror = null;
+  player.i = 0;
+  document.body.classList.remove('is-playing');
+  highlightPlaying(null);
+  setPlayButton(false);
+  updateSelectionUI();
+}
+
+function setPlayButton(playing) {
+  els.play.classList.toggle('playing', playing);
+  els.play.disabled = false;
+  els.play.innerHTML = playing
+    ? '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg> Stop'
+    : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Play';
+}
+
+function highlightPlaying(index) {
+  // Collapse the card we auto-opened for the previous word (leave manually-opened ones).
+  if (player.autoOpened) {
+    setOpen(player.autoOpened, false);
+    player.autoOpened = null;
+  }
+  els.list.querySelectorAll('.word-item.playing').forEach(el => el.classList.remove('playing'));
+  if (index == null) return;
+
+  const el = els.list.querySelector(`.word-item[data-index="${cssEscape(index)}"]`);
+  if (el) {
+    el.classList.add('playing');
+    if (!el.classList.contains('open')) {
+      setOpen(el, true);
+      player.autoOpened = el; // remember so we can auto-collapse it next
+    }
+    el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+}
+
+function setOpen(item, open) {
+  item.classList.toggle('open', open);
+  const btn = item.querySelector('.expand-btn');
+  if (btn) btn.setAttribute('aria-expanded', open);
+}
+
+function cssEscape(s) {
+  return (window.CSS && CSS.escape) ? CSS.escape(s) : s.replace(/["\\]/g, '\\$&');
 }
 
 function loadSelection() {

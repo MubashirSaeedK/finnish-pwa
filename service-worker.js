@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'suomi200-v1';
+const CACHE = 'suomi200-v4';
 const ASSETS = [
   '.',
   'index.html',
@@ -27,9 +27,23 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Cache-first for app shell; network fallback for everything else.
+// Network-first for the data file (so freshly generated audio shows up),
+// cache-first for the app shell and everything else.
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+
+  const url = new URL(event.request.url);
+  if (url.pathname.endsWith('/words.json') || url.pathname.endsWith('words.json')) {
+    event.respondWith(
+      fetch(event.request).then(res => {
+        const copy = res.clone();
+        caches.open(CACHE).then(c => c.put(event.request, copy)).catch(() => {});
+        return res;
+      }).catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request).then(cached => {
       if (cached) return cached;

@@ -4,1113 +4,1272 @@
 "fi": "on",
 "en": "is; (he/she/it) is",
 "fiSentence": "Hän on kotona.",
-"enSentence": "He is at home."
+"enSentence": "He is at home.",
+"hasAudio": true
 },
 {
 "index": "2",
 "fi": "ei",
 "en": "no; not; (he/she) doesn't",
 "fiSentence": "Ei, en tule.",
-"enSentence": "No, I'm not coming."
+"enSentence": "No, I'm not coming.",
+"hasAudio": true
 },
 {
 "index": "3",
 "fi": "ja",
 "en": "and",
 "fiSentence": "Äiti ja isä ovat töissä.",
-"enSentence": "Mom and dad are at work."
+"enSentence": "Mom and dad are at work.",
+"hasAudio": true
 },
 {
 "index": "4",
 "fi": "se",
 "en": "it; that; (spoken) he/she",
 "fiSentence": "Se on totta.",
-"enSentence": "It's true."
+"enSentence": "It's true.",
+"hasAudio": true
 },
 {
 "index": "5",
 "fi": "hän",
 "en": "he; she",
 "fiSentence": "Hän on ystäväni.",
-"enSentence": "He is my friend."
+"enSentence": "He is my friend.",
+"hasAudio": true
 },
 {
 "index": "5a",
 "fi": "se",
 "en": "he; she",
 "fiSentence": "Se on mun kaveri.",
-"enSentence": "He is my friend."
+"enSentence": "He is my friend.",
+"hasAudio": true
 },
 {
 "index": "6",
 "fi": "mitä",
 "en": "what (partitive)",
 "fiSentence": "Mitä sinä sanoit?",
-"enSentence": "What did you say?"
+"enSentence": "What did you say?",
+"hasAudio": true
 },
 {
 "index": "7",
 "fi": "en",
 "en": "I don't; I'm not (1st sg. negative)",
 "fiSentence": "En tiedä.",
-"enSentence": "I don't know."
+"enSentence": "I don't know.",
+"hasAudio": true
 },
 {
 "index": "8",
 "fi": "että",
 "en": "that (conjunction)",
 "fiSentence": "Tiedän, että olet oikeassa.",
-"enSentence": "I know that you are right."
+"enSentence": "I know that you are right.",
+"hasAudio": true
 },
 {
 "index": "8a",
 "fi": "et",
 "en": "that (conjunction)",
 "fiSentence": "Mä tiiän, et sä oot oikees.",
-"enSentence": "I know that you are right."
+"enSentence": "I know that you are right.",
+"hasAudio": true
 },
 {
 "index": "9",
 "fi": "ole",
 "en": "be (imperative of olla)",
 "fiSentence": "Ole rauhallinen.",
-"enSentence": "Be calm."
+"enSentence": "Be calm.",
+"hasAudio": true
 },
 {
 "index": "9a",
 "fi": "oo",
 "en": "be (imperative of olla)",
 "fiSentence": "Oo rauhallinen.",
-"enSentence": "Be calm."
+"enSentence": "Be calm.",
+"hasAudio": true
 },
 {
 "index": "10",
 "fi": "olen",
 "en": "I am",
 "fiSentence": "Olen suomalainen.",
-"enSentence": "I am Finnish."
+"enSentence": "I am Finnish.",
+"hasAudio": true
 },
 {
 "index": "10a",
 "fi": "oon",
 "en": "I am",
 "fiSentence": "Mä oon suomalainen.",
-"enSentence": "I am Finnish."
+"enSentence": "I am Finnish.",
+"hasAudio": true
 },
 {
 "index": "11",
 "fi": "niin",
 "en": "so; like that",
 "fiSentence": "Älä puhu niin nopeasti.",
-"enSentence": "Don't speak so fast."
+"enSentence": "Don't speak so fast.",
+"hasAudio": true
 },
 {
 "index": "11a",
 "fi": "nii",
 "en": "so; like that",
 "fiSentence": "Älä puhu nii nopeesti.",
-"enSentence": "Don't speak so fast."
+"enSentence": "Don't speak so fast.",
+"hasAudio": true
 },
 {
 "index": "12",
 "fi": "mutta",
 "en": "but",
 "fiSentence": "Pidän kahvista, mutta en teestä.",
-"enSentence": "I like coffee but not tea."
+"enSentence": "I like coffee but not tea.",
+"hasAudio": true
 },
 {
 "index": "12a",
 "fi": "mut",
 "en": "but",
 "fiSentence": "Pidän kahvist, mut en teest.",
-"enSentence": "I like coffee but not tea."
+"enSentence": "I like coffee but not tea.",
+"hasAudio": true
 },
 {
 "index": "13",
 "fi": "vain",
 "en": "only; just",
 "fiSentence": "Se maksaa vain euron.",
-"enSentence": "It costs only one euro."
+"enSentence": "It costs only one euro.",
+"hasAudio": true
 },
 {
 "index": "13a",
 "fi": "vaan",
 "en": "only; just",
 "fiSentence": "Se maksaa vaan euron.",
-"enSentence": "It costs only one euro."
+"enSentence": "It costs only one euro.",
+"hasAudio": true
 },
 {
 "index": "14",
 "fi": "sen",
 "en": "its; of it/that",
 "fiSentence": "Unohdin sen nimen.",
-"enSentence": "I forgot its name."
+"enSentence": "I forgot its name.",
+"hasAudio": true
 },
 {
 "index": "15",
 "fi": "minä",
 "en": "I",
 "fiSentence": "Minä rakastan sinua.",
-"enSentence": "I love you."
+"enSentence": "I love you.",
+"hasAudio": true
 },
 {
 "index": "15a",
 "fi": "mä",
 "en": "I",
 "fiSentence": "Mä rakastan sua.",
-"enSentence": "I love you."
+"enSentence": "I love you.",
+"hasAudio": true
 },
 {
 "index": "16",
 "fi": "oli",
 "en": "was",
 "fiSentence": "Eilen oli kylmä.",
-"enSentence": "Yesterday was cold."
+"enSentence": "Yesterday was cold.",
+"hasAudio": true
 },
 {
 "index": "17",
 "fi": "jos",
 "en": "if",
 "fiSentence": "Jos haluat, voimme lähteä.",
-"enSentence": "If you want, we can leave."
+"enSentence": "If you want, we can leave.",
+"hasAudio": true
 },
 {
 "index": "18",
 "fi": "tämä",
 "en": "this",
 "fiSentence": "Tämä on minun taloni.",
-"enSentence": "This is my house."
+"enSentence": "This is my house.",
+"hasAudio": true
 },
 {
 "index": "18a",
 "fi": "tää",
 "en": "this",
 "fiSentence": "Tää on mun talo.",
-"enSentence": "This is my house."
+"enSentence": "This is my house.",
+"hasAudio": true
 },
 {
 "index": "19",
 "fi": "sinä",
 "en": "you (sg.)",
 "fiSentence": "Sinä olet ystävällinen.",
-"enSentence": "You are kind."
+"enSentence": "You are kind.",
+"hasAudio": true
 },
 {
 "index": "19a",
 "fi": "sä",
 "en": "you (sg.)",
 "fiSentence": "Sä oot ystävällinen.",
-"enSentence": "You are kind."
+"enSentence": "You are kind.",
+"hasAudio": true
 },
 {
 "index": "20",
 "fi": "nyt",
 "en": "now",
 "fiSentence": "Minun täytyy mennä nyt.",
-"enSentence": "I have to go now."
+"enSentence": "I have to go now.",
+"hasAudio": true
 },
 {
 "index": "21",
 "fi": "voi",
 "en": "can; may; oh!",
 "fiSentence": "Hän voi tehdä sen.",
-"enSentence": "He can do it."
+"enSentence": "He can do it.",
+"hasAudio": true
 },
 {
 "index": "22",
 "fi": "olet",
 "en": "you are (sg.)",
 "fiSentence": "Sinä olet oikeassa.",
-"enSentence": "You are right."
+"enSentence": "You are right.",
+"hasAudio": true
 },
 {
 "index": "22a",
 "fi": "oot",
 "en": "you are (sg.)",
 "fiSentence": "Sä oot oikees.",
-"enSentence": "You are right."
+"enSentence": "You are right.",
+"hasAudio": true
 },
 {
 "index": "23",
 "fi": "kun",
 "en": "when; as; since",
 "fiSentence": "Olin nuori, kun muutin tänne.",
-"enSentence": "I was young when I moved here."
+"enSentence": "I was young when I moved here.",
+"hasAudio": true
 },
 {
 "index": "23a",
 "fi": "ku",
 "en": "when; as; since",
 "fiSentence": "Mä olin nuori, ku muutin tänne.",
-"enSentence": "I was young when I moved here."
+"enSentence": "I was young when I moved here.",
+"hasAudio": true
 },
 {
 "index": "24",
 "fi": "sitä",
 "en": "it (partitive)",
 "fiSentence": "En halua sitä.",
-"enSentence": "I don't want it."
+"enSentence": "I don't want it.",
+"hasAudio": true
 },
 {
 "index": "25",
 "fi": "kuin",
 "en": "than; as; like",
 "fiSentence": "Olet pidempi kuin minä.",
-"enSentence": "You are taller than me."
+"enSentence": "You are taller than me.",
+"hasAudio": true
 },
 {
 "index": "25a",
 "fi": "ku",
 "en": "than; as; like",
 "fiSentence": "Sä oot pidempi ku mä.",
-"enSentence": "You are taller than me."
+"enSentence": "You are taller than me.",
+"hasAudio": true
 },
 {
 "index": "26",
 "fi": "he",
 "en": "they (people)",
 "fiSentence": "He asuvat Helsingissä.",
-"enSentence": "They live in Helsinki."
+"enSentence": "They live in Helsinki.",
+"hasAudio": true
 },
 {
 "index": "26a",
 "fi": "ne",
 "en": "they (people)",
 "fiSentence": "Ne asuu Helsingis.",
-"enSentence": "They live in Helsinki."
+"enSentence": "They live in Helsinki.",
+"hasAudio": true
 },
 {
 "index": "27",
 "fi": "täällä",
 "en": "here",
 "fiSentence": "Olen ollut täällä koko päivän.",
-"enSentence": "I have been here all day."
+"enSentence": "I have been here all day.",
+"hasAudio": true
 },
 {
 "index": "27a",
 "fi": "tääl",
 "en": "here",
 "fiSentence": "Mä oon ollu tääl koko päivän.",
-"enSentence": "I have been here all day."
+"enSentence": "I have been here all day.",
+"hasAudio": true
 },
 {
 "index": "28",
 "fi": "minun",
 "en": "my; of me",
 "fiSentence": "Tämä on minun autoni.",
-"enSentence": "This is my car."
+"enSentence": "This is my car.",
+"hasAudio": true
 },
 {
 "index": "28a",
 "fi": "mun",
 "en": "my; of me",
 "fiSentence": "Tää on mun auto.",
-"enSentence": "This is my car."
+"enSentence": "This is my car.",
+"hasAudio": true
 },
 {
 "index": "29",
 "fi": "kaikki",
 "en": "all; everyone; everything",
 "fiSentence": "Kaikki ovat valmiita.",
-"enSentence": "Everyone is ready."
+"enSentence": "Everyone is ready.",
+"hasAudio": true
 },
 {
 "index": "29a",
 "fi": "kaik",
 "en": "all; everyone; everything",
 "fiSentence": "Kaik on valmiita.",
-"enSentence": "Everyone is ready."
+"enSentence": "Everyone is ready.",
+"hasAudio": true
 },
 {
 "index": "30",
 "fi": "hänen",
 "en": "his; her",
 "fiSentence": "Hänen nimensä on Anna.",
-"enSentence": "Her name is Anna."
+"enSentence": "Her name is Anna.",
+"hasAudio": true
 },
 {
 "index": "30a",
 "fi": "sen",
 "en": "his; her",
 "fiSentence": "Sen nimi on Anna.",
-"enSentence": "Her name is Anna."
+"enSentence": "Her name is Anna.",
+"hasAudio": true
 },
 {
 "index": "31",
 "fi": "et",
 "en": "you don't; you aren't (2nd sg. negative)",
 "fiSentence": "Et ole yksin.",
-"enSentence": "You are not alone."
+"enSentence": "You are not alone.",
+"hasAudio": true
 },
 {
 "index": "32",
 "fi": "ovat",
 "en": "they are",
 "fiSentence": "Lapset ovat koulussa.",
-"enSentence": "The children are at school."
+"enSentence": "The children are at school.",
+"hasAudio": true
 },
 {
 "index": "32a",
 "fi": "on",
 "en": "they are",
 "fiSentence": "Lapset on koulus.",
-"enSentence": "The children are at school."
+"enSentence": "The children are at school.",
+"hasAudio": true
 },
 {
 "index": "33",
 "fi": "hyvä",
 "en": "good",
 "fiSentence": "Tämä on hyvä idea.",
-"enSentence": "This is a good idea."
+"enSentence": "This is a good idea.",
+"hasAudio": true
 },
 {
 "index": "34",
 "fi": "olla",
 "en": "to be",
 "fiSentence": "Haluan olla vahva.",
-"enSentence": "I want to be strong."
+"enSentence": "I want to be strong.",
+"hasAudio": true
 },
 {
 "index": "35",
 "fi": "minua",
 "en": "me (partitive)",
 "fiSentence": "Älä unohda minua.",
-"enSentence": "Don't forget me."
+"enSentence": "Don't forget me.",
+"hasAudio": true
 },
 {
 "index": "35a",
 "fi": "mua",
 "en": "me (partitive)",
 "fiSentence": "Älä unohda mua.",
-"enSentence": "Don't forget me."
+"enSentence": "Don't forget me.",
+"hasAudio": true
 },
 {
 "index": "36",
 "fi": "sinun",
 "en": "your; of you",
 "fiSentence": "Onko tämä sinun?",
-"enSentence": "Is this yours?"
+"enSentence": "Is this yours?",
+"hasAudio": true
 },
 {
 "index": "36a",
 "fi": "sun",
 "en": "your; of you",
 "fiSentence": "Onks tää sun?",
-"enSentence": "Is this yours?"
+"enSentence": "Is this yours?",
+"hasAudio": true
 },
 {
 "index": "37",
 "fi": "sinua",
 "en": "you (partitive)",
 "fiSentence": "Rakastan sinua.",
-"enSentence": "I love you."
+"enSentence": "I love you.",
+"hasAudio": true
 },
 {
 "index": "37a",
 "fi": "sua",
 "en": "you (partitive)",
 "fiSentence": "Mä rakastan sua.",
-"enSentence": "I love you."
+"enSentence": "I love you.",
+"hasAudio": true
 },
 {
 "index": "38",
 "fi": "älä",
 "en": "don't (imperative)",
 "fiSentence": "Älä mene sinne.",
-"enSentence": "Don't go there."
+"enSentence": "Don't go there.",
+"hasAudio": true
 },
 {
 "index": "39",
 "fi": "kyllä",
 "en": "yes",
 "fiSentence": "Kyllä, olen samaa mieltä.",
-"enSentence": "Yes, I agree."
+"enSentence": "Yes, I agree.",
+"hasAudio": true
 },
 {
 "index": "39a",
 "fi": "kyl",
 "en": "yes",
 "fiSentence": "Kyl, mä oon samaa mieltä.",
-"enSentence": "Yes, I agree."
+"enSentence": "Yes, I agree.",
+"hasAudio": true
 },
 {
 "index": "40",
 "fi": "sitten",
 "en": "then; ago",
 "fiSentence": "Tapasimme viikko sitten.",
-"enSentence": "We met a week ago."
+"enSentence": "We met a week ago.",
+"hasAudio": true
 },
 {
 "index": "40a",
 "fi": "sit",
 "en": "then; ago",
 "fiSentence": "Tapasimme viikko sit.",
-"enSentence": "We met a week ago."
+"enSentence": "We met a week ago.",
+"hasAudio": true
 },
 {
 "index": "41",
 "fi": "onko",
 "en": "is...? (question form)",
 "fiSentence": "Onko sinulla nälkä?",
-"enSentence": "Are you hungry?"
+"enSentence": "Are you hungry?",
+"hasAudio": true
 },
 {
 "index": "41a",
 "fi": "onks",
 "en": "is...? (question form)",
 "fiSentence": "Onks sulla nälkä?",
-"enSentence": "Are you hungry?"
+"enSentence": "Are you hungry?",
+"hasAudio": true
 },
 {
 "index": "42",
 "fi": "miksi",
 "en": "why",
 "fiSentence": "Miksi itket?",
-"enSentence": "Why are you crying?"
+"enSentence": "Why are you crying?",
+"hasAudio": true
 },
 {
 "index": "42a",
 "fi": "miks",
 "en": "why",
 "fiSentence": "Miks sä itket?",
-"enSentence": "Why are you crying?"
+"enSentence": "Why are you crying?",
+"hasAudio": true
 },
 {
 "index": "43",
 "fi": "hänet",
 "en": "him; her (accusative)",
 "fiSentence": "Näin hänet eilen.",
-"enSentence": "I saw him yesterday."
+"enSentence": "I saw him yesterday.",
+"hasAudio": true
 },
 {
 "index": "43a",
 "fi": "sen",
 "en": "him; her (accusative)",
 "fiSentence": "Mä näin sen eilen.",
-"enSentence": "I saw him yesterday."
+"enSentence": "I saw him yesterday.",
+"hasAudio": true
 },
 {
 "index": "44",
 "fi": "mitään",
 "en": "anything (in negatives)",
 "fiSentence": "En tarvitse mitään.",
-"enSentence": "I don't need anything."
+"enSentence": "I don't need anything.",
+"hasAudio": true
 },
 {
 "index": "44a",
 "fi": "mitää",
 "en": "anything (in negatives)",
 "fiSentence": "Mä en tarvii mitää.",
-"enSentence": "I don't need anything."
+"enSentence": "I don't need anything.",
+"hasAudio": true
 },
 {
 "index": "45",
 "fi": "hei",
 "en": "hi; hello",
 "fiSentence": "Hei! Kuinka voit?",
-"enSentence": "Hi! How are you?"
+"enSentence": "Hi! How are you?",
+"hasAudio": true
 },
 {
 "index": "46",
 "fi": "mikä",
 "en": "what; which",
 "fiSentence": "Mikä tämä on?",
-"enSentence": "What is this?"
+"enSentence": "What is this?",
+"hasAudio": true
 },
 {
 "index": "47",
 "fi": "siitä",
 "en": "about it; from it",
 "fiSentence": "Älä huoli siitä.",
-"enSentence": "Don't worry about it."
+"enSentence": "Don't worry about it.",
+"hasAudio": true
 },
 {
 "index": "47a",
 "fi": "siit",
 "en": "about it; from it",
 "fiSentence": "Älä huoli siit.",
-"enSentence": "Don't worry about it."
+"enSentence": "Don't worry about it.",
+"hasAudio": true
 },
 {
 "index": "48",
 "fi": "kiitos",
 "en": "thank you; thanks",
 "fiSentence": "Kiitos paljon avusta.",
-"enSentence": "Thank you very much for the help."
+"enSentence": "Thank you very much for the help.",
+"hasAudio": true
 },
 {
 "index": "49",
 "fi": "miten",
 "en": "how",
 "fiSentence": "Miten tämä toimii?",
-"enSentence": "How does this work?"
+"enSentence": "How does this work?",
+"hasAudio": true
 },
 {
 "index": "50",
 "fi": "ne",
 "en": "they; those (inanimate)",
 "fiSentence": "Ne ovat hyviä.",
-"enSentence": "They are good."
+"enSentence": "They are good.",
+"hasAudio": true
 },
 {
 "index": "51",
 "fi": "olisi",
 "en": "would be",
 "fiSentence": "Olisi kiva nähdä sinut.",
-"enSentence": "It would be nice to see you."
+"enSentence": "It would be nice to see you.",
+"hasAudio": true
 },
 {
 "index": "51a",
 "fi": "ois",
 "en": "would be",
 "fiSentence": "Ois kiva nähä sut.",
-"enSentence": "It would be nice to see you."
+"enSentence": "It would be nice to see you.",
+"hasAudio": true
 },
 {
 "index": "52",
 "fi": "joka",
 "en": "which; that; every",
 "fiSentence": "Mies, joka seisoo tuolla, on isäni.",
-"enSentence": "The man who is standing there is my father."
+"enSentence": "The man who is standing there is my father.",
+"hasAudio": true
 },
 {
 "index": "53",
 "fi": "minulle",
 "en": "to me; for me",
 "fiSentence": "Anna se minulle.",
-"enSentence": "Give it to me."
+"enSentence": "Give it to me.",
+"hasAudio": true
 },
 {
 "index": "53a",
 "fi": "mulle",
 "en": "to me; for me",
 "fiSentence": "Anna se mulle.",
-"enSentence": "Give it to me."
+"enSentence": "Give it to me.",
+"hasAudio": true
 },
 {
 "index": "54",
 "fi": "tässä",
 "en": "here; in this",
 "fiSentence": "Istutaan tässä.",
-"enSentence": "Let's sit here."
+"enSentence": "Let's sit here.",
+"hasAudio": true
 },
 {
 "index": "54a",
 "fi": "täs",
 "en": "here; in this",
 "fiSentence": "Istutaan täs.",
-"enSentence": "Let's sit here."
+"enSentence": "Let's sit here.",
+"hasAudio": true
 },
 {
 "index": "55",
 "fi": "kanssa",
 "en": "with",
 "fiSentence": "Tulen sinun kanssasi.",
-"enSentence": "I'll come with you."
+"enSentence": "I'll come with you.",
+"hasAudio": true
 },
 {
 "index": "55a",
 "fi": "kaa",
 "en": "with",
 "fiSentence": "Mä tuun sun kaa.",
-"enSentence": "I'll come with you."
+"enSentence": "I'll come with you.",
+"hasAudio": true
 },
 {
 "index": "56",
 "fi": "tai",
 "en": "or",
 "fiSentence": "Kahvia tai teetä?",
-"enSentence": "Coffee or tea?"
+"enSentence": "Coffee or tea?",
+"hasAudio": true
 },
 {
 "index": "57",
 "fi": "missä",
 "en": "where",
 "fiSentence": "Missä sinä asut?",
-"enSentence": "Where do you live?"
+"enSentence": "Where do you live?",
+"hasAudio": true
 },
 {
 "index": "57a",
 "fi": "mis",
 "en": "where",
 "fiSentence": "Mis sä asut?",
-"enSentence": "Where do you live?"
+"enSentence": "Where do you live?",
+"hasAudio": true
 },
 {
 "index": "58",
 "fi": "pitää",
 "en": "must; to hold; to like",
 "fiSentence": "Minun pitää lähteä.",
-"enSentence": "I have to leave."
+"enSentence": "I have to leave.",
+"hasAudio": true
 },
 {
 "index": "59",
 "fi": "tiedä",
 "en": "know (negative/imperative stem)",
 "fiSentence": "En tiedä vastausta.",
-"enSentence": "I don't know the answer."
+"enSentence": "I don't know the answer.",
+"hasAudio": true
 },
 {
 "index": "59a",
 "fi": "tiiä",
 "en": "know (negative/imperative stem)",
 "fiSentence": "Mä en tiiä vastaust.",
-"enSentence": "I don't know the answer."
+"enSentence": "I don't know the answer.",
+"hasAudio": true
 },
 {
 "index": "60",
 "fi": "minulla",
 "en": "I have (on me)",
 "fiSentence": "Minulla on koira.",
-"enSentence": "I have a dog."
+"enSentence": "I have a dog.",
+"hasAudio": true
 },
 {
 "index": "60a",
 "fi": "mul",
 "en": "I have (on me)",
 "fiSentence": "Mul on koira.",
-"enSentence": "I have a dog."
+"enSentence": "I have a dog.",
+"hasAudio": true
 },
 {
 "index": "61",
 "fi": "tuo",
 "en": "that (over there)",
 "fiSentence": "Tuo on kaunis.",
-"enSentence": "That is beautiful."
+"enSentence": "That is beautiful.",
+"hasAudio": true
 },
 {
 "index": "61a",
 "fi": "toi",
 "en": "that (over there)",
 "fiSentence": "Toi on kaunis.",
-"enSentence": "That is beautiful."
+"enSentence": "That is beautiful.",
+"hasAudio": true
 },
 {
 "index": "62",
 "fi": "jotain",
 "en": "something",
 "fiSentence": "Sano jotain.",
-"enSentence": "Say something."
+"enSentence": "Say something.",
+"hasAudio": true
 },
 {
 "index": "62a",
 "fi": "jotai",
 "en": "something",
 "fiSentence": "Sano jotai.",
-"enSentence": "Say something."
+"enSentence": "Say something.",
+"hasAudio": true
 },
 {
 "index": "63",
 "fi": "minut",
 "en": "me (accusative)",
 "fiSentence": "He kutsuivat minut juhliin.",
-"enSentence": "They invited me to the party."
+"enSentence": "They invited me to the party.",
+"hasAudio": true
 },
 {
 "index": "63a",
 "fi": "mut",
 "en": "me (accusative)",
 "fiSentence": "Ne kutsu mut juhliin.",
-"enSentence": "They invited me to the party."
+"enSentence": "They invited me to the party.",
+"hasAudio": true
 },
 {
 "index": "64",
 "fi": "ollut",
 "en": "been (past participle)",
 "fiSentence": "En ole ollut siellä.",
-"enSentence": "I haven't been there."
+"enSentence": "I haven't been there.",
+"hasAudio": true
 },
 {
 "index": "64a",
 "fi": "ollu",
 "en": "been (past participle)",
 "fiSentence": "Mä en oo ollu siel.",
-"enSentence": "I haven't been there."
+"enSentence": "I haven't been there.",
+"hasAudio": true
 },
 {
 "index": "65",
 "fi": "sinulle",
 "en": "to you; for you",
 "fiSentence": "Toin sinulle lahjan.",
-"enSentence": "I brought you a gift."
+"enSentence": "I brought you a gift.",
+"hasAudio": true
 },
 {
 "index": "65a",
 "fi": "sulle",
 "en": "to you; for you",
 "fiSentence": "Mä toin sulle lahjan.",
-"enSentence": "I brought you a gift."
+"enSentence": "I brought you a gift.",
+"hasAudio": true
 },
 {
 "index": "66",
 "fi": "me",
 "en": "we",
 "fiSentence": "Me menemme rannalle.",
-"enSentence": "We are going to the beach."
+"enSentence": "We are going to the beach.",
+"hasAudio": true
 },
 {
 "index": "67",
 "fi": "sinut",
 "en": "you (accusative)",
 "fiSentence": "Näin sinut kaupassa.",
-"enSentence": "I saw you at the store."
+"enSentence": "I saw you at the store.",
+"hasAudio": true
 },
 {
 "index": "67a",
 "fi": "sut",
 "en": "you (accusative)",
 "fiSentence": "Mä näin sut kaupas.",
-"enSentence": "I saw you at the store."
+"enSentence": "I saw you at the store.",
+"hasAudio": true
 },
 {
 "index": "68",
 "fi": "häntä",
 "en": "him; her (partitive)",
 "fiSentence": "Odotan häntä.",
-"enSentence": "I'm waiting for him."
+"enSentence": "I'm waiting for him.",
+"hasAudio": true
 },
 {
 "index": "68a",
 "fi": "sitä",
 "en": "him; her (partitive)",
 "fiSentence": "Mä odotan sitä.",
-"enSentence": "I'm waiting for him."
+"enSentence": "I'm waiting for him.",
+"hasAudio": true
 },
 {
 "index": "69",
 "fi": "oletko",
 "en": "are you? (sg.)",
 "fiSentence": "Oletko valmis?",
-"enSentence": "Are you ready?"
+"enSentence": "Are you ready?",
+"hasAudio": true
 },
 {
 "index": "69a",
 "fi": "ootsä",
 "en": "are you? (sg.)",
 "fiSentence": "Ootsä valmis?",
-"enSentence": "Are you ready?"
+"enSentence": "Are you ready?",
+"hasAudio": true
 },
 {
 "index": "70",
 "fi": "tämän",
 "en": "of this (genitive)",
 "fiSentence": "Luin tämän kirjan.",
-"enSentence": "I read this book."
+"enSentence": "I read this book.",
+"hasAudio": true
 },
 {
 "index": "70a",
 "fi": "tän",
 "en": "of this (genitive)",
 "fiSentence": "Mä luin tän kirjan.",
-"enSentence": "I read this book."
+"enSentence": "I read this book.",
+"hasAudio": true
 },
 {
 "index": "71",
 "fi": "kuka",
 "en": "who",
 "fiSentence": "Kuka sinä olet?",
-"enSentence": "Who are you?"
+"enSentence": "Who are you?",
+"hasAudio": true
 },
 {
 "index": "72",
 "fi": "meidän",
 "en": "our; of us",
 "fiSentence": "Meidän talomme on iso.",
-"enSentence": "Our house is big."
+"enSentence": "Our house is big.",
+"hasAudio": true
 },
 {
 "index": "72a",
 "fi": "meiän",
 "en": "our; of us",
 "fiSentence": "Meiän talo on iso.",
-"enSentence": "Our house is big."
+"enSentence": "Our house is big.",
+"hasAudio": true
 },
 {
 "index": "73",
 "fi": "olemme",
 "en": "we are",
 "fiSentence": "Olemme valmiita.",
-"enSentence": "We are ready."
+"enSentence": "We are ready.",
+"hasAudio": true
 },
 {
 "index": "73a",
 "fi": "ollaan",
 "en": "we are",
 "fiSentence": "Me ollaan valmiita.",
-"enSentence": "We are ready."
+"enSentence": "We are ready.",
+"hasAudio": true
 },
 {
 "index": "74",
 "fi": "vielä",
 "en": "still; yet",
 "fiSentence": "Onko vielä aikaa?",
-"enSentence": "Is there still time?"
+"enSentence": "Is there still time?",
+"hasAudio": true
 },
 {
 "index": "74a",
 "fi": "viel",
 "en": "still; yet",
 "fiSentence": "Onks viel aikaa?",
-"enSentence": "Is there still time?"
+"enSentence": "Is there still time?",
+"hasAudio": true
 },
 {
 "index": "75",
 "fi": "hyvin",
 "en": "well",
 "fiSentence": "Nukuin hyvin.",
-"enSentence": "I slept well."
+"enSentence": "I slept well.",
+"hasAudio": true
 },
 {
 "index": "76",
 "fi": "tänne",
 "en": "to here",
 "fiSentence": "Tule tänne!",
-"enSentence": "Come here!"
+"enSentence": "Come here!",
+"hasAudio": true
 },
 {
 "index": "77",
 "fi": "anteeksi",
 "en": "sorry; excuse me",
 "fiSentence": "Anteeksi, missä on asema?",
-"enSentence": "Excuse me, where is the station?"
+"enSentence": "Excuse me, where is the station?",
+"hasAudio": true
 },
 {
 "index": "77a",
 "fi": "anteeks",
 "en": "sorry; excuse me",
 "fiSentence": "Anteeks, mis on asema?",
-"enSentence": "Excuse me, where is the station?"
+"enSentence": "Excuse me, where is the station?",
+"hasAudio": true
 },
 {
 "index": "78",
 "fi": "jo",
 "en": "already",
 "fiSentence": "Onko hän jo täällä?",
-"enSentence": "Is he here already?"
+"enSentence": "Is he here already?",
+"hasAudio": true
 },
 {
 "index": "79",
 "fi": "tiedän",
 "en": "I know",
 "fiSentence": "Tiedän vastauksen.",
-"enSentence": "I know the answer."
+"enSentence": "I know the answer.",
+"hasAudio": true
 },
 {
 "index": "79a",
 "fi": "tiiän",
 "en": "I know",
 "fiSentence": "Mä tiiän vastauksen.",
-"enSentence": "I know the answer."
+"enSentence": "I know the answer.",
+"hasAudio": true
 },
 {
 "index": "80",
 "fi": "koska",
 "en": "because; when",
 "fiSentence": "Jään kotiin, koska olen kipeä.",
-"enSentence": "I'm staying home because I'm sick."
+"enSentence": "I'm staying home because I'm sick.",
+"hasAudio": true
 },
 {
 "index": "81",
 "fi": "tehdä",
 "en": "to do; to make",
 "fiSentence": "Mitä haluat tehdä?",
-"enSentence": "What do you want to do?"
+"enSentence": "What do you want to do?",
+"hasAudio": true
 },
 {
 "index": "81a",
 "fi": "tehä",
 "en": "to do; to make",
 "fiSentence": "Mitä sä haluut tehä?",
-"enSentence": "What do you want to do?"
+"enSentence": "What do you want to do?",
+"hasAudio": true
 },
 {
 "index": "82",
 "fi": "ehkä",
 "en": "maybe; perhaps",
 "fiSentence": "Ehkä tulen myöhemmin.",
-"enSentence": "Maybe I'll come later."
+"enSentence": "Maybe I'll come later.",
+"hasAudio": true
 },
 {
 "index": "83",
 "fi": "täytyy",
 "en": "must; have to",
 "fiSentence": "Minun täytyy nukkua.",
-"enSentence": "I have to sleep."
+"enSentence": "I have to sleep.",
+"hasAudio": true
 },
 {
 "index": "84",
 "fi": "anna",
 "en": "give (imperative)",
 "fiSentence": "Anna minulle vettä.",
-"enSentence": "Give me water."
+"enSentence": "Give me water.",
+"hasAudio": true
 },
 {
 "index": "85",
 "fi": "tule",
 "en": "come (imperative)",
 "fiSentence": "Tule sisään.",
-"enSentence": "Come in."
+"enSentence": "Come in.",
+"hasAudio": true
 },
 {
 "index": "85a",
 "fi": "tuu",
 "en": "come (imperative)",
 "fiSentence": "Tuu sisään.",
-"enSentence": "Come in."
+"enSentence": "Come in.",
+"hasAudio": true
 },
 {
 "index": "86",
 "fi": "haluan",
 "en": "I want",
 "fiSentence": "Haluan kupin kahvia.",
-"enSentence": "I want a cup of coffee."
+"enSentence": "I want a cup of coffee.",
+"hasAudio": true
 },
 {
 "index": "86a",
 "fi": "haluun",
 "en": "I want",
 "fiSentence": "Mä haluun kupin kahvii.",
-"enSentence": "I want a cup of coffee."
+"enSentence": "I want a cup of coffee.",
+"hasAudio": true
 },
 {
 "index": "87",
 "fi": "pois",
 "en": "away; off",
 "fiSentence": "Mene pois!",
-"enSentence": "Go away!"
+"enSentence": "Go away!",
+"hasAudio": true
 },
 {
 "index": "88",
 "fi": "emme",
 "en": "we don't; we aren't",
 "fiSentence": "Emme tiedä.",
-"enSentence": "We don't know."
+"enSentence": "We don't know.",
+"hasAudio": true
 },
 {
 "index": "89",
 "fi": "kuinka",
 "en": "how",
 "fiSentence": "Kuinka vanha olet?",
-"enSentence": "How old are you?"
+"enSentence": "How old are you?",
+"hasAudio": true
 },
 {
 "index": "90",
 "fi": "siellä",
 "en": "there",
 "fiSentence": "Kävin siellä eilen.",
-"enSentence": "I went there yesterday."
+"enSentence": "I went there yesterday.",
+"hasAudio": true
 },
 {
 "index": "90a",
 "fi": "siel",
 "en": "there",
 "fiSentence": "Mä kävin siel eilen.",
-"enSentence": "I went there yesterday."
+"enSentence": "I went there yesterday.",
+"hasAudio": true
 },
 {
 "index": "91",
 "fi": "herra",
 "en": "mister; sir; lord",
 "fiSentence": "Hyvää päivää, herra Virtanen.",
-"enSentence": "Good day, Mr. Virtanen."
+"enSentence": "Good day, Mr. Virtanen.",
+"hasAudio": true
 },
 {
 "index": "92",
 "fi": "takaisin",
 "en": "back",
 "fiSentence": "Tule pian takaisin.",
-"enSentence": "Come back soon."
+"enSentence": "Come back soon.",
+"hasAudio": true
 },
 {
 "index": "92a",
 "fi": "takas",
 "en": "back",
 "fiSentence": "Tuu pian takas.",
-"enSentence": "Come back soon."
+"enSentence": "Come back soon.",
+"hasAudio": true
 },
 {
 "index": "93",
 "fi": "tätä",
 "en": "this (partitive)",
 "fiSentence": "En ymmärrä tätä.",
-"enSentence": "I don't understand this."
+"enSentence": "I don't understand this.",
+"hasAudio": true
 },
 {
 "index": "94",
 "fi": "sinulla",
 "en": "you have",
 "fiSentence": "Sinulla on kaunis koti.",
-"enSentence": "You have a beautiful home."
+"enSentence": "You have a beautiful home.",
+"hasAudio": true
 },
 {
 "index": "94a",
 "fi": "sul",
 "en": "you have",
 "fiSentence": "Sul on kaunis koti.",
-"enSentence": "You have a beautiful home."
+"enSentence": "You have a beautiful home.",
+"hasAudio": true
 },
 {
 "index": "95",
 "fi": "paljon",
 "en": "a lot; much",
 "fiSentence": "Rakastan sinua paljon.",
-"enSentence": "I love you a lot."
+"enSentence": "I love you a lot.",
+"hasAudio": true
 },
 {
 "index": "95a",
 "fi": "paljo",
 "en": "a lot; much",
 "fiSentence": "Mä rakastan sua paljo.",
-"enSentence": "I love you a lot."
+"enSentence": "I love you a lot.",
+"hasAudio": true
 },
 {
 "index": "96",
 "fi": "selvä",
 "en": "clear; alright",
 "fiSentence": "Selvä, teen sen.",
-"enSentence": "Alright, I'll do it."
+"enSentence": "Alright, I'll do it.",
+"hasAudio": true
 },
 {
 "index": "97",
 "fi": "eivät",
 "en": "they don't; they aren't",
 "fiSentence": "He eivät tiedä.",
-"enSentence": "They don't know."
+"enSentence": "They don't know.",
+"hasAudio": true
 },
 {
 "index": "97a",
 "fi": "ei",
 "en": "they don't; they aren't",
 "fiSentence": "Ne ei tiiä.",
-"enSentence": "They don't know."
+"enSentence": "They don't know.",
+"hasAudio": true
 },
 {
 "index": "98",
 "fi": "saa",
 "en": "may; is allowed; gets",
 "fiSentence": "Täällä ei saa juosta.",
-"enSentence": "You may not run here."
+"enSentence": "You may not run here.",
+"hasAudio": true
 },
 {
 "index": "99",
 "fi": "tulee",
 "en": "comes; will come",
 "fiSentence": "Hän tulee kohta.",
-"enSentence": "He is coming soon."
+"enSentence": "He is coming soon.",
+"hasAudio": true
 },
 {
 "index": "100",
 "fi": "siinä",
 "en": "in it; there",
 "fiSentence": "Mikä siinä on?",
-"enSentence": "What's wrong with it?"
+"enSentence": "What's wrong with it?",
+"hasAudio": true
 },
 {
 "index": "100a",
 "fi": "siin",
 "en": "in it; there",
 "fiSentence": "Mikä siin on?",
-"enSentence": "What's wrong with it?"
+"enSentence": "What's wrong with it?",
+"hasAudio": true
 },
 {
 "index": "101",

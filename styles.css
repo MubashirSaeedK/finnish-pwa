@@ -271,6 +271,21 @@ body::before {
   min-width: 0;
 }
 
+/* Audio-ready indicator */
+.has-audio {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 14%, transparent);
+}
+.has-audio svg { width: 16px; height: 16px; }
+.word-item.playing .has-audio { color: var(--hot); background: color-mix(in srgb, var(--hot) 16%, transparent); }
+
 /* Dropdown / expand button */
 .expand-btn {
   flex: none;
@@ -446,4 +461,30 @@ mark {
   color: var(--text-dim);
   box-shadow: none;
   cursor: not-allowed;
+}
+.btn-play.playing {
+  background: linear-gradient(135deg, var(--hot), #ff8a5b);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--hot) 50%, transparent);
+  animation: playpulse 1.6s ease-in-out infinite;
+}
+@keyframes playpulse {
+  0%, 100% { box-shadow: 0 8px 20px color-mix(in srgb, var(--hot) 45%, transparent); }
+  50%      { box-shadow: 0 8px 28px color-mix(in srgb, var(--hot) 75%, transparent); }
+}
+
+/* Currently-playing card */
+.word-item.playing {
+  border-color: color-mix(in srgb, var(--hot) 55%, transparent);
+  box-shadow: var(--shadow-md), 0 0 0 2px color-mix(in srgb, var(--hot) 45%, transparent);
+}
+.word-item.playing::before {
+  opacity: 1;
+  background: linear-gradient(180deg, var(--hot), #ff8a5b);
+}
+.word-item.playing .idx {
+  background: linear-gradient(135deg, var(--hot), #ff8a5b);
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--hot) 40%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-play.playing { animation: none; }
 }
