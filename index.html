@@ -24,6 +24,14 @@
       <input id="search" type="search" inputmode="search" placeholder="Search word, meaning, or #…" autocomplete="off" />
       <button id="clearSearch" class="clear-search" type="button" aria-label="Clear search" hidden>×</button>
     </div>
+    <div class="chips" id="chips" aria-label="Filter words">
+      <button class="chip active" type="button" data-filter="all">All<span class="n"></span></button>
+      <button class="chip" type="button" data-filter="selected">Selected<span class="n"></span></button>
+      <button class="chip" type="button" data-filter="audio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5H4z" fill="currentColor"/><path d="M15.5 8.5a4 4 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Audio<span class="n"></span>
+      </button>
+    </div>
   </header>
 
   <main>
@@ -32,16 +40,41 @@
   </main>
 
   <footer class="selection-bar" id="selectionBar">
+    <div class="mode-seg" id="modeSeg" role="group" aria-label="Playback mode">
+      <button type="button" data-mode="listen" class="active" title="Word, then the meaning right away">Listen</button>
+      <button type="button" data-mode="quiz" title="Word, then a pause to recall the meaning before the answer">Quiz</button>
+      <button type="button" data-mode="produce" title="Meaning first, then a pause to say it in Finnish before the answer">Produce</button>
+    </div>
+    <div class="bar-row">
+    <div class="np">
+      <div class="np-word-row">
+        <span class="np-word" id="npWord"></span>
+        <span class="np-meta" id="npMeta"></span>
+      </div>
+      <div class="np-parts" id="npParts" aria-hidden="true">
+        <span data-part="word">word</span>
+        <span data-part="meaning">meaning</span>
+        <span data-part="fi">FI</span>
+        <span data-part="en">EN</span>
+      </div>
+    </div>
     <div class="sel-info">
       <strong id="selCount">0</strong> selected
     </div>
     <div class="sel-actions">
       <button id="selectAll" type="button" class="btn-ghost">Select all</button>
       <button id="clearSel" type="button" class="btn-ghost">Clear</button>
+      <button id="npPrev" type="button" class="np-btn" aria-label="Previous word">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M19 5l-10 7 10 7z" fill="currentColor"/></svg>
+      </button>
       <button id="play" type="button" class="btn-play" disabled title="Audio coming in Phase 2">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
         Play
       </button>
+      <button id="npNext" type="button" class="np-btn" aria-label="Next word">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 5v14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M5 5l10 7-10 7z" fill="currentColor"/></svg>
+      </button>
+    </div>
     </div>
   </footer>
 

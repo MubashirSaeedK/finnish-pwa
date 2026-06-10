@@ -2,6 +2,7 @@
 
 const STORAGE_KEY = 'suomi200.selected';
 const SKIP_KEY = 'suomi200.sentenceSkip';
+const MODE_KEY = 'suomi200.mode';
 
 const els = {
   list: document.getElementById('list'),
@@ -13,12 +14,21 @@ const els = {
   selectAll: document.getElementById('selectAll'),
   clearSel: document.getElementById('clearSel'),
   play: document.getElementById('play'),
+  chips: document.getElementById('chips'),
+  npWord: document.getElementById('npWord'),
+  npMeta: document.getElementById('npMeta'),
+  npParts: document.getElementById('npParts'),
+  npPrev: document.getElementById('npPrev'),
+  npNext: document.getElementById('npNext'),
+  modeSeg: document.getElementById('modeSeg'),
 };
 
 let words = [];
 let selected = loadSelection();
 let sentenceSkip = loadSentenceSkip(); // { index: { fi: true, en: true } } — true means skip
 let query = '';
+let filter = 'all'; // 'all' | 'selected' | 'audio'
+let mode = loadMode(); // 'listen' | 'quiz' | 'produce'
 let hasRendered = false;
 
 const CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -41,6 +51,7 @@ async function init() {
   els.total.title = `${audioCount} of ${words.length} words have audio`;
   render();
   updateSelectionUI();
+  updateModeUI();
   bindEvents();
   registerSW();
 }
@@ -48,19 +59,25 @@ async function init() {
 /* ---------- Rendering ---------- */
 function render() {
   const q = query.trim().toLowerCase();
-  const matches = q
-    ? words.filter(w =>
-        w.fi.toLowerCase().includes(q) ||
-        w.en.toLowerCase().includes(q) ||
-        w.index.toLowerCase().includes(q))
-    : words;
+  const matches = visibleWords();
 
   els.empty.hidden = matches.length > 0;
+  if (matches.length === 0) {
+    els.empty.textContent = (filter === 'selected' && !q)
+      ? 'Nothing selected yet — tap words to add them.'
+      : 'No matches.';
+  }
   els.list.innerHTML = matches.map(w => rowHTML(w, q)).join('');
 
   // Play the entrance animation only on the very first paint.
   els.list.classList.toggle('animate-in', !hasRendered);
   hasRendered = true;
+
+  // Re-apply playing highlight/auto-expand lost in the DOM rebuild.
+  if (player.playing && player.currentIndex != null) {
+    player.autoOpened = null;
+    highlightPlaying(player.currentIndex);
+  }
 }
 
 function rowHTML(w, q) {
@@ -70,7 +87,7 @@ function rowHTML(w, q) {
     <div class="row-main" role="button" tabindex="0" aria-pressed="${isSel}" aria-label="Select ${esc(w.fi)}">
       <span class="idx">${esc(w.index)}</span>
       <span class="fi-word">${highlight(w.fi, q)}</span>
-      ${w.hasAudio ? `<span class="has-audio" title="Audio ready" aria-label="Audio ready">${SPEAKER_SVG}</span>` : ''}
+      ${w.hasAudio ? `<span class="has-audio" role="button" title="Tap to play this word" aria-label="Play ${esc(w.fi)}">${SPEAKER_SVG}</span>` : ''}
       <button class="expand-btn" type="button" aria-expanded="false" aria-label="Show details" tabindex="0">
         ${CHEV_SVG}
       </button>
@@ -107,6 +124,7 @@ function toggleOpen(item) {
 }
 
 function toggleSelect(item) {
+  buzz();
   const cb = item.querySelector('input[type="checkbox"]');
   const idx = item.dataset.index;
   const next = !cb.checked;
@@ -130,6 +148,22 @@ function bindEvents() {
 
     if (e.target.closest('.expand-btn')) {
       toggleOpen(item);
+      return;
+    }
+
+    // Speaker icon: play just this word once — or jump the running loop to it.
+    if (e.target.closest('.has-audio')) {
+      const w = words.find(x => x.index === item.dataset.index);
+      if (w && w.hasAudio) {
+        buzz();
+        if (player.playing && !player.once) {
+          const qi = player.queue.findIndex(it => it.index === w.index);
+          if (qi !== -1) jumpTo(qi);
+        } else {
+          if (player.playing) stopPlayback();
+          startPlayback(queueForWords([w]), true);
+        }
+      }
       return;
     }
 
@@ -171,14 +205,26 @@ function bindEvents() {
     els.search.focus();
   });
 
+  // Filter chips
+  els.chips.addEventListener('click', (e) => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    buzz();
+    filter = chip.dataset.filter;
+    els.chips.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c === chip));
+    render();
+  });
+
   // Selection actions
   els.selectAll.addEventListener('click', () => {
+    buzz();
     visibleWords().forEach(w => selected.add(w.index));
     saveSelection();
     render();
     updateSelectionUI();
   });
   els.clearSel.addEventListener('click', () => {
+    buzz();
     selected.clear();
     saveSelection();
     render();
@@ -187,15 +233,40 @@ function bindEvents() {
 
   // Play / Stop
   els.play.addEventListener('click', () => {
+    buzz();
     if (player.playing) stopPlayback();
     else startPlayback();
+  });
+
+  // Skip to previous / next word while playing
+  els.npPrev.addEventListener('click', () => { if (player.playing) { buzz(); jumpTo(wordBoundary(-1)); } });
+  els.npNext.addEventListener('click', () => { if (player.playing) { buzz(); jumpTo(wordBoundary(1)); } });
+
+  // Playback mode — applies immediately, even mid-loop (restarts the current word).
+  els.modeSeg.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-mode]');
+    if (!btn || btn.dataset.mode === mode) return;
+    buzz();
+    mode = btn.dataset.mode;
+    saveMode();
+    updateModeUI();
+    if (player.playing && !player.once) {
+      clearTimeout(player.timer);
+      player.queue = buildQueue();
+      if (player.queue.length === 0) { stopPlayback(); return; }
+      const qi = player.queue.findIndex(it => it.index === player.currentIndex);
+      jumpTo(qi !== -1 ? qi : 0);
+    }
   });
 }
 
 function visibleWords() {
+  let list = words;
+  if (filter === 'selected') list = list.filter(w => selected.has(w.index));
+  else if (filter === 'audio') list = list.filter(w => w.hasAudio);
   const q = query.trim().toLowerCase();
-  if (!q) return words;
-  return words.filter(w =>
+  if (!q) return list;
+  return list.filter(w =>
     w.fi.toLowerCase().includes(q) ||
     w.en.toLowerCase().includes(q) ||
     w.index.toLowerCase().includes(q));
@@ -208,19 +279,38 @@ function updateSelectionUI() {
   const playable = selectedAudioWords().length;
   els.play.disabled = playable === 0 && !player.playing;
   els.play.title = playable === 0 ? 'Select words that have audio' : 'Play selected words';
+  updateChipCounts();
+}
+
+function updateChipCounts() {
+  const set = (f, v) => {
+    const el = els.chips.querySelector(`[data-filter="${f}"] .n`);
+    if (el) el.textContent = v;
+  };
+  set('all', words.length);
+  set('selected', selected.size);
+  set('audio', words.filter(w => w.hasAudio).length);
 }
 
 /* ---------- Audio playback (Phase 2) ---------- */
-const PART_ORDER = ['word', 'meaning', 'fi', 'en'];
-// Pause (ms) AFTER each part, within the same word:
-const GAP_AFTER = {
-  word: 300,     // word -> meaning
-  meaning: 600,  // meaning -> Finnish sentence
-  fi: 300,       // Finnish sentence -> English sentence
+// Each mode defines the clip order within a word and the silent gap (ms)
+// AFTER each part. Quiz and Produce leave a long recall gap before the answer:
+//   listen  — word, meaning right away (passive listening)
+//   quiz    — word … pause to recall the meaning … meaning (recognition)
+//   produce — meaning … pause to say it in Finnish … word (production)
+const MODE_CONFIG = {
+  listen:  { parts: ['word', 'meaning', 'fi', 'en'], gaps: { word: 300,  meaning: 600, fi: 300 } },
+  quiz:    { parts: ['word', 'meaning', 'fi', 'en'], gaps: { word: 2500, meaning: 600, fi: 300 } },
+  produce: { parts: ['meaning', 'word', 'fi', 'en'], gaps: { meaning: 2500, word: 600, fi: 300 } },
 };
 const GAP_WORD = 1000;  // between one word's last part and the next word
 
-const player = { playing: false, queue: [], i: 0, audio: new Audio(), timer: null, currentIndex: null, autoOpened: null };
+const player = {
+  playing: false, queue: [], i: 0, audio: new Audio(), timer: null,
+  currentIndex: null, autoOpened: null,
+  loop: 1,      // which pass of the auto-replay loop we're on
+  once: false,  // true for single-word previews: play through once, no loop
+};
 
 function audioSrc(index, part) {
   const safe = index.replace(/[^\w.-]/g, '_');
@@ -232,12 +322,12 @@ function selectedAudioWords() {
   return words.filter(w => selected.has(w.index) && w.hasAudio);
 }
 
-function buildQueue() {
+function queueForWords(list) {
   const q = [];
-  const list = selectedAudioWords();
+  const cfg = MODE_CONFIG[mode] || MODE_CONFIG.listen;
   list.forEach((w, wi) => {
     // word & meaning always play; sentences only if their checkbox is on.
-    const parts = PART_ORDER.filter(p => {
+    const parts = cfg.parts.filter(p => {
       if (p === 'fi') return !skipped(w.index, 'fi');
       if (p === 'en') return !skipped(w.index, 'en');
       return true;
@@ -246,17 +336,26 @@ function buildQueue() {
     parts.forEach((part, pi) => {
       const lastPart = pi === parts.length - 1;
       // gap after this clip: word-boundary on the last part, else this part's gap
-      let gapAfter = lastPart ? (lastWord ? 0 : GAP_WORD) : (GAP_AFTER[part] ?? 0);
-      q.push({ index: w.index, fi: w.fi, part, src: audioSrc(w.index, part), gapAfter });
+      let gapAfter = lastPart ? (lastWord ? 0 : GAP_WORD) : (cfg.gaps[part] ?? 0);
+      q.push({
+        index: w.index, fi: w.fi, part, src: audioSrc(w.index, part), gapAfter,
+        wpos: wi + 1, wtotal: list.length,
+      });
     });
   });
   return q;
 }
 
-function startPlayback() {
-  player.queue = buildQueue();
+function buildQueue() {
+  return queueForWords(selectedAudioWords());
+}
+
+function startPlayback(queue, once = false) {
+  player.queue = queue || buildQueue();
   if (player.queue.length === 0) return;
   player.playing = true;
+  player.once = once;
+  player.loop = 1;
   player.i = 0;
   player.currentIndex = null;
   document.body.classList.add('is-playing');
@@ -267,11 +366,13 @@ function startPlayback() {
 function playNext() {
   if (!player.playing) return;
   if (player.i >= player.queue.length) {
+    if (player.once) { stopPlayback(); return; }
     // Loop: rebuild (so selection/skip edits during playback take effect) and restart.
     player.queue = buildQueue();
     if (player.queue.length === 0) { stopPlayback(); return; }
     player.i = 0;
     player.currentIndex = null;
+    player.loop++;
     player.timer = setTimeout(playNext, GAP_WORD);
     return;
   }
@@ -281,6 +382,7 @@ function playNext() {
     player.currentIndex = item.index;
     highlightPlaying(item.index);
   }
+  updateNowPlaying(item);
 
   const a = player.audio;
   a.src = item.src;
@@ -297,15 +399,54 @@ function playNext() {
 
 function stopPlayback() {
   player.playing = false;
+  player.once = false;
   clearTimeout(player.timer);
   try { player.audio.pause(); } catch {}
   player.audio.onended = null;
   player.audio.onerror = null;
   player.i = 0;
   document.body.classList.remove('is-playing');
+  els.npParts.querySelectorAll('.active').forEach(p => p.classList.remove('active'));
   highlightPlaying(null);
   setPlayButton(false);
   updateSelectionUI();
+}
+
+/* ---------- Now-playing dock ---------- */
+function updateNowPlaying(item) {
+  els.npWord.textContent = item.fi;
+  els.npMeta.textContent = player.once
+    ? 'preview'
+    : `${item.wpos}/${item.wtotal} · loop ${player.loop}`;
+  els.npParts.querySelectorAll('[data-part]').forEach(p =>
+    p.classList.toggle('active', p.dataset.part === item.part));
+}
+
+// Jump the loop to a given queue position (clip boundary).
+function jumpTo(i) {
+  clearTimeout(player.timer);
+  player.i = i;
+  player.currentIndex = null; // force re-highlight
+  playNext();
+}
+
+// Queue position of the next (+1) or previous (-1) word's first clip, wrapping.
+function wordBoundary(dir) {
+  const q = player.queue;
+  if (q.length === 0) return 0;
+  const cur = q[Math.min(player.i, q.length - 1)].index;
+  if (dir > 0) {
+    let i = player.i;
+    while (i < q.length && q[i].index === cur) i++;
+    return i < q.length ? i : 0;
+  }
+  let start = Math.min(player.i, q.length - 1);
+  while (start > 0 && q[start - 1].index === cur) start--;
+  let p = start - 1;
+  if (p < 0) p = q.length - 1;
+  const prevIdx = q[p].index;
+  while (p > 0 && q[p - 1].index === prevIdx) p--;
+  return p;
 }
 
 function setPlayButton(playing) {
@@ -332,7 +473,7 @@ function highlightPlaying(index) {
       setOpen(el, true);
       player.autoOpened = el; // remember so we can auto-collapse it next
     }
-    el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' });
   }
 }
 
@@ -354,6 +495,27 @@ function loadSelection() {
 }
 function saveSelection() {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...selected])); } catch {}
+}
+
+/* ---------- Playback mode ---------- */
+function updateModeUI() {
+  els.modeSeg.querySelectorAll('[data-mode]').forEach(b =>
+    b.classList.toggle('active', b.dataset.mode === mode));
+  // Reorder the now-playing part pills to match this mode's playback order.
+  const cfg = MODE_CONFIG[mode] || MODE_CONFIG.listen;
+  cfg.parts.forEach(p => {
+    const pill = els.npParts.querySelector(`[data-part="${p}"]`);
+    if (pill) els.npParts.appendChild(pill);
+  });
+}
+function loadMode() {
+  try {
+    const m = localStorage.getItem(MODE_KEY);
+    return ['listen', 'quiz', 'produce'].includes(m) ? m : 'listen';
+  } catch { return 'listen'; }
+}
+function saveMode() {
+  try { localStorage.setItem(MODE_KEY, mode); } catch {}
 }
 
 /* ---------- Per-sentence skip state ---------- */
@@ -382,6 +544,11 @@ function saveSentenceSkip() {
 }
 
 /* ---------- Helpers ---------- */
+// Light haptic tick on devices that support it (Android); no-op elsewhere.
+function buzz(ms = 8) {
+  try { if (navigator.vibrate) navigator.vibrate(ms); } catch {}
+}
+
 function esc(s) {
   return String(s).replace(/[&<>"']/g, c => (
     { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]

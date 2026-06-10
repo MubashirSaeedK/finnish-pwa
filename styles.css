@@ -50,7 +50,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--text);
   line-height: 1.4;
-  padding-bottom: calc(96px + var(--safe-bottom));
+  padding-bottom: calc(150px + var(--safe-bottom));
   -webkit-font-smoothing: antialiased;
   position: relative;
   min-height: 100vh;
@@ -173,6 +173,42 @@ body::before {
   z-index: 1;
 }
 
+/* Filter chips */
+.chips {
+  display: flex;
+  gap: 7px;
+  margin-top: 11px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: .8rem;
+  font-weight: 700;
+  padding: 7px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background .18s, color .18s, border-color .18s, transform .12s, box-shadow .18s;
+}
+.chip svg { width: 14px; height: 14px; }
+.chip .n { font-size: .72rem; font-weight: 800; opacity: .7; font-variant-numeric: tabular-nums; }
+.chip:active { transform: scale(.94); }
+.chip.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-color: transparent;
+  box-shadow: 0 6px 14px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+.chip.active .n { opacity: .85; }
+
 /* ---------- List ---------- */
 .word-list {
   list-style: none;
@@ -277,14 +313,29 @@ body::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  margin: -3px -2px;
+  border-radius: 10px;
   color: var(--accent-2);
   background: color-mix(in srgb, var(--accent-2) 14%, transparent);
+  cursor: pointer;
+  transition: background .15s, transform .12s;
 }
-.has-audio svg { width: 16px; height: 16px; }
+.has-audio:active { transform: scale(.88); }
+@media (hover: hover) {
+  .has-audio:hover { background: color-mix(in srgb, var(--accent-2) 26%, transparent); }
+}
+.has-audio svg { width: 17px; height: 17px; }
 .word-item.playing .has-audio { color: var(--hot); background: color-mix(in srgb, var(--hot) 16%, transparent); }
+.word-item.playing .has-audio svg { animation: speak 1s ease-in-out infinite; }
+@keyframes speak {
+  0%, 100% { transform: scale(1); opacity: .85; }
+  50%      { transform: scale(1.18); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .word-item.playing .has-audio svg { animation: none; }
+}
 
 /* Dropdown / expand button */
 .expand-btn {
@@ -444,10 +495,10 @@ mark {
   bottom: calc(12px + var(--safe-bottom));
   z-index: 20;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 11px 12px 11px 18px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  padding: 11px 12px;
   border-radius: 20px;
   background: var(--glass);
   border: 1px solid var(--border);
@@ -455,6 +506,109 @@ mark {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   box-shadow: var(--shadow-lg);
 }
+.bar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-left: 6px;
+}
+
+/* Playback mode segmented control */
+.mode-seg {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 13px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.mode-seg button {
+  flex: 1 1 0;
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  padding: 8px 6px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background .18s, color .18s, box-shadow .18s, transform .12s;
+}
+.mode-seg button:active { transform: scale(.96); }
+.mode-seg button.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+/* ---------- Now-playing dock (replaces selection controls while playing) ---------- */
+.np { display: none; flex: 1 1 auto; min-width: 0; flex-direction: column; gap: 7px; }
+body.is-playing .np { display: flex; }
+body.is-playing .sel-info,
+body.is-playing #selectAll,
+body.is-playing #clearSel { display: none; }
+
+.np-word-row { display: flex; align-items: baseline; gap: 9px; min-width: 0; }
+.np-word {
+  font-size: 1.2rem;
+  font-weight: 850;
+  letter-spacing: -.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: linear-gradient(100deg, var(--hot), #ff8a5b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.np-meta {
+  flex: none;
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.np-parts { display: flex; gap: 5px; }
+.np-parts span {
+  font-size: .58rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  transition: background .18s, color .18s, border-color .18s, box-shadow .18s;
+}
+.np-parts span.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--hot), #ff8a5b);
+  border-color: transparent;
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--hot) 40%, transparent);
+}
+
+.np-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform .12s, background .15s;
+}
+body.is-playing .np-btn { display: inline-flex; }
+.np-btn:active { transform: scale(.9); background: var(--surface-2); }
+.np-btn svg { width: 18px; height: 18px; }
+
 .sel-info { font-size: .9rem; color: var(--text-dim); font-weight: 500; }
 .sel-info strong {
   color: var(--text);
