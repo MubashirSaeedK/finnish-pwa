@@ -346,7 +346,7 @@ body::before {
 .word-item.open .detail { grid-template-rows: 1fr; }
 .detail-inner { overflow: hidden; min-height: 0; }
 .detail-body {
-  padding: 4px 16px 16px 66px;
+  padding: 4px 16px 16px 18px;
   position: relative;
 }
 .detail-body::before {
@@ -362,8 +362,48 @@ body::before {
   font-weight: 600;
   margin: 12px 0 14px;
 }
+/* Sentence row with its big include/skip checkbox */
+.sentence-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 8px;
+  padding: 6px 8px 6px 4px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background .15s, opacity .15s;
+}
+@media (hover: hover) { .sentence-row:hover { background: var(--surface-2); } }
+.sentence-row:active { background: var(--surface-2); }
+
+.sent-check { position: absolute; opacity: 0; width: 0; height: 0; }
+.sbox {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid color-mix(in srgb, var(--text-dim) 45%, transparent);
+  border-radius: 9px;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .18s, border-color .18s, box-shadow .18s;
+}
+.sbox svg { width: 18px; height: 18px; color: #fff; opacity: 0; transform: scale(.4) rotate(-15deg); transition: .22s cubic-bezier(.2,1.4,.4,1); }
+.sent-check:checked ~ .sbox {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  box-shadow: 0 5px 12px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+.sent-check:checked ~ .sbox svg { opacity: 1; transform: scale(1) rotate(0); }
+.sent-check:focus-visible ~ .sbox { box-shadow: 0 0 0 4px var(--ring); }
+/* Dim a sentence that's excluded from playback */
+.sentence-row:has(.sent-check:not(:checked)) { opacity: .5; }
+
 .sentence {
-  margin: 0 0 10px;
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
   font-size: .95rem;
   display: flex;
   gap: 9px;

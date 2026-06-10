@@ -1,6 +1,7 @@
 'use strict';
 
 const STORAGE_KEY = 'suomi200.selected';
+const SKIP_KEY = 'suomi200.sentenceSkip';
 
 const els = {
   list: document.getElementById('list'),
@@ -16,6 +17,7 @@ const els = {
 
 let words = [];
 let selected = loadSelection();
+let sentenceSkip = loadSentenceSkip(); // { index: { fi: true, en: true } } — true means skip
 let query = '';
 let hasRendered = false;
 
@@ -81,8 +83,16 @@ function rowHTML(w, q) {
       <div class="detail-inner">
         <div class="detail-body">
           <p class="meaning">${highlight(w.en, q)}</p>
-          <p class="sentence fi"><span class="lbl">FI</span><b>${esc(w.fiSentence)}</b></p>
-          <p class="sentence en"><span class="lbl">EN</span>${esc(w.enSentence)}</p>
+          <label class="sentence-row">
+            <input type="checkbox" class="sent-check" data-part="fi" ${skipped(w.index, 'fi') ? '' : 'checked'} aria-label="Include Finnish sentence in playback" />
+            <span class="sbox">${CHECK_SVG}</span>
+            <span class="sentence fi"><span class="lbl">FI</span><b>${esc(w.fiSentence)}</b></span>
+          </label>
+          <label class="sentence-row">
+            <input type="checkbox" class="sent-check" data-part="en" ${skipped(w.index, 'en') ? '' : 'checked'} aria-label="Include English sentence in playback" />
+            <span class="sbox">${CHECK_SVG}</span>
+            <span class="sentence en"><span class="lbl">EN</span>${esc(w.enSentence)}</span>
+          </label>
         </div>
       </div>
     </div>
@@ -136,6 +146,15 @@ function bindEvents() {
     if (!main) return;
     e.preventDefault();
     toggleSelect(main.closest('.word-item'));
+  });
+
+  // Per-sentence include/skip checkboxes (inside the expanded detail).
+  els.list.addEventListener('change', (e) => {
+    if (!e.target.classList.contains('sent-check')) return;
+    const item = e.target.closest('.word-item');
+    const idx = item.dataset.index;
+    const part = e.target.dataset.part; // 'fi' or 'en'
+    setSkipped(idx, part, !e.target.checked);
   });
 
   // Search
@@ -193,8 +212,13 @@ function updateSelectionUI() {
 
 /* ---------- Audio playback (Phase 2) ---------- */
 const PART_ORDER = ['word', 'meaning', 'fi', 'en'];
-const GAP_PART = 600;   // ms between parts of the same word
-const GAP_WORD = 1200;  // ms between words
+// Pause (ms) AFTER each part, within the same word:
+const GAP_AFTER = {
+  word: 300,     // word -> meaning
+  meaning: 600,  // meaning -> Finnish sentence
+  fi: 300,       // Finnish sentence -> English sentence
+};
+const GAP_WORD = 1000;  // between one word's last part and the next word
 
 const player = { playing: false, queue: [], i: 0, audio: new Audio(), timer: null, currentIndex: null, autoOpened: null };
 
@@ -212,11 +236,17 @@ function buildQueue() {
   const q = [];
   const list = selectedAudioWords();
   list.forEach((w, wi) => {
-    PART_ORDER.forEach((part, pi) => {
-      const lastPartOfWord = pi === PART_ORDER.length - 1;
-      const lastWord = wi === list.length - 1;
-      let gapAfter = GAP_PART;
-      if (lastPartOfWord) gapAfter = lastWord ? 0 : GAP_WORD;
+    // word & meaning always play; sentences only if their checkbox is on.
+    const parts = PART_ORDER.filter(p => {
+      if (p === 'fi') return !skipped(w.index, 'fi');
+      if (p === 'en') return !skipped(w.index, 'en');
+      return true;
+    });
+    const lastWord = wi === list.length - 1;
+    parts.forEach((part, pi) => {
+      const lastPart = pi === parts.length - 1;
+      // gap after this clip: word-boundary on the last part, else this part's gap
+      let gapAfter = lastPart ? (lastWord ? 0 : GAP_WORD) : (GAP_AFTER[part] ?? 0);
       q.push({ index: w.index, fi: w.fi, part, src: audioSrc(w.index, part), gapAfter });
     });
   });
@@ -236,7 +266,15 @@ function startPlayback() {
 
 function playNext() {
   if (!player.playing) return;
-  if (player.i >= player.queue.length) { stopPlayback(); return; }
+  if (player.i >= player.queue.length) {
+    // Loop: rebuild (so selection/skip edits during playback take effect) and restart.
+    player.queue = buildQueue();
+    if (player.queue.length === 0) { stopPlayback(); return; }
+    player.i = 0;
+    player.currentIndex = null;
+    player.timer = setTimeout(playNext, GAP_WORD);
+    return;
+  }
 
   const item = player.queue[player.i];
   if (item.index !== player.currentIndex) {
@@ -316,6 +354,31 @@ function loadSelection() {
 }
 function saveSelection() {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...selected])); } catch {}
+}
+
+/* ---------- Per-sentence skip state ---------- */
+// Default = include both sentences. We only store the parts a word should SKIP.
+function skipped(index, part) {
+  return !!(sentenceSkip[index] && sentenceSkip[index][part]);
+}
+function setSkipped(index, part, skip) {
+  if (skip) {
+    sentenceSkip[index] = sentenceSkip[index] || {};
+    sentenceSkip[index][part] = true;
+  } else if (sentenceSkip[index]) {
+    delete sentenceSkip[index][part];
+    if (Object.keys(sentenceSkip[index]).length === 0) delete sentenceSkip[index];
+  }
+  saveSentenceSkip();
+}
+function loadSentenceSkip() {
+  try {
+    const raw = localStorage.getItem(SKIP_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch { return {}; }
+}
+function saveSentenceSkip() {
+  try { localStorage.setItem(SKIP_KEY, JSON.stringify(sentenceSkip)); } catch {}
 }
 
 /* ---------- Helpers ---------- */
