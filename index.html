@@ -16,8 +16,11 @@
 <body>
   <header class="app-header">
     <div class="header-row">
-      <h1>Suomi 200 <span class="flag" aria-hidden="true">🇫🇮</span></h1>
-      <span class="count-badge" id="totalCount"></span>
+      <h1><span id="appTitle">Suomi 200</span> <span class="flag" id="appFlag" aria-hidden="true">🇫🇮</span></h1>
+      <div class="lang-seg" id="langSeg" role="group" aria-label="Language">
+        <button type="button" data-lang="fi" class="active"><span aria-hidden="true">🇫🇮</span> FI</button>
+        <button type="button" data-lang="sv"><span aria-hidden="true">🇸🇪</span> SV</button>
+      </div>
     </div>
     <div class="search-wrap">
       <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>

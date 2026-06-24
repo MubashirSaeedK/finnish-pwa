@@ -1,15 +1,29 @@
 'use strict';
 
-const STORAGE_KEY = 'suomi200.selected';
-const SKIP_KEY = 'suomi200.sentenceSkip';
 const MODE_KEY = 'suomi200.mode';
+const LANG_KEY = 'suomi200.lang';
+
+// Each language is a self-contained dataset. `fi`/`fiSentence` in the JSON hold
+// the *target* word/sentence; `label` is shown on the target-sentence badge.
+// Finnish keeps the original (unsuffixed) storage keys so existing state is kept.
+// `enAudio` = whether English example sentences have spoken clips for this
+// language. Swedish only voices word/meaning/sentence, so its English sentence
+// is read-only reference (no checkbox, never queued for playback).
+const LANGS = {
+  fi: { title: 'Suomi 200', flag: '🇫🇮', label: 'FI', name: 'Finnish',
+        file: 'words.json',   audioDir: 'audio',    enAudio: true },
+  sv: { title: 'Svenska',   flag: '🇸🇪', label: 'SV', name: 'Swedish',
+        file: 'swedish.json', audioDir: 'audio/sv', enAudio: false },
+};
 
 const els = {
   list: document.getElementById('list'),
   empty: document.getElementById('empty'),
   search: document.getElementById('search'),
   clearSearch: document.getElementById('clearSearch'),
-  total: document.getElementById('totalCount'),
+  appTitle: document.getElementById('appTitle'),
+  appFlag: document.getElementById('appFlag'),
+  langSeg: document.getElementById('langSeg'),
   selCount: document.getElementById('selCount'),
   selectAll: document.getElementById('selectAll'),
   clearSel: document.getElementById('clearSel'),
@@ -23,6 +37,7 @@ const els = {
   modeSeg: document.getElementById('modeSeg'),
 };
 
+let lang = loadLang(); // 'fi' | 'sv' — must be set before selection/skip load
 let words = [];
 let selected = loadSelection();
 let sentenceSkip = loadSentenceSkip(); // { index: { fi: true, en: true } } — true means skip
@@ -31,29 +46,69 @@ let filter = 'all'; // 'all' | 'selected' | 'audio'
 let mode = loadMode(); // 'listen' | 'quiz' | 'produce'
 let hasRendered = false;
 
+// Per-language localStorage keys (Finnish keeps the original keys).
+function selectionKey() { return lang === 'fi' ? 'suomi200.selected' : `suomi200.selected.${lang}`; }
+function skipKey()      { return lang === 'fi' ? 'suomi200.sentenceSkip' : `suomi200.sentenceSkip.${lang}`; }
+
 const CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const CHEV_SVG = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const SPEAKER_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5H4z" fill="currentColor"/><path d="M15.5 8.5a4 4 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+// Speech bubble = "spoken form"
+const SPOKEN_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3v4l5-4h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z" fill="currentColor"/></svg>';
 
 init();
 
 async function init() {
-  try {
-    const res = await fetch('words.json');
-    words = await res.json();
-  } catch (e) {
-    els.empty.hidden = false;
-    els.empty.textContent = 'Could not load words.json';
-    return;
-  }
-  const audioCount = words.filter(w => w.hasAudio).length;
-  els.total.textContent = `${audioCount}/${words.length} 🔊`;
-  els.total.title = `${audioCount} of ${words.length} words have audio`;
+  applyLangChrome();
+  const ok = await loadWords();
+  if (!ok) return;
   render();
   updateSelectionUI();
   updateModeUI();
   bindEvents();
   registerSW();
+}
+
+// Fetch the current language's word list into `words`. Returns false on failure.
+async function loadWords() {
+  try {
+    const res = await fetch(LANGS[lang].file);
+    words = await res.json();
+    return true;
+  } catch (e) {
+    els.empty.hidden = false;
+    els.empty.textContent = `Could not load ${LANGS[lang].file}`;
+    return false;
+  }
+}
+
+// Update the header title/flag and active language button for the current lang.
+function applyLangChrome() {
+  const cfg = LANGS[lang];
+  els.appTitle.textContent = cfg.title;
+  els.appFlag.textContent = cfg.flag;
+  document.title = `${cfg.title} — ${cfg.name} Words`;
+  els.langSeg.querySelectorAll('[data-lang]').forEach(b =>
+    b.classList.toggle('active', b.dataset.lang === lang));
+  // Hide the EN part pill in the now-playing dock when EN isn't voiced.
+  const enPill = els.npParts.querySelector('[data-part="en"]');
+  if (enPill) enPill.hidden = !cfg.enAudio;
+}
+
+// Switch language: reload that dataset and its saved selection/skip state.
+async function setLanguage(next) {
+  if (next === lang || !LANGS[next]) return;
+  if (player.playing) stopPlayback();
+  lang = next;
+  saveLang();
+  selected = loadSelection();
+  sentenceSkip = loadSentenceSkip();
+  applyLangChrome();
+  const ok = await loadWords();
+  if (!ok) return;
+  hasRendered = false; // replay the entrance animation on language change
+  render();
+  updateSelectionUI();
 }
 
 /* ---------- Rendering ---------- */
@@ -99,21 +154,37 @@ function rowHTML(w, q) {
     <div class="detail">
       <div class="detail-inner">
         <div class="detail-body">
-          <p class="meaning">${highlight(w.en, q)}</p>
+          <div class="detail-head">
+            <p class="meaning">${highlight(w.en, q)}</p>
+            ${w.pos ? `<span class="pos-tag">${esc(w.pos)}</span>` : ''}
+          </div>
+          ${spokenHTML(w)}
           <label class="sentence-row">
-            <input type="checkbox" class="sent-check" data-part="fi" ${skipped(w.index, 'fi') ? '' : 'checked'} aria-label="Include Finnish sentence in playback" />
+            <input type="checkbox" class="sent-check" data-part="fi" ${skipped(w.index, 'fi') ? '' : 'checked'} aria-label="Include ${LANGS[lang].name} sentence in playback" />
             <span class="sbox">${CHECK_SVG}</span>
-            <span class="sentence fi"><span class="lbl">FI</span><b>${esc(w.fiSentence)}</b></span>
+            <span class="sentence fi"><span class="lbl">${LANGS[lang].label}</span><b>${esc(w.fiSentence)}</b></span>
           </label>
-          <label class="sentence-row">
+          ${LANGS[lang].enAudio ? `<label class="sentence-row">
             <input type="checkbox" class="sent-check" data-part="en" ${skipped(w.index, 'en') ? '' : 'checked'} aria-label="Include English sentence in playback" />
             <span class="sbox">${CHECK_SVG}</span>
             <span class="sentence en"><span class="lbl">EN</span>${esc(w.enSentence)}</span>
-          </label>
+          </label>` : `<div class="ref-row">
+            <span class="sentence en"><span class="lbl">EN</span>${esc(w.enSentence)}</span>
+          </div>`}
         </div>
       </div>
     </div>
   </li>`;
+}
+
+// Spoken-form variants (Swedish): shown inside the dropdown, no checkbox.
+function spokenHTML(w) {
+  if (!Array.isArray(w.spoken) || w.spoken.length === 0) return '';
+  return w.spoken.map(s => `
+          <div class="spoken-row">
+            <span class="spoken-icon" title="Spoken form" aria-label="Spoken form">${SPOKEN_SVG}</span>
+            <span class="spoken-text"><b>${esc(s.fi)}</b>${s.fiSentence ? `<span class="spoken-sent">${esc(s.fiSentence)}</span>` : ''}</span>
+          </div>`).join('');
 }
 
 /* ---------- Row interactions ---------- */
@@ -242,6 +313,14 @@ function bindEvents() {
   els.npPrev.addEventListener('click', () => { if (player.playing) { buzz(); jumpTo(wordBoundary(-1)); } });
   els.npNext.addEventListener('click', () => { if (player.playing) { buzz(); jumpTo(wordBoundary(1)); } });
 
+  // Language toggle (Finnish / Swedish)
+  els.langSeg.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-lang]');
+    if (!btn || btn.dataset.lang === lang) return;
+    buzz();
+    setLanguage(btn.dataset.lang);
+  });
+
   // Playback mode — applies immediately, even mid-loop (restarts the current word).
   els.modeSeg.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-mode]');
@@ -314,7 +393,7 @@ const player = {
 
 function audioSrc(index, part) {
   const safe = index.replace(/[^\w.-]/g, '_');
-  return `audio/${safe}-${part}.mp3`;
+  return `${LANGS[lang].audioDir}/${safe}-${part}.mp3`;
 }
 
 // Selected words that have audio, kept in list order.
@@ -327,9 +406,10 @@ function queueForWords(list) {
   const cfg = MODE_CONFIG[mode] || MODE_CONFIG.listen;
   list.forEach((w, wi) => {
     // word & meaning always play; sentences only if their checkbox is on.
+    // English sentence is dropped entirely for languages without en audio.
     const parts = cfg.parts.filter(p => {
       if (p === 'fi') return !skipped(w.index, 'fi');
-      if (p === 'en') return !skipped(w.index, 'en');
+      if (p === 'en') return LANGS[lang].enAudio && !skipped(w.index, 'en');
       return true;
     });
     const lastWord = wi === list.length - 1;
@@ -489,12 +569,23 @@ function cssEscape(s) {
 
 function loadSelection() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(selectionKey());
     return new Set(raw ? JSON.parse(raw) : []);
   } catch { return new Set(); }
 }
 function saveSelection() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...selected])); } catch {}
+  try { localStorage.setItem(selectionKey(), JSON.stringify([...selected])); } catch {}
+}
+
+/* ---------- Language ---------- */
+function loadLang() {
+  try {
+    const l = localStorage.getItem(LANG_KEY);
+    return LANGS[l] ? l : 'fi';
+  } catch { return 'fi'; }
+}
+function saveLang() {
+  try { localStorage.setItem(LANG_KEY, lang); } catch {}
 }
 
 /* ---------- Playback mode ---------- */
@@ -535,12 +626,12 @@ function setSkipped(index, part, skip) {
 }
 function loadSentenceSkip() {
   try {
-    const raw = localStorage.getItem(SKIP_KEY);
+    const raw = localStorage.getItem(skipKey());
     return raw ? JSON.parse(raw) : {};
   } catch { return {}; }
 }
 function saveSentenceSkip() {
-  try { localStorage.setItem(SKIP_KEY, JSON.stringify(sentenceSkip)); } catch {}
+  try { localStorage.setItem(skipKey(), JSON.stringify(sentenceSkip)); } catch {}
 }
 
 /* ---------- Helpers ---------- */

@@ -1,12 +1,13 @@
 'use strict';
 
-const CACHE = 'suomi200-v7';
+const CACHE = 'suomi200-v10';
 const ASSETS = [
   '.',
   'index.html',
   'styles.css',
   'app.js',
   'words.json',
+  'swedish.json',
   'manifest.webmanifest',
   'icons/icon-192.png',
   'icons/icon-512.png',
@@ -33,7 +34,7 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
-  if (url.pathname.endsWith('/words.json') || url.pathname.endsWith('words.json')) {
+  if (/(?:^|\/)(?:words|swedish)\.json$/.test(url.pathname)) {
     event.respondWith(
       fetch(event.request).then(res => {
         const copy = res.clone();

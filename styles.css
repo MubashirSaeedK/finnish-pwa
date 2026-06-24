@@ -118,16 +118,38 @@ body::before {
   filter: drop-shadow(0 2px 6px rgba(35,80,200,.4));
 }
 
-.count-badge {
-  font-size: .78rem;
-  font-weight: 700;
-  color: var(--text-dim);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 5px 11px;
+/* Language toggle (Finnish / Swedish) */
+.lang-seg {
+  flex: none;
+  display: flex;
+  gap: 3px;
+  padding: 3px;
   border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
-  white-space: nowrap;
+}
+.lang-seg button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+  padding: 6px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .18s, color .18s, box-shadow .18s, transform .12s;
+}
+.lang-seg button span { font-size: .9rem; line-height: 1; }
+.lang-seg button:active { transform: scale(.94); }
+.lang-seg button.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
 .search-wrap { position: relative; display: flex; align-items: center; }
@@ -407,12 +429,62 @@ body::before {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border) 20%, var(--border) 80%, transparent);
 }
+.detail-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 12px 0 14px;
+}
 .meaning {
   color: var(--text);
   font-size: .98rem;
   font-weight: 600;
-  margin: 12px 0 14px;
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
 }
+/* Minimal part-of-speech tag (Swedish grammar hint) */
+.pos-tag {
+  flex: none;
+  align-self: center;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Spoken-form variant row (no checkbox) */
+.spoken-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+  padding: 7px 10px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-2) 8%, transparent);
+  border: 1px dashed color-mix(in srgb, var(--accent-2) 35%, transparent);
+}
+.spoken-icon {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 16%, transparent);
+}
+.spoken-icon svg { width: 15px; height: 15px; }
+.spoken-text { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.spoken-text b { font-size: 1rem; font-weight: 750; letter-spacing: -.01em; }
+.spoken-sent { font-size: .82rem; color: var(--text-dim); }
 /* Sentence row with its big include/skip checkbox */
 .sentence-row {
   display: flex;
@@ -450,6 +522,16 @@ body::before {
 .sent-check:focus-visible ~ .sbox { box-shadow: 0 0 0 4px var(--ring); }
 /* Dim a sentence that's excluded from playback */
 .sentence-row:has(.sent-check:not(:checked)) { opacity: .5; }
+
+/* Read-only reference sentence (e.g. Swedish English-sentence: not voiced) */
+.ref-row {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px;
+  padding: 6px 8px 6px 4px;
+  /* Indent to line up with the text of the checkbox rows above. */
+  padding-left: 46px;
+}
 
 .sentence {
   margin: 0;
