@@ -66,6 +66,30 @@ LANGS = {
             ("fi", "fiSentence"),
         ],
     },
+    # Swedish "in-progress" study tabs. Same parts as sv (word, meaning,
+    # Swedish sentence). All three tabs share ONE audio pool (audio/svp) keyed
+    # by index: every row comes from the same Sheet2, so a given index has
+    # identical text everywhere and its clips only need to exist once. Running
+    # the three tabs in sequence naturally de-duplicates via the skip-existing
+    # check below.
+    "svp1": {
+        "json": "svp/learn-today.json",
+        "audio_dir": "audio/svp",
+        "voice_env": "ELEVENLABS_VOICE_ID_SV",
+        "parts": [("word", "fi"), ("meaning", "en"), ("fi", "fiSentence")],
+    },
+    "svp2": {
+        "json": "svp/learn-today-2.json",
+        "audio_dir": "audio/svp",
+        "voice_env": "ELEVENLABS_VOICE_ID_SV",
+        "parts": [("word", "fi"), ("meaning", "en"), ("fi", "fiSentence")],
+    },
+    "svpy": {
+        "json": "svp/yellow.json",
+        "audio_dir": "audio/svp",
+        "voice_env": "ELEVENLABS_VOICE_ID_SV",
+        "parts": [("word", "fi"), ("meaning", "en"), ("fi", "fiSentence")],
+    },
 }
 
 

@@ -152,6 +152,39 @@ body::before {
   box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
+/* In-progress study tabs (shown only in the "WIP" language group) */
+.svp-tabs {
+  display: flex;
+  gap: 3px;
+  margin-top: 10px;
+  padding: 3px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.svp-tabs[hidden] { display: none; }
+.svp-tabs button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .01em;
+  padding: 8px 6px;
+  border-radius: 9px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .18s, color .18s, box-shadow .18s, transform .12s;
+}
+.svp-tabs button:active { transform: scale(.96); }
+.svp-tabs button.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
 .search-wrap { position: relative; display: flex; align-items: center; }
 .search-icon {
   position: absolute;

@@ -2,6 +2,7 @@
 
 const MODE_KEY = 'suomi200.mode';
 const LANG_KEY = 'suomi200.lang';
+const SVP_TAB_KEY = 'suomi200.svpTab'; // remembers which in-progress tab was last open
 
 // Each language is a self-contained dataset. `fi`/`fiSentence` in the JSON hold
 // the *target* word/sentence; `label` is shown on the target-sentence badge.
@@ -14,7 +15,20 @@ const LANGS = {
         file: 'words.json',   audioDir: 'audio',    enAudio: true },
   sv: { title: 'Svenska',   flag: '🇸🇪', label: 'SV', name: 'Swedish',
         file: 'swedish.json', audioDir: 'audio/sv', enAudio: false },
+  // Swedish "in-progress": three study tabs, each its own dataset but grouped
+  // under one language button (group: 'svp'). All three share one audio pool
+  // (audio/svp) keyed by index — every row comes from the same Kelly Sheet2,
+  // so an index's word/meaning/sentence clips are identical across tabs.
+  svp1: { title: 'Learn Today',   flag: '🇸🇪', label: 'SV', name: 'Swedish', group: 'svp',
+          file: 'svp/learn-today.json',   audioDir: 'audio/svp', enAudio: false },
+  svp2: { title: 'Learn today 2', flag: '🇸🇪', label: 'SV', name: 'Swedish', group: 'svp',
+          file: 'svp/learn-today-2.json', audioDir: 'audio/svp', enAudio: false },
+  svpy: { title: 'Yello',         flag: '🇸🇪', label: 'SV', name: 'Swedish', group: 'svp',
+          file: 'svp/yellow.json',        audioDir: 'audio/svp', enAudio: false },
 };
+
+// True when `l` is one of the Swedish in-progress tabs.
+function isSvp(l) { return !!(LANGS[l] && LANGS[l].group === 'svp'); }
 
 const els = {
   list: document.getElementById('list'),
@@ -24,6 +38,7 @@ const els = {
   appTitle: document.getElementById('appTitle'),
   appFlag: document.getElementById('appFlag'),
   langSeg: document.getElementById('langSeg'),
+  svpTabs: document.getElementById('svpTabs'),
   selCount: document.getElementById('selCount'),
   selectAll: document.getElementById('selectAll'),
   clearSel: document.getElementById('clearSel'),
@@ -88,11 +103,25 @@ function applyLangChrome() {
   els.appTitle.textContent = cfg.title;
   els.appFlag.textContent = cfg.flag;
   document.title = `${cfg.title} — ${cfg.name} Words`;
+  // Top-level buttons: the in-progress button (data-lang="svp") is active for
+  // any of its tabs; the others match their own lang exactly.
   els.langSeg.querySelectorAll('[data-lang]').forEach(b =>
-    b.classList.toggle('active', b.dataset.lang === lang));
+    b.classList.toggle('active',
+      b.dataset.lang === lang || (b.dataset.lang === 'svp' && isSvp(lang))));
+  updateSvpTabsUI();
   // Hide the EN part pill in the now-playing dock when EN isn't voiced.
   const enPill = els.npParts.querySelector('[data-part="en"]');
   if (enPill) enPill.hidden = !cfg.enAudio;
+}
+
+// Show the 3-tab bar only in the in-progress group and mark the active tab.
+function updateSvpTabsUI() {
+  const show = isSvp(lang);
+  els.svpTabs.hidden = !show;
+  if (show) {
+    els.svpTabs.querySelectorAll('[data-tab]').forEach(b =>
+      b.classList.toggle('active', b.dataset.tab === lang));
+  }
 }
 
 // Switch language: reload that dataset and its saved selection/skip state.
@@ -101,6 +130,7 @@ async function setLanguage(next) {
   if (player.playing) stopPlayback();
   lang = next;
   saveLang();
+  if (isSvp(lang)) saveSvpTab(); // remember the tab for the in-progress button
   selected = loadSelection();
   sentenceSkip = loadSentenceSkip();
   applyLangChrome();
@@ -313,12 +343,25 @@ function bindEvents() {
   els.npPrev.addEventListener('click', () => { if (player.playing) { buzz(); jumpTo(wordBoundary(-1)); } });
   els.npNext.addEventListener('click', () => { if (player.playing) { buzz(); jumpTo(wordBoundary(1)); } });
 
-  // Language toggle (Finnish / Swedish)
+  // Language toggle (Finnish / Swedish / Swedish in-progress).
+  // The in-progress button (data-lang="svp") is a group: it opens the tab that
+  // was last active, then the tab bar switches between the three datasets.
   els.langSeg.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-lang]');
-    if (!btn || btn.dataset.lang === lang) return;
+    if (!btn) return;
+    let next = btn.dataset.lang;
+    if (next === 'svp') next = loadSvpTab();
+    if (next === lang) return;
     buzz();
-    setLanguage(btn.dataset.lang);
+    setLanguage(next);
+  });
+
+  // In-progress tab bar (Learn Today / Learn today 2 / Yello).
+  els.svpTabs.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-tab]');
+    if (!btn || btn.dataset.tab === lang) return;
+    buzz();
+    setLanguage(btn.dataset.tab);
   });
 
   // Playback mode — applies immediately, even mid-loop (restarts the current word).
@@ -586,6 +629,16 @@ function loadLang() {
 }
 function saveLang() {
   try { localStorage.setItem(LANG_KEY, lang); } catch {}
+}
+// Which in-progress tab the group button reopens (defaults to the first tab).
+function loadSvpTab() {
+  try {
+    const t = localStorage.getItem(SVP_TAB_KEY);
+    return isSvp(t) ? t : 'svp1';
+  } catch { return 'svp1'; }
+}
+function saveSvpTab() {
+  try { localStorage.setItem(SVP_TAB_KEY, lang); } catch {}
 }
 
 /* ---------- Playback mode ---------- */

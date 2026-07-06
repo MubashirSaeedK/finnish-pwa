@@ -1,0 +1,556 @@
+===== svp1 =====
+Lang: svp1 | model: eleven_v3 | voice: ZSHzpa6aUvhjzShiBmYw
+Parts: word, meaning, fi | entries: 30 -> audio/svp/
+
+[39] sin
+[142] utan
+    ✓ word: "utan"  (18 KB)
+    ✓ meaning: "without"  (15 KB)
+    ✓ fi: "Jag dricker kaffe utan socker"  (32 KB)
+[185] ett lag
+    ✓ word: "ett lag"  (28 KB)
+    ✓ meaning: "law"  (20 KB)
+    ✓ fi: "Det är emot lagen"  (20 KB)
+[210] ur
+    ✓ word: "ur"  (22 KB)
+    ✓ meaning: "out of, from"  (33 KB)
+    ✓ fi: "Hon tog en bok ur väskan"  (23 KB)
+[216] en väg
+    ✓ word: "en väg"  (39 KB)
+    ✓ meaning: "road, way"  (34 KB)
+    ✓ fi: "Vägen är lång"  (29 KB)
+[248] svår
+    ✓ word: "svår"  (26 KB)
+    ✓ meaning: "difficult, hard"  (32 KB)
+    ✓ fi: "Det är en svår fråga"  (24 KB)
+[299] vidare
+    ✓ word: "vidare"  (24 KB)
+    ✓ meaning: "further, on"  (34 KB)
+    ✓ fi: "Vi går vidare till nästa fråga"  (33 KB)
+[300] ganska
+    ✓ word: "ganska"  (28 KB)
+    ✓ meaning: "quite, fairly"  (32 KB)
+    ✓ fi: "Det är ganska kallt"  (27 KB)
+[330] inför
+    ✓ word: "inför"  (29 KB)
+    ✓ meaning: "before, ahead of"  (29 KB)
+    ✓ fi: "Hon är nervös inför provet"  (33 KB)
+[345] ett slut
+    ✓ word: "ett slut"  (32 KB)
+    ✓ meaning: "end"  (26 KB)
+    ✓ fi: "Filmen var bra i slutet"  (26 KB)
+[362] att betala
+    ✓ word: "att betala"  (33 KB)
+    ✓ meaning: "to pay"  (29 KB)
+    ✓ fi: "Kan jag betala med kort?"  (20 KB)
+[494] naturligtvis
+    ✓ word: "naturligtvis"  (14 KB)
+    ✓ meaning: "of course, naturally"  (32 KB)
+    ✓ fi: "Naturligtvis hjälper jag dig"  (27 KB)
+[513] förra
+    ✓ word: "förra"  (26 KB)
+    ✓ meaning: "previous, last"  (28 KB)
+    ✓ fi: "Förra veckan var jag sjuk"  (32 KB)
+[530] att röra
+    ✓ word: "att röra"  (47 KB)
+    ✓ meaning: "to touch, to stir, to move"  (49 KB)
+    ✓ fi: "Rör inte tavlan"  (27 KB)
+[591] en död
+    ✓ word: "en död"  (43 KB)
+    ✓ meaning: "death"  (20 KB)
+    ✓ fi: "Hans död var en chock"  (29 KB)
+[621] att innehålla
+    ✓ word: "att innehålla"  (18 KB)
+    ✓ meaning: "to contain"  (31 KB)
+    ✓ fi: "Boken innehåller många bilder"  (35 KB)
+[678] en match
+    ✓ word: "en match"  (17 KB)
+    ✓ meaning: "match, game"  (32 KB)
+    ✓ fi: "Matchen börjar klockan sju"  (26 KB)
+[697] en utredning
+    ✓ word: "en utredning"  (19 KB)
+    ✓ meaning: "investigation, inquiry"  (38 KB)
+    ✓ fi: "Polisen inledde en utredning"  (37 KB)
+[730] en natt
+    ✓ word: "en natt"  (37 KB)
+    ✓ meaning: "night"  (19 KB)
+    ✓ fi: "God natt!"  (12 KB)
+[845] speciellt
+    ✓ word: "speciellt"  (23 KB)
+    ✓ meaning: "especially"  (28 KB)
+    ✓ fi: "Det är inte speciellt dyrt"  (23 KB)
+[875] tillräckligt
+    ✓ word: "tillräckligt"  (42 KB)
+    ✓ meaning: "enough, sufficiently"  (40 KB)
+    ✓ fi: "Har vi tillräckligt med tid?"  (27 KB)
+[1005] att försvara
+    ✓ word: "att försvara"  (28 KB)
+    ✓ meaning: "to defend"  (26 KB)
+    ✓ fi: "Han försvarade sin åsikt"  (26 KB)
+[1245] kläder
+    ✓ word: "kläder"  (22 KB)
+    ✓ meaning: "clothes"  (23 KB)
+    ✓ fi: "Ta på dig varma kläder"  (27 KB)
+[1286] ett fängelse
+    ✓ word: "ett fängelse"  (20 KB)
+    ✓ meaning: "prison"  (20 KB)
+    ✓ fi: "Han sitter i fängelse"  (31 KB)
+[1454] förr
+    ✓ word: "förr"  (23 KB)
+    ✓ meaning: "before, in the past"  (29 KB)
+    ✓ fi: "Förr var allt enklare"  (27 KB)
+[1478] att begränsa
+    ✓ word: "att begränsa"  (15 KB)
+    ✓ meaning: "to limit, restrict"  (38 KB)
+    ✓ fi: "Vi måste begränsa kostnaderna"  (33 KB)
+[1811] ett fenomen
+    ✓ word: "ett fenomen"  (28 KB)
+    ✓ meaning: "phenomenon"  (24 KB)
+    ✓ fi: "Det är ett konstigt fenomen"  (28 KB)
+[1878] en fotboll
+    ✓ word: "en fotboll"  (29 KB)
+    ✓ meaning: "football, soccer"  (37 KB)
+    ✓ fi: "Pojkarna spelar fotboll"  (27 KB)
+[1891] en summa
+    ✓ word: "en summa"  (31 KB)
+    ✓ meaning: "sum, amount"  (24 KB)
+    ✓ fi: "Det är en stor summa"  (20 KB)
+[1927] ett köp
+    ✓ word: "ett köp"  (23 KB)
+    ✓ meaning: "purchase"  (27 KB)
+    ✓ fi: "Det var ett bra köp"  (27 KB)
+
+Done. Generated 87 clip(s), skipped 3 existing. Updated svp/learn-today.json (hasAudio flags).
+===== svp2 =====
+Lang: svp2 | model: eleven_v3 | voice: ZSHzpa6aUvhjzShiBmYw
+Parts: word, meaning, fi | entries: 30 -> audio/svp/
+
+[86] lite
+[131] din
+    ✓ word: "din"  (19 KB)
+    ✓ meaning: "your, yours"  (31 KB)
+    ✓ fi: "Är det din jacka?"  (17 KB)
+[141] fler
+    ✓ word: "fler"  (26 KB)
+    ✓ meaning: "more"  (28 KB)
+    ✓ fi: "Vi behöver fler stolar"  (28 KB)
+[158] en regering
+    ✓ word: "en regering"  (17 KB)
+    ✓ meaning: "government"  (43 KB)
+    ✓ fi: "Regeringen fattade ett beslut"  (31 KB)
+[176] ett problem
+    ✓ word: "ett problem"  (33 KB)
+    ✓ meaning: "problem"  (28 KB)
+    ✓ fi: "Vi har ett litet problem"  (32 KB)
+[177] ett fall
+    ✓ word: "ett fall"  (29 KB)
+    ✓ meaning: "case, fall"  (32 KB)
+    ✓ fi: "I så fall stannar jag hemma"  (23 KB)
+[272] ner
+    ✓ word: "ner"  (20 KB)
+    ✓ meaning: "down"  (18 KB)
+    ✓ fi: "Sätt dig ner"  (23 KB)
+[332] ett jobb
+    ✓ word: "ett jobb"  (49 KB)
+    ✓ meaning: "job, work"  (29 KB)
+    ✓ fi: "Jag har ett nytt jobb"  (23 KB)
+[356] samtidigt
+    ✓ word: "samtidigt"  (33 KB)
+    ✓ meaning: "at the same time, simultaneously"  (38 KB)
+    ✓ fi: "Vi kom fram samtidigt"  (20 KB)
+[397] att klara
+    ✓ word: "att klara"  (44 KB)
+    ✓ meaning: "to manage, cope, pass"  (37 KB)
+    ✓ fi: "Jag klarade provet"  (24 KB)
+[432] en grund
+    ✓ word: "en grund"  (28 KB)
+    ✓ meaning: "basis, foundation, ground"  (60 KB)
+    ✓ fi: "Det finns ingen grund för oro"  (32 KB)
+[510] såsom
+    ✓ word: "såsom"  (31 KB)
+    ✓ meaning: "such as, as"  (39 KB)
+    ✓ fi: "Frukter såsom äpplen och päron"  (40 KB)
+[626] en forskning
+    ✓ word: "en forskning"  (28 KB)
+    ✓ meaning: "research"  (15 KB)
+    ✓ fi: "Forskningen tar tid"  (33 KB)
+[721] en plan
+    ✓ word: "en plan"  (23 KB)
+    ✓ meaning: "plan, plane level"  (38 KB)
+    ✓ fi: "Vi har en bra plan"  (20 KB)
+[789] att fundera
+    ✓ word: "att fundera"  (17 KB)
+    ✓ meaning: "to ponder, think about"  (32 KB)
+    ✓ fi: "Jag måste fundera på saken"  (28 KB)
+[839] en studie
+    ✓ word: "en studie"  (33 KB)
+    ✓ meaning: "study"  (28 KB)
+    ✓ fi: "Det är en intressant studie"  (29 KB)
+[880] ett universitet
+    ✓ word: "ett universitet"  (20 KB)
+    ✓ meaning: "university"  (20 KB)
+    ✓ fi: "Hon studerar vid universitetet"  (34 KB)
+[1292] ända
+    ✓ word: "ända"  (24 KB)
+    ✓ meaning: "all the way"  (47 KB)
+    ✓ fi: "Vi gick ända till stranden"  (26 KB)
+[1494] dåligt
+    ✓ word: "dåligt"  (28 KB)
+    ✓ meaning: "badly, poorly"  (35 KB)
+    ✓ fi: "Han sover dåligt"  (19 KB)
+[1499] ett klimat
+    ✓ word: "ett klimat"  (38 KB)
+    ✓ meaning: "climate"  (24 KB)
+    ✓ fi: "Klimatet förändras"  (27 KB)
+[1602] längs
+    ✓ word: "längs"  (26 KB)
+    ✓ meaning: "along"  (27 KB)
+    ✓ fi: "Vi gick längs stranden"  (23 KB)
+[1644] en trafik
+    ✓ word: "en trafik"  (33 KB)
+    ✓ meaning: "traffic"  (32 KB)
+    ✓ fi: "Det är mycket trafik idag"  (23 KB)
+[1758] en svenska
+    ✓ word: "en svenska"  (19 KB)
+    ✓ meaning: "Swedish language"  (24 KB)
+    ✓ fi: "Jag lär mig svenska"  (26 KB)
+[1900] extremt
+    ✓ word: "extremt"  (37 KB)
+    ✓ meaning: "extremely"  (24 KB)
+    ✓ fi: "Det var extremt kallt"  (32 KB)
+[1998] en alkohol
+    ✓ word: "en alkohol"  (29 KB)
+    ✓ meaning: "alcohol"  (35 KB)
+    ✓ fi: "De säljer inte alkohol här"  (28 KB)
+[2171] en förmiddag
+    ✓ word: "en förmiddag"  (31 KB)
+    ✓ meaning: "late morning, forenoon abbr. fm"  (64 KB)
+    ✓ fi: "Vi ses på förmiddagen"  (20 KB)
+[2392] västra
+    ✓ word: "västra"  (28 KB)
+    ✓ meaning: "western"  (28 KB)
+    ✓ fi: "Vi bor på västra sidan"  (26 KB)
+[2693] en skugga
+    ✓ word: "en skugga"  (18 KB)
+    ✓ meaning: "shadow, shade"  (35 KB)
+    ✓ fi: "Vi satt i skuggan"  (19 KB)
+[3404] en kyla
+    ✓ word: "en kyla"  (33 KB)
+    ✓ meaning: "cold, chill"  (28 KB)
+    ✓ fi: "Det var en bitande kyla"  (26 KB)
+[3781] mätt
+    ✓ word: "mätt"  (24 KB)
+    ✓ meaning: "full after eating"  (29 KB)
+    ✓ fi: "Jag är mätt, tack"  (17 KB)
+
+Done. Generated 87 clip(s), skipped 3 existing. Updated svp/learn-today-2.json (hasAudio flags).
+===== svpy =====
+Lang: svpy | model: eleven_v3 | voice: ZSHzpa6aUvhjzShiBmYw
+Parts: word, meaning, fi | entries: 111 -> audio/svp/
+
+[8] som
+[13] att
+[30] att få
+[36] att bli
+[61] vad
+[62] ett år
+[67] där
+[68] då
+[73] mot
+[78] vid
+[79] än
+[81] ingen
+[82] dem
+[83] efter
+[84] upp
+[86] lite
+[88] in
+[90] över
+[104] en dag
+    ✓ word: "en dag"  (29 KB)
+    ✓ meaning: "day"  (26 KB)
+    ✓ fi: "Ha en bra dag!"  (15 KB)
+[120] mellan
+    ✓ word: "mellan"  (34 KB)
+    ✓ meaning: "between"  (47 KB)
+    ✓ fi: "Affären ligger mellan banken och kaféet"  (38 KB)
+[129] ett sätt
+    ✓ word: "ett sätt"  (23 KB)
+    ✓ meaning: "way, manner"  (28 KB)
+    ✓ fi: "På vilket sätt menar du?"  (19 KB)
+[131] din
+[140] helt
+    ✓ word: "helt"  (26 KB)
+    ✓ meaning: "completely, entirely"  (33 KB)
+    ✓ fi: "Jag är helt säker"  (20 KB)
+[141] fler
+[145] enligt
+    ✓ word: "enligt"  (37 KB)
+    ✓ meaning: "according to"  (38 KB)
+    ✓ fi: "Enligt tidningen blir det regn"  (29 KB)
+[148] viktig
+    ✓ word: "viktig"  (14 KB)
+    ✓ meaning: "important"  (26 KB)
+    ✓ fi: "Det är en viktig dag"  (19 KB)
+[151] ett liv
+    ✓ word: "ett liv"  (27 KB)
+    ✓ meaning: "life"  (23 KB)
+    ✓ fi: "Han räddade mitt liv"  (26 KB)
+[158] en regering
+[159] fram
+    ✓ word: "fram"  (22 KB)
+    ✓ meaning: "forward, forth"  (27 KB)
+    ✓ fi: "Kom fram till tavlan"  (22 KB)
+[166] länge
+    ✓ word: "länge"  (24 KB)
+    ✓ meaning: "for a long time"  (23 KB)
+    ✓ fi: "Vi väntade länge"  (23 KB)
+[170] både
+    ✓ word: "både"  (34 KB)
+    ✓ meaning: "both"  (20 KB)
+    ✓ fi: "Jag gillar både te och kaffe"  (33 KB)
+[171] just
+    ✓ word: "just"  (26 KB)
+    ✓ meaning: "just, exactly"  (47 KB)
+    ✓ fi: "Det är just det jag menar"  (28 KB)
+[176] ett problem
+[177] ett fall
+[179] aldrig
+    ✓ word: "aldrig"  (35 KB)
+    ✓ meaning: "never"  (33 KB)
+    ✓ fi: "Jag glömmer dig aldrig"  (29 KB)
+[180] ofta
+    ✓ word: "ofta"  (26 KB)
+    ✓ meaning: "often"  (24 KB)
+    ✓ fi: "Vi äter ofta ute"  (24 KB)
+[192] att handla
+    ✓ word: "att handla"  (38 KB)
+    ✓ meaning: "to shop, to be about"  (35 KB)
+    ✓ fi: "Jag ska handla mat"  (20 KB)
+[193] gammal
+    ✓ word: "gammal"  (29 KB)
+    ✓ meaning: "old"  (32 KB)
+    ✓ fi: "Mitt hus är väldigt gammalt"  (37 KB)
+[200] god
+    ✓ word: "god"  (19 KB)
+    ✓ meaning: "good"  (20 KB)
+    ✓ fi: "Maten är väldigt god"  (27 KB)
+[218] alltså
+    ✓ word: "alltså"  (18 KB)
+    ✓ meaning: "so, thus, in other words"  (39 KB)
+    ✓ fi: "Han kom inte, alltså väntade vi"  (42 KB)
+[242] ändå
+    ✓ word: "ändå"  (19 KB)
+    ✓ meaning: "still, anyway"  (24 KB)
+    ✓ fi: "Det regnade, men vi gick ut ändå"  (38 KB)
+[244] att lyckas
+    ✓ word: "att lyckas"  (17 KB)
+    ✓ meaning: "to succeed"  (14 KB)
+    ✓ fi: "Han lyckades med provet"  (31 KB)
+[256] tidigare
+    ✓ word: "tidigare"  (14 KB)
+    ✓ meaning: "earlier, previously"  (29 KB)
+    ✓ fi: "Vi har träffats tidigare"  (27 KB)
+[259] väldigt
+    ✓ word: "väldigt"  (27 KB)
+    ✓ meaning: "very"  (23 KB)
+    ✓ fi: "Det är väldigt kallt idag"  (28 KB)
+[272] ner
+[273] att fortsätta
+    ✓ word: "att fortsätta"  (20 KB)
+    ✓ meaning: "to continue"  (34 KB)
+    ✓ fi: "Vi måste fortsätta arbeta"  (33 KB)
+[276] ett mål
+    ✓ word: "ett mål"  (27 KB)
+    ✓ meaning: "goal, meal"  (33 KB)
+    ✓ fi: "Vårt mål är att vinna"  (33 KB)
+[286] fortfarande
+    ✓ word: "fortfarande"  (14 KB)
+    ✓ meaning: "still"  (40 KB)
+    ✓ fi: "Han sover fortfarande"  (24 KB)
+[291] bort
+    ✓ word: "bort"  (20 KB)
+    ✓ meaning: "away"  (43 KB)
+    ✓ fi: "Gå inte bort"  (19 KB)
+[297] endast
+    ✓ word: "endast"  (40 KB)
+    ✓ meaning: "only"  (22 KB)
+    ✓ fi: "Det finns endast en plats kvar"  (35 KB)
+[306] heller
+    ✓ word: "heller"  (28 KB)
+    ✓ meaning: "either"  (24 KB)
+    ✓ fi: "Jag vill inte heller gå"  (20 KB)
+[313] nästan
+    ✓ word: "nästan"  (28 KB)
+    ✓ meaning: "almost, nearly"  (32 KB)
+    ✓ fi: "Jag är nästan klar"  (22 KB)
+[322] ett krig
+    ✓ word: "ett krig"  (23 KB)
+    ✓ meaning: "war"  (20 KB)
+    ✓ fi: "Landet är i krig"  (29 KB)
+[332] ett jobb
+[343] ibland
+    ✓ word: "ibland"  (24 KB)
+    ✓ meaning: "sometimes also i bland"  (33 KB)
+    ✓ fi: "Ibland regnar det"  (19 KB)
+[349] en procent
+    ✓ word: "en procent"  (22 KB)
+    ✓ meaning: "percent"  (28 KB)
+    ✓ fi: "Priset steg tio procent"  (33 KB)
+[356] samtidigt
+[367] att hjälpa
+    ✓ word: "att hjälpa"  (24 KB)
+    ✓ meaning: "to help"  (26 KB)
+    ✓ fi: "Kan du hjälpa mig?"  (17 KB)
+[372] ett exempel
+    ✓ word: "ett exempel"  (32 KB)
+    ✓ meaning: "example"  (22 KB)
+    ✓ fi: "Ge mig ett exempel"  (19 KB)
+[397] att klara
+[400] båda
+    ✓ word: "båda"  (27 KB)
+    ✓ meaning: "both"  (26 KB)
+    ✓ fi: "Båda böckerna är bra"  (22 KB)
+[432] en grund
+[435] att köra
+    ✓ word: "att köra"  (31 KB)
+    ✓ meaning: "to drive"  (24 KB)
+    ✓ fi: "Kan du köra bil?"  (22 KB)
+[481] att driva
+    ✓ word: "att driva"  (37 KB)
+    ✓ meaning: "to drive, run, operate"  (42 KB)
+    ✓ fi: "Hon driver ett företag"  (24 KB)
+[510] såsom
+[543] per
+    ✓ word: "per"  (27 KB)
+    ✓ meaning: "per"  (24 KB)
+    ✓ fi: "Det kostar tio kronor per styck"  (33 KB)
+[548] ett håll
+    ✓ word: "ett håll"  (24 KB)
+    ✓ meaning: "direction, ache"  (39 KB)
+    ✓ fi: "Åt vilket håll ska vi gå?"  (24 KB)
+[612] en rapport
+    ✓ word: "en rapport"  (33 KB)
+    ✓ meaning: "report"  (31 KB)
+    ✓ fi: "Hon skrev en lång rapport"  (27 KB)
+[626] en forskning
+[651] en medborgare
+    ✓ word: "en medborgare"  (19 KB)
+    ✓ meaning: "citizen"  (27 KB)
+    ✓ fi: "Hon är svensk medborgare"  (26 KB)
+[661] en tillgång
+    ✓ word: "en tillgång"  (40 KB)
+    ✓ meaning: "asset, access, supply"  (44 KB)
+    ✓ fi: "Vi har tillgång till internet"  (24 KB)
+[699] en kung
+    ✓ word: "en kung"  (28 KB)
+    ✓ meaning: "king"  (19 KB)
+    ✓ fi: "Sverige har en kung"  (28 KB)
+[711] en skatt
+    ✓ word: "en skatt"  (42 KB)
+    ✓ meaning: "tax, treasure"  (33 KB)
+    ✓ fi: "Vi betalar skatt varje år"  (27 KB)
+[721] en plan
+[733] någonting
+    ✓ word: "någonting"  (32 KB)
+    ✓ meaning: "something"  (26 KB)
+    ✓ fi: "Vill du ha någonting att dricka?"  (22 KB)
+[743] åtminstone
+    ✓ word: "åtminstone"  (24 KB)
+    ✓ meaning: "at least"  (32 KB)
+    ✓ fi: "Vänta åtminstone en timme"  (33 KB)
+[746] att byta
+    ✓ word: "att byta"  (28 KB)
+    ✓ meaning: "to change, swap"  (33 KB)
+    ✓ fi: "Jag vill byta tröja"  (20 KB)
+[774] ett försök
+    ✓ word: "ett försök"  (18 KB)
+    ✓ meaning: "attempt, try"  (38 KB)
+    ✓ fi: "Det var ett bra försök"  (22 KB)
+[789] att fundera
+[806] framför
+    ✓ word: "framför"  (33 KB)
+    ✓ meaning: "in front of"  (19 KB)
+    ✓ fi: "Bilen står framför huset"  (29 KB)
+[809] en orsak
+    ✓ word: "en orsak"  (22 KB)
+    ✓ meaning: "cause, reason"  (42 KB)
+    ✓ fi: "Vad är orsaken till branden?"  (33 KB)
+[839] en studie
+[865] att döda
+    ✓ word: "att döda"  (37 KB)
+    ✓ meaning: "to kill"  (27 KB)
+    ✓ fi: "Man får inte döda"  (27 KB)
+[880] ett universitet
+[893] en nyhet
+    ✓ word: "en nyhet"  (33 KB)
+    ✓ meaning: "piece of news, novelty"  (38 KB)
+    ✓ fi: "Det är en glad nyhet"  (22 KB)
+[916] att rädda
+    ✓ word: "att rädda"  (47 KB)
+    ✓ meaning: "to save, rescue"  (32 KB)
+    ✓ fi: "Brandmannen räddade katten"  (33 KB)
+[921] flera
+    ✓ word: "flera"  (19 KB)
+    ✓ meaning: "several"  (17 KB)
+    ✓ fi: "Jag har flera frågor"  (24 KB)
+[922] en undersökning
+    ✓ word: "en undersökning"  (31 KB)
+    ✓ meaning: "survey, examination, study"  (51 KB)
+    ✓ fi: "Vi gjorde en undersökning"  (27 KB)
+[936] rysk
+    ✓ word: "rysk"  (23 KB)
+    ✓ meaning: "Russian"  (23 KB)
+    ✓ fi: "Det är en rysk roman"  (23 KB)
+[948] var
+    ✓ word: "var"  (17 KB)
+    ✓ meaning: "where"  (18 KB)
+    ✓ fi: "Var bor du?"  (34 KB)
+[1035] inne
+    ✓ word: "inne"  (20 KB)
+    ✓ meaning: "in, inside"  (28 KB)
+    ✓ fi: "Vi stannar inne idag"  (18 KB)
+[1141] att stänga
+    ✓ word: "att stänga"  (26 KB)
+    ✓ meaning: "to close, shut"  (42 KB)
+    ✓ fi: "Stäng dörren, tack"  (17 KB)
+[1220] en invandrare
+    ✓ word: "en invandrare"  (32 KB)
+    ✓ meaning: "immigrant"  (24 KB)
+    ✓ fi: "Hon är invandrare från Polen"  (32 KB)
+[1292] ända
+[1310] tusentals
+    ✓ word: "tusentals"  (26 KB)
+    ✓ meaning: "thousands of"  (24 KB)
+    ✓ fi: "Tusentals människor kom"  (28 KB)
+[1363] ett tåg
+    ✓ word: "ett tåg"  (28 KB)
+    ✓ meaning: "train"  (20 KB)
+    ✓ fi: "Tåget är försenat"  (28 KB)
+[1494] dåligt
+[1499] ett klimat
+[1602] längs
+[1619] en telefon
+    ✓ word: "en telefon"  (17 KB)
+    ✓ meaning: "telephone"  (32 KB)
+    ✓ fi: "Min telefon är trasig"  (26 KB)
+[1644] en trafik
+[1758] en svenska
+[1860] en euro
+    ✓ word: "en euro"  (29 KB)
+    ✓ meaning: "euro"  (13 KB)
+    ✓ fi: "Det kostar tio euro"  (23 KB)
+[1900] extremt
+[1998] en alkohol
+[2171] en förmiddag
+[2279] öppet
+    ✓ word: "öppet"  (31 KB)
+    ✓ meaning: "openly"  (26 KB)
+    ✓ fi: "Han talade öppet om problemet"  (33 KB)
+[2392] västra
+[2693] en skugga
+[3404] en kyla
+[3781] mätt
+
+Done. Generated 192 clip(s), skipped 141 existing. Updated svp/yellow.json (hasAudio flags).
+ALL_SVP_DONE

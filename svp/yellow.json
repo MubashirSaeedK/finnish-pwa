@@ -1,0 +1,1001 @@
+[
+{
+"index": "8",
+"fi": "som",
+"en": "who, which, that",
+"fiSentence": "Mannen som bor här är snäll.",
+"enSentence": "The man who lives here is nice.",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "13",
+"fi": "att",
+"en": "to (infinitive marker); that",
+"fiSentence": "Det är roligt att resa.",
+"enSentence": "It is fun to travel.",
+"pos": "subjunction",
+"hasAudio": true
+},
+{
+"index": "30",
+"fi": "att få",
+"en": "to get, receive; may",
+"fiSentence": "Får jag en kaffe, tack?",
+"enSentence": "May I have a coffee, please?",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "36",
+"fi": "att bli",
+"en": "to become",
+"fiSentence": "Jag vill bli läkare.",
+"enSentence": "I want to become a doctor.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "61",
+"fi": "vad",
+"en": "what",
+"fiSentence": "Vad heter du?",
+"enSentence": "What is your name?",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "62",
+"fi": "ett år",
+"en": "year",
+"fiSentence": "Jag har bott här i tre år.",
+"enSentence": "I have lived here for three years.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "67",
+"fi": "där",
+"en": "there",
+"fiSentence": "Där är min bil.",
+"enSentence": "There is my car.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "68",
+"fi": "då",
+"en": "then; at that time",
+"fiSentence": "Vi var unga då.",
+"enSentence": "We were young then.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "73",
+"fi": "mot",
+"en": "towards; against",
+"fiSentence": "Vi går mot stationen.",
+"enSentence": "We are walking towards the station.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "78",
+"fi": "vid",
+"en": "at, by",
+"fiSentence": "Vi möts vid stationen.",
+"enSentence": "We will meet by the station.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "79",
+"fi": "än",
+"en": "than; yet",
+"fiSentence": "Hon är längre än jag.",
+"enSentence": "She is taller than me.",
+"pos": "conjunction",
+"hasAudio": true
+},
+{
+"index": "81",
+"fi": "ingen",
+"en": "no one, none, no",
+"fiSentence": "Ingen vet svaret.",
+"enSentence": "No one knows the answer.",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "82",
+"fi": "dem",
+"en": "them",
+"fiSentence": "Jag såg dem igår.",
+"enSentence": "I saw them yesterday.",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "83",
+"fi": "efter",
+"en": "after",
+"fiSentence": "Vi ses efter jobbet.",
+"enSentence": "See you after work.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "84",
+"fi": "upp",
+"en": "up",
+"fiSentence": "Stå upp, tack.",
+"enSentence": "Stand up, please.",
+"pos": "particle",
+"hasAudio": true
+},
+{
+"index": "86",
+"fi": "lite",
+"en": "a little, a bit",
+"fiSentence": "Jag talar lite svenska.",
+"enSentence": "I speak a little Swedish.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "88",
+"fi": "in",
+"en": "in",
+"fiSentence": "Kom in!",
+"enSentence": "Come in!",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "90",
+"fi": "över",
+"en": "over; above",
+"fiSentence": "Bron går över floden.",
+"enSentence": "The bridge goes over the river.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "104",
+"fi": "en dag",
+"en": "day",
+"fiSentence": "Ha en bra dag!",
+"enSentence": "Have a good day!",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "120",
+"fi": "mellan",
+"en": "between",
+"fiSentence": "Affären ligger mellan banken och kaféet.",
+"enSentence": "The shop is between the bank and the café.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "129",
+"fi": "ett sätt",
+"en": "way, manner",
+"fiSentence": "På vilket sätt menar du?",
+"enSentence": "In what way do you mean?",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "131",
+"fi": "din",
+"en": "your, yours",
+"fiSentence": "Är det din jacka?",
+"enSentence": "Is that your jacket?",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "140",
+"fi": "helt",
+"en": "completely, entirely",
+"fiSentence": "Jag är helt säker.",
+"enSentence": "I am completely sure.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "141",
+"fi": "fler",
+"en": "more",
+"fiSentence": "Vi behöver fler stolar.",
+"enSentence": "We need more chairs.",
+"pos": "adjective",
+"hasAudio": true
+},
+{
+"index": "145",
+"fi": "enligt",
+"en": "according to",
+"fiSentence": "Enligt tidningen blir det regn.",
+"enSentence": "According to the newspaper, it will rain.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "148",
+"fi": "viktig",
+"en": "important",
+"fiSentence": "Det är en viktig dag.",
+"enSentence": "It is an important day.",
+"pos": "adjective",
+"hasAudio": true
+},
+{
+"index": "151",
+"fi": "ett liv",
+"en": "life",
+"fiSentence": "Han räddade mitt liv.",
+"enSentence": "He saved my life.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "158",
+"fi": "en regering",
+"en": "government",
+"fiSentence": "Regeringen fattade ett beslut.",
+"enSentence": "The government made a decision.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "159",
+"fi": "fram",
+"en": "forward, forth",
+"fiSentence": "Kom fram till tavlan.",
+"enSentence": "Come up to the board.",
+"pos": "particle",
+"hasAudio": true
+},
+{
+"index": "166",
+"fi": "länge",
+"en": "for a long time",
+"fiSentence": "Vi väntade länge.",
+"enSentence": "We waited for a long time.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "170",
+"fi": "både",
+"en": "both",
+"fiSentence": "Jag gillar både te och kaffe.",
+"enSentence": "I like both tea and coffee.",
+"pos": "conjunction",
+"hasAudio": true
+},
+{
+"index": "171",
+"fi": "just",
+"en": "just, exactly",
+"fiSentence": "Det är just det jag menar.",
+"enSentence": "That is exactly what I mean.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "176",
+"fi": "ett problem",
+"en": "problem",
+"fiSentence": "Vi har ett litet problem.",
+"enSentence": "We have a small problem.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "177",
+"fi": "ett fall",
+"en": "case; fall",
+"fiSentence": "I så fall stannar jag hemma.",
+"enSentence": "In that case I will stay home.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "179",
+"fi": "aldrig",
+"en": "never",
+"fiSentence": "Jag glömmer dig aldrig.",
+"enSentence": "I will never forget you.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "180",
+"fi": "ofta",
+"en": "often",
+"fiSentence": "Vi äter ofta ute.",
+"enSentence": "We often eat out.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "192",
+"fi": "att handla",
+"en": "to shop; to be about",
+"fiSentence": "Jag ska handla mat.",
+"enSentence": "I am going to shop for food.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "193",
+"fi": "gammal",
+"en": "old",
+"fiSentence": "Mitt hus är väldigt gammalt.",
+"enSentence": "My house is very old.",
+"pos": "adjective",
+"hasAudio": true
+},
+{
+"index": "200",
+"fi": "god",
+"en": "good",
+"fiSentence": "Maten är väldigt god.",
+"enSentence": "The food is very good.",
+"pos": "adjective",
+"hasAudio": true
+},
+{
+"index": "218",
+"fi": "alltså",
+"en": "so, thus, in other words",
+"fiSentence": "Han kom inte, alltså väntade vi.",
+"enSentence": "He didn't come, so we waited.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "242",
+"fi": "ändå",
+"en": "still, anyway",
+"fiSentence": "Det regnade, men vi gick ut ändå.",
+"enSentence": "It rained, but we went out anyway.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "244",
+"fi": "att lyckas",
+"en": "to succeed",
+"fiSentence": "Han lyckades med provet.",
+"enSentence": "He succeeded on the test.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "256",
+"fi": "tidigare",
+"en": "earlier, previously",
+"fiSentence": "Vi har träffats tidigare.",
+"enSentence": "We have met before.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "259",
+"fi": "väldigt",
+"en": "very",
+"fiSentence": "Det är väldigt kallt idag.",
+"enSentence": "It is very cold today.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "272",
+"fi": "ner",
+"en": "down",
+"fiSentence": "Sätt dig ner.",
+"enSentence": "Sit down.",
+"pos": "particle",
+"hasAudio": true
+},
+{
+"index": "273",
+"fi": "att fortsätta",
+"en": "to continue",
+"fiSentence": "Vi måste fortsätta arbeta.",
+"enSentence": "We have to continue working.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "276",
+"fi": "ett mål",
+"en": "goal; meal",
+"fiSentence": "Vårt mål är att vinna.",
+"enSentence": "Our goal is to win.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "286",
+"fi": "fortfarande",
+"en": "still",
+"fiSentence": "Han sover fortfarande.",
+"enSentence": "He is still sleeping.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "291",
+"fi": "bort",
+"en": "away",
+"fiSentence": "Gå inte bort.",
+"enSentence": "Don't go away.",
+"pos": "particle",
+"hasAudio": true
+},
+{
+"index": "297",
+"fi": "endast",
+"en": "only",
+"fiSentence": "Det finns endast en plats kvar.",
+"enSentence": "There is only one seat left.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "306",
+"fi": "heller",
+"en": "either",
+"fiSentence": "Jag vill inte heller gå.",
+"enSentence": "I don't want to go either.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "313",
+"fi": "nästan",
+"en": "almost, nearly",
+"fiSentence": "Jag är nästan klar.",
+"enSentence": "I am almost done.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "322",
+"fi": "ett krig",
+"en": "war",
+"fiSentence": "Landet är i krig.",
+"enSentence": "The country is at war.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "332",
+"fi": "ett jobb",
+"en": "job, work",
+"fiSentence": "Jag har ett nytt jobb.",
+"enSentence": "I have a new job.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "343",
+"fi": "ibland",
+"en": "sometimes (also: i bland)",
+"fiSentence": "Ibland regnar det.",
+"enSentence": "Sometimes it rains.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "349",
+"fi": "en procent",
+"en": "percent",
+"fiSentence": "Priset steg tio procent.",
+"enSentence": "The price rose ten percent.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "356",
+"fi": "samtidigt",
+"en": "at the same time, simultaneously",
+"fiSentence": "Vi kom fram samtidigt.",
+"enSentence": "We arrived at the same time.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "367",
+"fi": "att hjälpa",
+"en": "to help",
+"fiSentence": "Kan du hjälpa mig?",
+"enSentence": "Can you help me?",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "372",
+"fi": "ett exempel",
+"en": "example",
+"fiSentence": "Ge mig ett exempel.",
+"enSentence": "Give me an example.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "397",
+"fi": "att klara",
+"en": "to manage, cope, pass",
+"fiSentence": "Jag klarade provet.",
+"enSentence": "I passed the test.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "400",
+"fi": "båda",
+"en": "both",
+"fiSentence": "Båda böckerna är bra.",
+"enSentence": "Both books are good.",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "432",
+"fi": "en grund",
+"en": "basis, foundation; ground",
+"fiSentence": "Det finns ingen grund för oro.",
+"enSentence": "There is no basis for worry.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "435",
+"fi": "att köra",
+"en": "to drive",
+"fiSentence": "Kan du köra bil?",
+"enSentence": "Can you drive a car?",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "481",
+"fi": "att driva",
+"en": "to drive, run, operate",
+"fiSentence": "Hon driver ett företag.",
+"enSentence": "She runs a company.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "510",
+"fi": "såsom",
+"en": "such as, as",
+"fiSentence": "Frukter såsom äpplen och päron.",
+"enSentence": "Fruits such as apples and pears.",
+"pos": "subjunction",
+"hasAudio": true
+},
+{
+"index": "543",
+"fi": "per",
+"en": "per",
+"fiSentence": "Det kostar tio kronor per styck.",
+"enSentence": "It costs ten kronor per piece.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "548",
+"fi": "ett håll",
+"en": "direction; ache",
+"fiSentence": "Åt vilket håll ska vi gå?",
+"enSentence": "Which direction should we go?",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "612",
+"fi": "en rapport",
+"en": "report",
+"fiSentence": "Hon skrev en lång rapport.",
+"enSentence": "She wrote a long report.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "626",
+"fi": "en forskning",
+"en": "research",
+"fiSentence": "Forskningen tar tid.",
+"enSentence": "Research takes time.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "651",
+"fi": "en medborgare",
+"en": "citizen",
+"fiSentence": "Hon är svensk medborgare.",
+"enSentence": "She is a Swedish citizen.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "661",
+"fi": "en tillgång",
+"en": "asset; access; supply",
+"fiSentence": "Vi har tillgång till internet.",
+"enSentence": "We have access to the internet.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "699",
+"fi": "en kung",
+"en": "king",
+"fiSentence": "Sverige har en kung.",
+"enSentence": "Sweden has a king.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "711",
+"fi": "en skatt",
+"en": "tax; treasure",
+"fiSentence": "Vi betalar skatt varje år.",
+"enSentence": "We pay taxes every year.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "721",
+"fi": "en plan",
+"en": "plan; plane (level)",
+"fiSentence": "Vi har en bra plan.",
+"enSentence": "We have a good plan.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "733",
+"fi": "någonting",
+"en": "something",
+"fiSentence": "Vill du ha någonting att dricka?",
+"enSentence": "Do you want something to drink?",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "743",
+"fi": "åtminstone",
+"en": "at least",
+"fiSentence": "Vänta åtminstone en timme.",
+"enSentence": "Wait at least an hour.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "746",
+"fi": "att byta",
+"en": "to change, swap",
+"fiSentence": "Jag vill byta tröja.",
+"enSentence": "I want to change my sweater.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "774",
+"fi": "ett försök",
+"en": "attempt, try",
+"fiSentence": "Det var ett bra försök.",
+"enSentence": "It was a good attempt.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "789",
+"fi": "att fundera",
+"en": "to ponder, think (about)",
+"fiSentence": "Jag måste fundera på saken.",
+"enSentence": "I have to think about the matter.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "806",
+"fi": "framför",
+"en": "in front of",
+"fiSentence": "Bilen står framför huset.",
+"enSentence": "The car is in front of the house.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "809",
+"fi": "en orsak",
+"en": "cause, reason",
+"fiSentence": "Vad är orsaken till branden?",
+"enSentence": "What is the cause of the fire?",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "839",
+"fi": "en studie",
+"en": "study",
+"fiSentence": "Det är en intressant studie.",
+"enSentence": "It is an interesting study.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "865",
+"fi": "att döda",
+"en": "to kill",
+"fiSentence": "Man får inte döda.",
+"enSentence": "One must not kill.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "880",
+"fi": "ett universitet",
+"en": "university",
+"fiSentence": "Hon studerar vid universitetet.",
+"enSentence": "She studies at the university.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "893",
+"fi": "en nyhet",
+"en": "(piece of) news; novelty",
+"fiSentence": "Det är en glad nyhet.",
+"enSentence": "It is happy news.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "916",
+"fi": "att rädda",
+"en": "to save, rescue",
+"fiSentence": "Brandmannen räddade katten.",
+"enSentence": "The firefighter rescued the cat.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "921",
+"fi": "flera",
+"en": "several",
+"fiSentence": "Jag har flera frågor.",
+"enSentence": "I have several questions.",
+"pos": "pronoun",
+"hasAudio": true
+},
+{
+"index": "922",
+"fi": "en undersökning",
+"en": "survey, examination, study",
+"fiSentence": "Vi gjorde en undersökning.",
+"enSentence": "We did a survey.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "936",
+"fi": "rysk",
+"en": "Russian",
+"fiSentence": "Det är en rysk roman.",
+"enSentence": "It is a Russian novel.",
+"pos": "adjective",
+"hasAudio": true
+},
+{
+"index": "948",
+"fi": "var",
+"en": "where",
+"fiSentence": "Var bor du?",
+"enSentence": "Where do you live?",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1035",
+"fi": "inne",
+"en": "in, inside",
+"fiSentence": "Vi stannar inne idag.",
+"enSentence": "We are staying inside today.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1141",
+"fi": "att stänga",
+"en": "to close, shut",
+"fiSentence": "Stäng dörren, tack.",
+"enSentence": "Close the door, please.",
+"pos": "verb",
+"hasAudio": true
+},
+{
+"index": "1220",
+"fi": "en invandrare",
+"en": "immigrant",
+"fiSentence": "Hon är invandrare från Polen.",
+"enSentence": "She is an immigrant from Poland.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1292",
+"fi": "ända",
+"en": "all the way",
+"fiSentence": "Vi gick ända till stranden.",
+"enSentence": "We walked all the way to the beach.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1310",
+"fi": "tusentals",
+"en": "thousands of",
+"fiSentence": "Tusentals människor kom.",
+"enSentence": "Thousands of people came.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1363",
+"fi": "ett tåg",
+"en": "train",
+"fiSentence": "Tåget är försenat.",
+"enSentence": "The train is delayed.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1494",
+"fi": "dåligt",
+"en": "badly, poorly",
+"fiSentence": "Han sover dåligt.",
+"enSentence": "He sleeps poorly.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1499",
+"fi": "ett klimat",
+"en": "climate",
+"fiSentence": "Klimatet förändras.",
+"enSentence": "The climate is changing.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1602",
+"fi": "längs",
+"en": "along",
+"fiSentence": "Vi gick längs stranden.",
+"enSentence": "We walked along the beach.",
+"pos": "preposition",
+"hasAudio": true
+},
+{
+"index": "1619",
+"fi": "en telefon",
+"en": "telephone",
+"fiSentence": "Min telefon är trasig.",
+"enSentence": "My telephone is broken.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1644",
+"fi": "en trafik",
+"en": "traffic",
+"fiSentence": "Det är mycket trafik idag.",
+"enSentence": "There is a lot of traffic today.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1758",
+"fi": "en svenska",
+"en": "Swedish (language)",
+"fiSentence": "Jag lär mig svenska.",
+"enSentence": "I am learning Swedish.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1860",
+"fi": "en euro",
+"en": "euro",
+"fiSentence": "Det kostar tio euro.",
+"enSentence": "It costs ten euros.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1900",
+"fi": "extremt",
+"en": "extremely",
+"fiSentence": "Det var extremt kallt.",
+"enSentence": "It was extremely cold.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1998",
+"fi": "en alkohol",
+"en": "alcohol",
+"fiSentence": "De säljer inte alkohol här.",
+"enSentence": "They don't sell alcohol here.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "2171",
+"fi": "en förmiddag",
+"en": "(late) morning, forenoon (abbr. fm.)",
+"fiSentence": "Vi ses på förmiddagen.",
+"enSentence": "See you in the morning.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "2279",
+"fi": "öppet",
+"en": "openly",
+"fiSentence": "Han talade öppet om problemet.",
+"enSentence": "He spoke openly about the problem.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "2392",
+"fi": "västra",
+"en": "western",
+"fiSentence": "Vi bor på västra sidan.",
+"enSentence": "We live on the western side.",
+"pos": "adjective",
+"hasAudio": true
+},
+{
+"index": "2693",
+"fi": "en skugga",
+"en": "shadow; shade",
+"fiSentence": "Vi satt i skuggan.",
+"enSentence": "We sat in the shade.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "3404",
+"fi": "en kyla",
+"en": "cold, chill",
+"fiSentence": "Det var en bitande kyla.",
+"enSentence": "There was a biting cold.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "3781",
+"fi": "mätt",
+"en": "full (after eating)",
+"fiSentence": "Jag är mätt, tack.",
+"enSentence": "I am full, thank you.",
+"pos": "adjective",
+"hasAudio": true
+}
+]
