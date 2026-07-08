@@ -36,6 +36,16 @@
 "hasAudio": true
 },
 {
+"index": "39",
+"fi": "sin",
+"en": "his/her/its own",
+"fiSentence": "Han älskar sin hund.",
+"enSentence": "He loves his own dog.",
+"pos": "pronoun",
+"hasAudio": true,
+"status": "red"
+},
+{
 "index": "61",
 "fi": "vad",
 "en": "what",
@@ -78,7 +88,8 @@
 "fiSentence": "Vi går mot stationen.",
 "enSentence": "We are walking towards the station.",
 "pos": "preposition",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "78",
@@ -204,7 +215,8 @@
 "fiSentence": "Jag är helt säker.",
 "enSentence": "I am completely sure.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "141",
@@ -213,6 +225,15 @@
 "fiSentence": "Vi behöver fler stolar.",
 "enSentence": "We need more chairs.",
 "pos": "adjective",
+"hasAudio": true
+},
+{
+"index": "142",
+"fi": "utan",
+"en": "without",
+"fiSentence": "Jag dricker kaffe utan socker.",
+"enSentence": "I drink coffee without sugar.",
+"pos": "preposition",
 "hasAudio": true
 },
 {
@@ -267,7 +288,8 @@
 "fiSentence": "Vi väntade länge.",
 "enSentence": "We waited for a long time.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "170",
@@ -324,6 +346,15 @@
 "hasAudio": true
 },
 {
+"index": "185",
+"fi": "ett lag",
+"en": "law",
+"fiSentence": "Det är emot lagen.",
+"enSentence": "It is against the law.",
+"pos": "noun",
+"hasAudio": true
+},
+{
 "index": "192",
 "fi": "att handla",
 "en": "to shop; to be about",
@@ -351,13 +382,33 @@
 "hasAudio": true
 },
 {
+"index": "210",
+"fi": "ur",
+"en": "out of, from",
+"fiSentence": "Hon tog en bok ur väskan.",
+"enSentence": "She took a book out of the bag.",
+"pos": "preposition",
+"hasAudio": true,
+"status": "red"
+},
+{
+"index": "216",
+"fi": "en väg",
+"en": "road, way",
+"fiSentence": "Vägen är lång.",
+"enSentence": "The road is long.",
+"pos": "noun",
+"hasAudio": true
+},
+{
 "index": "218",
 "fi": "alltså",
 "en": "so, thus, in other words",
 "fiSentence": "Han kom inte, alltså väntade vi.",
 "enSentence": "He didn't come, so we waited.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "242",
@@ -366,7 +417,8 @@
 "fiSentence": "Det regnade, men vi gick ut ändå.",
 "enSentence": "It rained, but we went out anyway.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "244",
@@ -375,6 +427,16 @@
 "fiSentence": "Han lyckades med provet.",
 "enSentence": "He succeeded on the test.",
 "pos": "verb",
+"hasAudio": true,
+"status": "red"
+},
+{
+"index": "248",
+"fi": "svår",
+"en": "difficult, hard",
+"fiSentence": "Det är en svår fråga.",
+"enSentence": "It is a difficult question.",
+"pos": "adjective",
 "hasAudio": true
 },
 {
@@ -384,7 +446,8 @@
 "fiSentence": "Vi har träffats tidigare.",
 "enSentence": "We have met before.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "259",
@@ -393,7 +456,8 @@
 "fiSentence": "Det är väldigt kallt idag.",
 "enSentence": "It is very cold today.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "272",
@@ -411,7 +475,8 @@
 "fiSentence": "Vi måste fortsätta arbeta.",
 "enSentence": "We have to continue working.",
 "pos": "verb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "276",
@@ -429,7 +494,8 @@
 "fiSentence": "Han sover fortfarande.",
 "enSentence": "He is still sleeping.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "291",
@@ -438,7 +504,8 @@
 "fiSentence": "Gå inte bort.",
 "enSentence": "Don't go away.",
 "pos": "particle",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "297",
@@ -446,6 +513,26 @@
 "en": "only",
 "fiSentence": "Det finns endast en plats kvar.",
 "enSentence": "There is only one seat left.",
+"pos": "adverb",
+"hasAudio": true,
+"status": "red"
+},
+{
+"index": "299",
+"fi": "vidare",
+"en": "further; on",
+"fiSentence": "Vi går vidare till nästa fråga.",
+"enSentence": "We move on to the next question.",
+"pos": "adverb",
+"hasAudio": true,
+"status": "red"
+},
+{
+"index": "300",
+"fi": "ganska",
+"en": "quite, fairly",
+"fiSentence": "Det är ganska kallt.",
+"enSentence": "It is quite cold.",
 "pos": "adverb",
 "hasAudio": true
 },
@@ -465,7 +552,8 @@
 "fiSentence": "Jag är nästan klar.",
 "enSentence": "I am almost done.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "322",
@@ -474,6 +562,15 @@
 "fiSentence": "Landet är i krig.",
 "enSentence": "The country is at war.",
 "pos": "noun",
+"hasAudio": true
+},
+{
+"index": "330",
+"fi": "inför",
+"en": "before, ahead of",
+"fiSentence": "Hon är nervös inför provet.",
+"enSentence": "She is nervous before the exam.",
+"pos": "preposition",
 "hasAudio": true
 },
 {
@@ -495,6 +592,15 @@
 "hasAudio": true
 },
 {
+"index": "345",
+"fi": "ett slut",
+"en": "end",
+"fiSentence": "Filmen var bra i slutet.",
+"enSentence": "The movie was good at the end.",
+"pos": "noun",
+"hasAudio": true
+},
+{
 "index": "349",
 "fi": "en procent",
 "en": "percent",
@@ -511,6 +617,16 @@
 "enSentence": "We arrived at the same time.",
 "pos": "adverb",
 "hasAudio": true
+},
+{
+"index": "362",
+"fi": "att betala",
+"en": "to pay",
+"fiSentence": "Kan jag betala med kort?",
+"enSentence": "Can I pay by card?",
+"pos": "verb",
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "367",
@@ -576,12 +692,41 @@
 "hasAudio": true
 },
 {
+"index": "494",
+"fi": "naturligtvis",
+"en": "of course, naturally",
+"fiSentence": "Naturligtvis hjälper jag dig.",
+"enSentence": "Of course I'll help you.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
 "index": "510",
 "fi": "såsom",
 "en": "such as, as",
 "fiSentence": "Frukter såsom äpplen och päron.",
 "enSentence": "Fruits such as apples and pears.",
 "pos": "subjunction",
+"hasAudio": true,
+"status": "red"
+},
+{
+"index": "513",
+"fi": "förra",
+"en": "previous, last",
+"fiSentence": "Förra veckan var jag sjuk.",
+"enSentence": "Last week I was sick.",
+"pos": "adjective",
+"hasAudio": true,
+"status": "red"
+},
+{
+"index": "530",
+"fi": "att röra",
+"en": "to touch; to stir; to move",
+"fiSentence": "Rör inte tavlan.",
+"enSentence": "Don't touch the painting.",
+"pos": "verb",
 "hasAudio": true
 },
 {
@@ -600,6 +745,16 @@
 "fiSentence": "Åt vilket håll ska vi gå?",
 "enSentence": "Which direction should we go?",
 "pos": "noun",
+"hasAudio": true,
+"status": "red"
+},
+{
+"index": "591",
+"fi": "en död",
+"en": "death",
+"fiSentence": "Hans död var en chock.",
+"enSentence": "His death was a shock.",
+"pos": "noun",
 "hasAudio": true
 },
 {
@@ -612,13 +767,23 @@
 "hasAudio": true
 },
 {
+"index": "621",
+"fi": "att innehålla",
+"en": "to contain",
+"fiSentence": "Boken innehåller många bilder.",
+"enSentence": "The book contains many pictures.",
+"pos": "verb",
+"hasAudio": true
+},
+{
 "index": "626",
 "fi": "en forskning",
 "en": "research",
 "fiSentence": "Forskningen tar tid.",
 "enSentence": "Research takes time.",
 "pos": "noun",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "651",
@@ -639,6 +804,24 @@
 "hasAudio": true
 },
 {
+"index": "678",
+"fi": "en match",
+"en": "match, game",
+"fiSentence": "Matchen börjar klockan sju.",
+"enSentence": "The match starts at seven.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "697",
+"fi": "en utredning",
+"en": "investigation, inquiry",
+"fiSentence": "Polisen inledde en utredning.",
+"enSentence": "The police started an investigation.",
+"pos": "noun",
+"hasAudio": true
+},
+{
 "index": "699",
 "fi": "en kung",
 "en": "king",
@@ -654,7 +837,8 @@
 "fiSentence": "Vi betalar skatt varje år.",
 "enSentence": "We pay taxes every year.",
 "pos": "noun",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "721",
@@ -666,13 +850,23 @@
 "hasAudio": true
 },
 {
+"index": "730",
+"fi": "en natt",
+"en": "night",
+"fiSentence": "God natt!",
+"enSentence": "Good night!",
+"pos": "noun",
+"hasAudio": true
+},
+{
 "index": "733",
 "fi": "någonting",
 "en": "something",
 "fiSentence": "Vill du ha någonting att dricka?",
 "enSentence": "Do you want something to drink?",
 "pos": "pronoun",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "743",
@@ -681,7 +875,8 @@
 "fiSentence": "Vänta åtminstone en timme.",
 "enSentence": "Wait at least an hour.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "746",
@@ -699,7 +894,8 @@
 "fiSentence": "Det var ett bra försök.",
 "enSentence": "It was a good attempt.",
 "pos": "noun",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "789",
@@ -717,7 +913,8 @@
 "fiSentence": "Bilen står framför huset.",
 "enSentence": "The car is in front of the house.",
 "pos": "preposition",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "809",
@@ -738,6 +935,15 @@
 "hasAudio": true
 },
 {
+"index": "845",
+"fi": "speciellt",
+"en": "especially",
+"fiSentence": "Det är inte speciellt dyrt.",
+"enSentence": "It is not especially expensive.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
 "index": "865",
 "fi": "att döda",
 "en": "to kill",
@@ -745,6 +951,16 @@
 "enSentence": "One must not kill.",
 "pos": "verb",
 "hasAudio": true
+},
+{
+"index": "875",
+"fi": "tillräckligt",
+"en": "enough, sufficiently",
+"fiSentence": "Har vi tillräckligt med tid?",
+"enSentence": "Do we have enough time?",
+"pos": "adverb",
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "880",
@@ -771,7 +987,8 @@
 "fiSentence": "Brandmannen räddade katten.",
 "enSentence": "The firefighter rescued the cat.",
 "pos": "verb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "921",
@@ -789,7 +1006,8 @@
 "fiSentence": "Vi gjorde en undersökning.",
 "enSentence": "We did a survey.",
 "pos": "noun",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "936",
@@ -808,6 +1026,16 @@
 "enSentence": "Where do you live?",
 "pos": "adverb",
 "hasAudio": true
+},
+{
+"index": "1005",
+"fi": "att försvara",
+"en": "to defend",
+"fiSentence": "Han försvarade sin åsikt.",
+"enSentence": "He defended his opinion.",
+"pos": "verb",
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "1035",
@@ -837,13 +1065,32 @@
 "hasAudio": true
 },
 {
+"index": "1245",
+"fi": "kläder",
+"en": "clothes",
+"fiSentence": "Ta på dig varma kläder.",
+"enSentence": "Put on warm clothes.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1286",
+"fi": "ett fängelse",
+"en": "prison",
+"fiSentence": "Han sitter i fängelse.",
+"enSentence": "He is in prison.",
+"pos": "noun",
+"hasAudio": true
+},
+{
 "index": "1292",
 "fi": "ända",
 "en": "all the way",
 "fiSentence": "Vi gick ända till stranden.",
 "enSentence": "We walked all the way to the beach.",
 "pos": "adverb",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "1310",
@@ -862,6 +1109,25 @@
 "enSentence": "The train is delayed.",
 "pos": "noun",
 "hasAudio": true
+},
+{
+"index": "1454",
+"fi": "förr",
+"en": "before, in the past",
+"fiSentence": "Förr var allt enklare.",
+"enSentence": "In the past everything was simpler.",
+"pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1478",
+"fi": "att begränsa",
+"en": "to limit, restrict",
+"fiSentence": "Vi måste begränsa kostnaderna.",
+"enSentence": "We have to limit the costs.",
+"pos": "verb",
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "1494",
@@ -888,7 +1154,8 @@
 "fiSentence": "Vi gick längs stranden.",
 "enSentence": "We walked along the beach.",
 "pos": "preposition",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "1619",
@@ -918,11 +1185,38 @@
 "hasAudio": true
 },
 {
+"index": "1811",
+"fi": "ett fenomen",
+"en": "phenomenon",
+"fiSentence": "Det är ett konstigt fenomen.",
+"enSentence": "It is a strange phenomenon.",
+"pos": "noun",
+"hasAudio": true
+},
+{
 "index": "1860",
 "fi": "en euro",
 "en": "euro",
 "fiSentence": "Det kostar tio euro.",
 "enSentence": "It costs ten euros.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1878",
+"fi": "en fotboll",
+"en": "football, soccer",
+"fiSentence": "Pojkarna spelar fotboll.",
+"enSentence": "The boys play football.",
+"pos": "noun",
+"hasAudio": true
+},
+{
+"index": "1891",
+"fi": "en summa",
+"en": "sum, amount",
+"fiSentence": "Det är en stor summa.",
+"enSentence": "It is a large sum.",
 "pos": "noun",
 "hasAudio": true
 },
@@ -933,6 +1227,15 @@
 "fiSentence": "Det var extremt kallt.",
 "enSentence": "It was extremely cold.",
 "pos": "adverb",
+"hasAudio": true
+},
+{
+"index": "1927",
+"fi": "ett köp",
+"en": "purchase",
+"fiSentence": "Det var ett bra köp.",
+"enSentence": "It was a good purchase.",
+"pos": "noun",
 "hasAudio": true
 },
 {
@@ -978,7 +1281,8 @@
 "fiSentence": "Vi satt i skuggan.",
 "enSentence": "We sat in the shade.",
 "pos": "noun",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "3404",
@@ -987,7 +1291,8 @@
 "fiSentence": "Det var en bitande kyla.",
 "enSentence": "There was a biting cold.",
 "pos": "noun",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 },
 {
 "index": "3781",
@@ -996,6 +1301,7 @@
 "fiSentence": "Jag är mätt, tack.",
 "enSentence": "I am full, thank you.",
 "pos": "adjective",
-"hasAudio": true
+"hasAudio": true,
+"status": "red"
 }
 ]

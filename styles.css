@@ -362,6 +362,18 @@ body::before {
   min-width: 0;
 }
 
+/* Red-status dot (Swedish in-progress: word you don't know yet) */
+.status-dot.red {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 7px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #e5484d;
+  box-shadow: 0 0 0 2px color-mix(in srgb, #e5484d 22%, transparent);
+}
+
 /* Audio-ready indicator */
 .has-audio {
   flex: none;

@@ -15,14 +15,14 @@ const LANGS = {
         file: 'words.json',   audioDir: 'audio',    enAudio: true },
   sv: { title: 'Svenska',   flag: '🇸🇪', label: 'SV', name: 'Swedish',
         file: 'swedish.json', audioDir: 'audio/sv', enAudio: false },
-  // Swedish "in-progress": three study tabs, each its own dataset but grouped
-  // under one language button (group: 'svp'). All three share one audio pool
+  // Swedish "in-progress": study tabs, each its own dataset but grouped under
+  // one language button (group: 'svp'). Both tabs share one audio pool
   // (audio/svp) keyed by index — every row comes from the same Kelly Sheet2,
   // so an index's word/meaning/sentence clips are identical across tabs.
+  // "Learn Today" is the daily batch (may be empty between refills); "Yello"
+  // is the running yellow list. Red-status words carry status:'red' -> red dot.
   svp1: { title: 'Learn Today',   flag: '🇸🇪', label: 'SV', name: 'Swedish', group: 'svp',
           file: 'svp/learn-today.json',   audioDir: 'audio/svp', enAudio: false },
-  svp2: { title: 'Learn today 2', flag: '🇸🇪', label: 'SV', name: 'Swedish', group: 'svp',
-          file: 'svp/learn-today-2.json', audioDir: 'audio/svp', enAudio: false },
   svpy: { title: 'Yello',         flag: '🇸🇪', label: 'SV', name: 'Swedish', group: 'svp',
           file: 'svp/yellow.json',        audioDir: 'audio/svp', enAudio: false },
 };
@@ -171,7 +171,7 @@ function rowHTML(w, q) {
   <li class="word-item${isSel ? ' selected' : ''}" data-index="${esc(w.index)}">
     <div class="row-main" role="button" tabindex="0" aria-pressed="${isSel}" aria-label="Select ${esc(w.fi)}">
       <span class="idx">${esc(w.index)}</span>
-      <span class="fi-word">${highlight(w.fi, q)}</span>
+      <span class="fi-word">${highlight(w.fi, q)}${w.status === 'red' ? '<span class="status-dot red" title="Red status — don\'t know yet" aria-label="Red status"></span>' : ''}</span>
       ${w.hasAudio ? `<span class="has-audio" role="button" title="Tap to play this word" aria-label="Play ${esc(w.fi)}">${SPEAKER_SVG}</span>` : ''}
       <button class="expand-btn" type="button" aria-expanded="false" aria-label="Show details" tabindex="0">
         ${CHEV_SVG}
@@ -356,7 +356,7 @@ function bindEvents() {
     setLanguage(next);
   });
 
-  // In-progress tab bar (Learn Today / Learn today 2 / Yello).
+  // In-progress tab bar (Learn Today / Yello).
   els.svpTabs.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-tab]');
     if (!btn || btn.dataset.tab === lang) return;
