@@ -50,3 +50,11 @@ s.sil { text-decoration: line-through; text-decoration-color: #e0453a; text-deco
 .fr-ctrl { display: flex; gap: 6px; }
 .fr-ctrl button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: .9rem; cursor: pointer; }
 .fr-ctrl .fr-pp { width: 46px; height: 46px; border: 0; color: #fff; background: linear-gradient(135deg, var(--primary), var(--accent)); }
+
+/* include / skip checkboxes */
+.fr-cb { flex: none; width: 20px; height: 20px; margin: 8px 0 0; accent-color: var(--primary); cursor: pointer; }
+.fr-sec-h .fr-cb { margin: 0; width: 22px; height: 22px; }
+.fr-it.known .fr-txt, .fr-it.known .fr-no { opacity: .42; }
+.fr-it.known .fr-pb { background: var(--surface-2); color: var(--text-dim); box-shadow: none; }
+body.hide-known .fr-it.known { display: none; }
+.fr-cnt { font-style: normal; }

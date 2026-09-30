@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'suomi200-v13';
+const CACHE = 'suomi200-v14';
 const ASSETS = [
   '.',
   'index.html',

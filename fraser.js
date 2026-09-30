@@ -3,7 +3,7 @@
 const $ = (s, r = document) => r.querySelector(s);
 const player = $('#player');
 const KEY = 'fraser-pwa';
-const ST = Object.assign({ rate: 1, gap: false, en: true, loop: false }, (() => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } })());
+const ST = Object.assign({ rate: 1, gap: false, en: true, loop: false, skip: {}, hideKnown: false }, (() => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } })());
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch (e) {} };
 let DATA = null, ALL = [], BY = {};
 let Q = null;        // { ids, i, src }  src = 'item:<id>' | 'sec:<id>' | 'all'
@@ -19,12 +19,14 @@ async function load() {
   main.innerHTML = DATA.sections.map(s => `
     <section class="fr-sec" id="sec-${s.id}">
       <div class="fr-sec-h">
+        <input type="checkbox" class="fr-cb fr-cb-sec" data-sec="${s.id}" aria-label="Include whole section">
         <span class="fr-sec-n">${s.n || '★'}</span>
-        <div class="fr-sec-t"><b>${esc(s.sv)}</b><span>${esc(s.en)} · ${s.items.length}</span></div>
+        <div class="fr-sec-t"><b>${esc(s.sv)}</b><span>${esc(s.en)} · <em class="fr-cnt" id="cnt-${s.id}"></em></span></div>
         <button type="button" class="fr-pb" data-sec="${s.id}" aria-label="Play section">▶</button>
       </div>
       <ul class="fr-items">${s.items.map(it => `
         <li class="fr-it" id="it-${it.id}">
+          <input type="checkbox" class="fr-cb" data-id="${it.id}" aria-label="Include in playback">
           <span class="fr-no">${it.no || ''}</span>
           <button type="button" class="fr-pb" data-id="${it.id}" aria-label="Play">▶</button>
           <div class="fr-txt"><div class="fr-sv">${it.h}</div><div class="fr-en">${esc(it.en)}</div></div>
@@ -32,6 +34,12 @@ async function load() {
       </ul>
     </section>`).join('');
   DATA.sections.forEach(s => s.items.forEach(it => { const o = Object.assign({ sec: s }, it); ALL.push(o); BY[it.id] = o; }));
+  main.addEventListener('change', e => {
+    const c = e.target.closest('.fr-cb'); if (!c) return;
+    if (c.dataset.id) setSkip([c.dataset.id], !c.checked);
+    else { const s = DATA.sections.find(x => x.id === c.dataset.sec); setSkip(s.items.map(i => i.id), !c.checked); }
+  });
+  syncChecks();
   main.addEventListener('click', e => {
     const b = e.target.closest('.fr-pb'); if (!b) return;
     if (b.dataset.id) toggleOrStart('item:' + b.dataset.id, [b.dataset.id]);
@@ -45,7 +53,34 @@ function toggleOrStart(src, ids) {
   if (Q && src.startsWith('item:') && Q.ids[Q.i] === src.slice(5)) { togglePause(); return; } // same phrase inside a section run
   start(src, ids);
 }
-function start(src, ids) { clearWait(); Q = { src, ids, i: 0 }; playCurrent(); }
+const isSkip = id => !!ST.skip[id];
+function firstFrom(i, dir = 1) { // next index (in the queue) that is not marked as known
+  if (!Q) return -1; const n = Q.ids.length;
+  if (n === 1) return i >= 0 && i < n ? i : -1;
+  for (let k = i; k >= 0 && k < n; k += dir) if (!isSkip(Q.ids[k])) return k;
+  return -1;
+}
+function start(src, ids) {
+  clearWait(); Q = { src, ids, i: 0 };
+  const f = firstFrom(0);
+  if (f < 0) { Q = null; flash('Alla fraser här är markerade som kända – bocka i någon för att spela.'); icons(); return; }
+  Q.i = f; playCurrent();
+}
+function flash(t) { const m = $('#offlineMsg'); m.textContent = t; $('#offlineMsg').scrollIntoView({ block: 'nearest' }); setTimeout(() => { if (m.textContent === t) m.textContent = ''; }, 5000); }
+function setSkip(ids, skip) { ids.forEach(id => { if (skip) ST.skip[id] = true; else delete ST.skip[id]; }); save(); syncChecks(); if (Q) updateMeta(); }
+function syncChecks() {
+  document.querySelectorAll('.fr-cb[data-id]').forEach(c => { c.checked = !isSkip(c.dataset.id); c.closest('.fr-it').classList.toggle('known', !c.checked); });
+  DATA.sections.forEach(s => {
+    const on = s.items.filter(i => !isSkip(i.id)).length, c = document.querySelector(`.fr-cb-sec[data-sec="${s.id}"]`);
+    c.checked = on === s.items.length; c.indeterminate = on > 0 && on < s.items.length;
+    document.getElementById('cnt-' + s.id).textContent = on === s.items.length ? `${on} fraser` : `${on} av ${s.items.length} att öva`;
+  });
+  const known = Object.keys(ST.skip).length; $('#knownTog').textContent = (ST.hideKnown ? 'Visa kända' : 'Göm kända') + (known ? ` (${known})` : '');
+}
+function updateMeta() {
+  const it = BY[Q.ids[Q.i]], act = Q.ids.filter(id => !isSkip(id) || Q.ids.length === 1), pos = act.indexOf(it.id) + 1;
+  $('#nowMeta').textContent = `${it.sec.sv} · ${pos > 0 ? pos : '–'}/${act.length}${ST.rate !== 1 ? ' · ' + ST.rate + '×' : ''}`;
+}
 function clearWait() { if (waitT) clearTimeout(waitT); waitT = null; waiting = false; document.querySelectorAll('.fr-it.echo').forEach(e => e.classList.remove('echo')); }
 function playCurrent() {
   const it = BY[Q.ids[Q.i]];
@@ -59,7 +94,7 @@ function playCurrent() {
   if (Q.ids.length > 1) row.scrollIntoView({ block: 'center', behavior: 'smooth' });
   $('#dock').hidden = false;
   $('#nowSv').innerHTML = it.h;
-  $('#nowMeta').textContent = `${it.sec.sv} · ${Q.i + 1}/${Q.ids.length}${ST.rate !== 1 ? ' · ' + ST.rate + '×' : ''}`;
+  updateMeta();
   if ('mediaSession' in navigator) {
     try { navigator.mediaSession.metadata = new MediaMetadata({ title: it.sv, artist: it.en, album: 'YKI fraser · ' + it.sec.sv, artwork: [{ src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' }] }); } catch (e) {}
   }
@@ -67,11 +102,11 @@ function playCurrent() {
 }
 function next() {
   clearWait(); if (!Q) return;
-  Q.i++;
-  if (Q.i >= Q.ids.length) { if (ST.loop && Q.ids.length > 1) Q.i = 0; else { stop(); return; } }
-  playCurrent();
+  let n = firstFrom(Q.i + 1);
+  if (n < 0) { if (ST.loop && Q.ids.length > 1) n = firstFrom(0); if (n < 0) { stop(); return; } }
+  Q.i = n; playCurrent();
 }
-function prev() { clearWait(); if (!Q) return; Q.i = Math.max(0, Q.i - 1); playCurrent(); }
+function prev() { clearWait(); if (!Q) return; const p = firstFrom(Q.i - 1, -1); if (p >= 0) Q.i = p; playCurrent(); }
 function stop() {
   clearWait(); player.pause(); Q = null;
   document.querySelectorAll('.fr-it.cur').forEach(e => e.classList.remove('cur'));
@@ -85,7 +120,7 @@ function togglePause() {
 }
 player.addEventListener('ended', () => {
   if (!Q) return;
-  const more = Q.i < Q.ids.length - 1 || (ST.loop && Q.ids.length > 1);
+  const more = firstFrom(Q.i + 1) >= 0 || (ST.loop && Q.ids.length > 1 && firstFrom(0) >= 0);
   if (ST.gap && more) {
     const dur = (isFinite(player.duration) ? player.duration : 2) / ST.rate;
     waiting = true; document.getElementById('it-' + Q.ids[Q.i]).classList.add('echo');
@@ -121,17 +156,19 @@ function icons() {
 function setRate(r) {
   ST.rate = r; save(); player.defaultPlaybackRate = r; player.playbackRate = r;
   document.querySelectorAll('#rateSeg button').forEach(b => b.classList.toggle('active', +b.dataset.rate === r));
-  if (Q) $('#nowMeta').textContent = $('#nowMeta').textContent.replace(/ · [\d.]+×$/, '') + (r !== 1 ? ' · ' + r + '×' : '');
+  if (Q) updateMeta();
 }
 function applyToggles() {
   $('#gapTog').classList.toggle('on', ST.gap);
   $('#enTog').classList.toggle('on', ST.en); document.body.classList.toggle('hide-en', !ST.en);
   $('#loopTog').classList.toggle('on', ST.loop);
+  document.body.classList.toggle('hide-known', ST.hideKnown); $('#knownTog').classList.toggle('on', ST.hideKnown);
 }
 $('#rateSeg').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setRate(+b.dataset.rate); });
 $('#gapTog').onclick = () => { ST.gap = !ST.gap; save(); applyToggles(); };
 $('#enTog').onclick = () => { ST.en = !ST.en; save(); applyToggles(); };
 $('#loopTog').onclick = () => { ST.loop = !ST.loop; save(); applyToggles(); };
+$('#knownTog').onclick = () => { ST.hideKnown = !ST.hideKnown; save(); applyToggles(); if (DATA) syncChecks(); };
 $('#playAll').onclick = () => toggleOrStart('all', ALL.map(i => i.id));
 $('#ppBtn').onclick = togglePause;
 $('#nextBtn').onclick = next;
