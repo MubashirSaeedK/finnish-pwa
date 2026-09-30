@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'suomi200-v12';
+const CACHE = 'suomi200-v13';
 const ASSETS = [
   '.',
   'index.html',
@@ -10,6 +10,10 @@ const ASSETS = [
   'swedish.json',
   'svp/learn-today.json',
   'svp/yellow.json',
+  'fraser.html',
+  'fraser.css',
+  'fraser.js',
+  'fraser.json',
   'manifest.webmanifest',
   'icons/icon-192.png',
   'icons/icon-512.png',
@@ -25,7 +29,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
+      Promise.all(keys.filter(k => k !== CACHE && k !== 'fraser-audio').map(k => caches.delete(k)))
     ).then(() => self.clients.claim())
   );
 });
@@ -36,7 +40,7 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
-  if (/(?:^|\/)(?:words|swedish|learn-today|yellow)\.json$/.test(url.pathname)) {
+  if (/(?:^|\/)(?:words|swedish|learn-today|yellow|fraser)\.json$/.test(url.pathname)) {
     event.respondWith(
       fetch(event.request).then(res => {
         const copy = res.clone();

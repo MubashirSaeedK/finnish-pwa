@@ -809,3 +809,6 @@ body.is-playing .np-btn { display: inline-flex; }
 @media (prefers-reduced-motion: reduce) {
   .btn-play.playing { animation: none; }
 }
+
+/* Link to the Fraser (YKI phrases) page */
+.fraser-link { text-decoration: none; margin-left: auto; color: var(--primary); background: var(--primary-soft); }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b3d91" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0a0f1f" media="(prefers-color-scheme: dark)" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fraser.css" />
+  <title>Fraser — YKI tala</title>
+</head>
+<body class="fr">
+  <header class="fr-head">
+    <div class="fr-row">
+      <a class="fr-back" href="index.html" aria-label="Back to words">‹ Ord</a>
+      <h1>Fraser <span aria-hidden="true">🇸🇪</span></h1>
+      <div class="fr-seg" id="rateSeg" role="group" aria-label="Speed">
+        <button type="button" data-rate="1">1×</button>
+        <button type="button" data-rate="0.75">0.75×</button>
+      </div>
+    </div>
+    <div class="fr-row fr-opts">
+      <button type="button" class="fr-play-all" id="playAll">▶ Spela allt</button>
+      <button type="button" class="fr-tog" id="gapTog" title="Pause after each phrase so you can repeat it">Upprepa-paus</button>
+      <button type="button" class="fr-tog" id="enTog">EN</button>
+      <button type="button" class="fr-tog" id="loopTog" title="Start again when finished">↻</button>
+    </div>
+  </header>
+
+  <main id="sections" class="fr-main"></main>
+  <p class="fr-foot"><button type="button" class="fr-tog" id="offlineBtn">⤓ Spara ljudet offline</button> <span id="offlineMsg"></span></p>
+
+  <footer class="fr-dock" id="dock" hidden>
+    <div class="fr-now">
+      <div class="fr-now-sv" id="nowSv"></div>
+      <div class="fr-now-meta" id="nowMeta"></div>
+    </div>
+    <div class="fr-ctrl">
+      <button type="button" id="prevBtn" aria-label="Previous">⏮</button>
+      <button type="button" id="ppBtn" class="fr-pp" aria-label="Play/Pause">❚❚</button>
+      <button type="button" id="nextBtn" aria-label="Next">⏭</button>
+      <button type="button" id="stopBtn" aria-label="Stop">■</button>
+    </div>
+  </footer>
+  <audio id="player" preload="auto"></audio>
+  <script src="fraser.js"></script>
+</body>
+</html>

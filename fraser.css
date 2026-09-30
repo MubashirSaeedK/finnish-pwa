@@ -1,0 +1,52 @@
+/* Fraser page — uses the colour tokens from styles.css */
+body.fr { padding-bottom: calc(120px + var(--safe-bottom)); }
+.fr-head { position: sticky; top: 0; z-index: 10; padding: calc(10px + var(--safe-top)) 14px 10px;
+  background: var(--glass); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+.fr-row { display: flex; align-items: center; gap: 10px; max-width: 760px; margin: 0 auto; }
+.fr-opts { margin-top: 10px; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.fr-opts::-webkit-scrollbar { display: none; }
+.fr-opts > * { flex: none; }
+.fr-head h1 { font-size: 1.25rem; margin: 0; flex: 1; letter-spacing: -.01em; }
+.fr-back { color: var(--primary); text-decoration: none; font-weight: 700; font-size: .95rem; }
+.fr-seg { display: inline-flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 3px; }
+.fr-seg button { border: 0; background: none; color: var(--text-dim); font-weight: 700; font-size: .85rem; padding: 6px 11px; border-radius: 9px; cursor: pointer; }
+.fr-seg button.active { background: var(--primary); color: #fff; box-shadow: var(--shadow-sm); }
+.fr-play-all { border: 0; border-radius: 12px; padding: 9px 16px; font-weight: 800; font-size: .95rem; color: #fff; cursor: pointer;
+  background: linear-gradient(135deg, var(--primary), var(--accent)); box-shadow: var(--shadow-md); }
+.fr-tog { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 12px; padding: 8px 12px; font-weight: 700; font-size: .85rem; cursor: pointer; }
+.fr-tog.on { background: var(--primary-soft); color: var(--primary); border-color: var(--primary); }
+.fr-main { max-width: 760px; margin: 0 auto; padding: 12px 12px 0; display: flex; flex-direction: column; gap: 14px; }
+.fr-sec { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; }
+.fr-sec-h { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: var(--surface-2); border-bottom: 1px solid var(--border); }
+.fr-sec-n { width: 30px; height: 30px; border-radius: 10px; display: grid; place-items: center; font-weight: 800; color: #fff; font-size: .85rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)); flex: none; }
+.fr-sec-t { flex: 1; min-width: 0; }
+.fr-sec-t b { display: block; font-size: 1.02rem; }
+.fr-sec-t span { color: var(--text-dim); font-size: .8rem; }
+.fr-items { list-style: none; margin: 0; padding: 4px 0; }
+.fr-it { display: flex; gap: 10px; align-items: flex-start; padding: 9px 14px; border-top: 1px solid var(--border); }
+.fr-it:first-child { border-top: 0; }
+.fr-it.cur { background: var(--primary-soft); }
+.fr-it.echo { background: rgba(255, 176, 64, .16); }
+.fr-no { color: var(--text-dim); font-size: .72rem; min-width: 22px; text-align: right; margin-top: 8px; font-variant-numeric: tabular-nums; }
+.fr-txt { flex: 1; min-width: 0; }
+.fr-sv { font-size: 1.05rem; line-height: 1.4; }
+.fr-en { color: var(--text-dim); font-size: .82rem; margin-top: 2px; }
+body.hide-en .fr-en { display: none; }
+.fr-pb { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 0; cursor: pointer; font-size: .8rem; color: #fff;
+  background: var(--primary); box-shadow: var(--shadow-sm); }
+.fr-pb.on { background: var(--hot); }
+.fr-pb.paused { background: #f0a53a; }
+.fr-sec-h .fr-pb { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--accent)); }
+s.sil { text-decoration: line-through; text-decoration-color: #e0453a; text-decoration-thickness: 2px; opacity: .55; }
+.fr-foot { max-width: 760px; margin: 18px auto 0; padding: 0 14px; color: var(--text-dim); font-size: .85rem; }
+.fr-dock { position: fixed; left: 10px; right: 10px; bottom: calc(10px + var(--safe-bottom)); z-index: 20; max-width: 760px; margin: 0 auto;
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 20px; background: var(--glass);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--border); box-shadow: var(--shadow-lg); }
+.fr-dock[hidden] { display: none; }
+.fr-now { flex: 1; min-width: 0; }
+.fr-now-sv { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fr-now-meta { color: var(--text-dim); font-size: .75rem; }
+.fr-ctrl { display: flex; gap: 6px; }
+.fr-ctrl button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: .9rem; cursor: pointer; }
+.fr-ctrl .fr-pp { width: 46px; height: 46px; border: 0; color: #fff; background: linear-gradient(135deg, var(--primary), var(--accent)); }
