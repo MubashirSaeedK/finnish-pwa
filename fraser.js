@@ -3,9 +3,9 @@
 const $ = (s, r = document) => r.querySelector(s);
 const player = $('#player');
 const KEY = 'fraser-pwa';
-const ST = Object.assign({ rate: 1, gap: false, en: true, loop: false, skip: {}, hideKnown: false }, (() => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } })());
+const ST = Object.assign({ rate: 1, gap: false, en: true, loop: false, skip: {}, hideKnown: false, voice: '1' }, (() => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } })());
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch (e) {} };
-let DATA = null, ALL = [], BY = {};
+let DATA = null, ALL = [], BY = {}, VOICES = [];
 let Q = null;        // { ids, i, src }  src = 'item:<id>' | 'sec:<id>' | 'all'
 let waitT = null;    // timer while waiting between phrases
 let waiting = false; // true during the "repeat" pause
@@ -15,6 +15,9 @@ function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<':
 async function load() {
   const res = await fetch('fraser.json');
   DATA = await res.json();
+  VOICES = [{ key: '1', name: 'Röst 1', dir: DATA.audioDir }];
+  try { const v = await (await fetch('fraser_voices.json', { cache: 'no-cache' })).json(); if (Array.isArray(v) && v.length) VOICES = v; } catch (e) {}
+  buildVoiceSeg();
   const main = $('#sections');
   main.innerHTML = DATA.sections.map(s => `
     <section class="fr-sec" id="sec-${s.id}">
@@ -33,7 +36,7 @@ async function load() {
         </li>`).join('')}
       </ul>
     </section>`).join('');
-  DATA.sections.forEach(s => s.items.forEach(it => { const o = Object.assign({ sec: s }, it); ALL.push(o); BY[it.id] = o; }));
+  DATA.sections.forEach(s => s.items.forEach(it => { const o = Object.assign({ sec: s, idx: ALL.length }, it); ALL.push(o); BY[it.id] = o; }));
   main.addEventListener('change', e => {
     const c = e.target.closest('.fr-cb'); if (!c) return;
     if (c.dataset.id) setSkip([c.dataset.id], !c.checked);
@@ -54,6 +57,20 @@ function toggleOrStart(src, ids) {
   start(src, ids);
 }
 const isSkip = id => !!ST.skip[id];
+function voiceFor(it) {
+  if (ST.voice === 'mix') return VOICES[it.idx % VOICES.length];
+  return VOICES.find(v => v.key === ST.voice) || VOICES[0];
+}
+function buildVoiceSeg() {
+  const seg = $('#voiceSeg');
+  if (VOICES.length < 2) { seg.hidden = true; return; }
+  if (ST.voice !== 'mix' && !VOICES.some(v => v.key === ST.voice)) ST.voice = VOICES[0].key;
+  seg.hidden = false;
+  seg.innerHTML = VOICES.map(v => `<button type="button" data-voice="${v.key}" title="${esc(v.name)}">${esc(v.name.split(/[\s-]/)[0])}</button>`).join('') +
+    '<button type="button" data-voice="mix" title="Alternate voices phrase by phrase">Mix</button>';
+  markVoice();
+}
+function markVoice() { document.querySelectorAll('#voiceSeg button').forEach(b => b.classList.toggle('active', b.dataset.voice === ST.voice)); }
 function firstFrom(i, dir = 1) { // next index (in the queue) that is not marked as known
   if (!Q) return -1; const n = Q.ids.length;
   if (n === 1) return i >= 0 && i < n ? i : -1;
@@ -79,12 +96,14 @@ function syncChecks() {
 }
 function updateMeta() {
   const it = BY[Q.ids[Q.i]], act = Q.ids.filter(id => !isSkip(id) || Q.ids.length === 1), pos = act.indexOf(it.id) + 1;
-  $('#nowMeta').textContent = `${it.sec.sv} · ${pos > 0 ? pos : '–'}/${act.length}${ST.rate !== 1 ? ' · ' + ST.rate + '×' : ''}`;
+  const vn = VOICES.length > 1 && Q.v ? ' · ' + Q.v.name : '';
+  $('#nowMeta').textContent = `${it.sec.sv} · ${pos > 0 ? pos : '–'}/${act.length}${ST.rate !== 1 ? ' · ' + ST.rate + '×' : ''}${vn}`;
 }
 function clearWait() { if (waitT) clearTimeout(waitT); waitT = null; waiting = false; document.querySelectorAll('.fr-it.echo').forEach(e => e.classList.remove('echo')); }
 function playCurrent() {
   const it = BY[Q.ids[Q.i]];
-  player.src = DATA.audioDir + it.id + '.mp3';
+  const v = voiceFor(it); Q.v = v; Q.fellBack = false;
+  player.src = v.dir + it.id + '.mp3';
   player.defaultPlaybackRate = ST.rate; player.playbackRate = ST.rate;
   player.preservesPitch = true; player.webkitPreservesPitch = true;
   player.play().catch(() => {});
@@ -134,6 +153,10 @@ player.addEventListener('play', icons);
 player.addEventListener('pause', icons);
 player.addEventListener('error', () => {
   if (!Q) return;
+  if (!Q.fellBack && Q.v && Q.v.dir !== VOICES[0].dir) {       // this voice lacks the clip → use voice 1
+    Q.fellBack = true; Q.v = VOICES[0]; updateMeta(); player.src = VOICES[0].dir + Q.ids[Q.i] + '.mp3';
+    player.defaultPlaybackRate = ST.rate; player.playbackRate = ST.rate; player.play().catch(() => {}); return;
+  }
   $('#nowMeta').textContent = 'Ljudfilen saknas: ' + DATA.audioDir + Q.ids[Q.i] + '.mp3';
   waitT = setTimeout(() => { if (Q && Q.ids.length > 1) next(); }, 1200);
 });
@@ -164,6 +187,11 @@ function applyToggles() {
   $('#loopTog').classList.toggle('on', ST.loop);
   document.body.classList.toggle('hide-known', ST.hideKnown); $('#knownTog').classList.toggle('on', ST.hideKnown);
 }
+$('#voiceSeg').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  ST.voice = b.dataset.voice; save(); markVoice();
+  if (Q && !player.paused && !waiting) playCurrent(); // switch the current phrase to the new voice
+});
 $('#rateSeg').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setRate(+b.dataset.rate); });
 $('#gapTog').onclick = () => { ST.gap = !ST.gap; save(); applyToggles(); };
 $('#enTog').onclick = () => { ST.en = !ST.en; save(); applyToggles(); };
@@ -185,12 +213,12 @@ $('#offlineBtn').onclick = async () => {
   const m = $('#offlineMsg');
   if (!('caches' in window)) { m.textContent = 'Offline-lagring stöds inte här.'; return; }
   const c = await caches.open('fraser-audio'); let n = 0, fail = 0;
-  for (const it of ALL) {
-    const url = DATA.audioDir + it.id + '.mp3';
+  const urls = []; VOICES.forEach(v => ALL.forEach(it => urls.push(v.dir + it.id + '.mp3')));
+  for (const url of urls) {
     try { if (!(await c.match(url))) { const r = await fetch(url); if (!r.ok) throw 0; await c.put(url, r); } n++; } catch (e) { fail++; }
-    m.textContent = `${n + fail}/${ALL.length} …`;
+    m.textContent = `${n + fail}/${urls.length} …`;
   }
-  m.textContent = fail ? `Klart: ${n} sparade, ${fail} saknas.` : `Klart! Alla ${n} ljudfiler finns offline.`;
+  m.textContent = fail ? `Klart: ${n} sparade, ${fail} saknas.` : `Klart! Alla ${n} ljudfiler (${VOICES.length} röster) finns offline.`;
 };
 
 setRate(ST.rate); applyToggles();

@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'suomi200-v14';
+const CACHE = 'suomi200-v15';
 const ASSETS = [
   '.',
   'index.html',
@@ -40,7 +40,7 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
-  if (/(?:^|\/)(?:words|swedish|learn-today|yellow|fraser)\.json$/.test(url.pathname)) {
+  if (/(?:^|\/)(?:words|swedish|learn-today|yellow|fraser|fraser_voices)\.json$/.test(url.pathname)) {
     event.respondWith(
       fetch(event.request).then(res => {
         const copy = res.clone();

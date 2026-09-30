@@ -58,3 +58,9 @@ s.sil { text-decoration: line-through; text-decoration-color: #e0453a; text-deco
 .fr-it.known .fr-pb { background: var(--surface-2); color: var(--text-dim); box-shadow: none; }
 body.hide-known .fr-it.known { display: none; }
 .fr-cnt { font-style: normal; }
+
+/* voice switcher */
+.fr-voices { margin-top: 8px; }
+.fr-voices:has(#voiceSeg[hidden]) { display: none; }
+.fr-lbl { color: var(--text-dim); font-size: .8rem; font-weight: 700; }
+#voiceSeg[hidden] { display: none; }
