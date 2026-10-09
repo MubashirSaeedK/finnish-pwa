@@ -235,60 +235,81 @@
    "en": "My well-being",
    "items": [
     {
-     "id": "y13",
+     "id": "y42",
      "no": 30,
-     "sv": "För att hålla mig frisk försöker jag röra på mig varje dag.",
-     "h": "För att hålla mi<s class=\"sil\">g</s> frisk försöker ja<s class=\"sil\">g</s> röra på mi<s class=\"sil\">g</s> varje da<s class=\"sil\">g</s>.",
-     "en": "To stay healthy I try to move every day."
+     "sv": "Jag tränar varje dag.",
+     "h": "Ja<s class=\"sil\">g</s> tränar varje da<s class=\"sil\">g</s>.",
+     "en": "I exercise every day."
     },
     {
-     "id": "y14",
+     "id": "y43",
      "no": 31,
-     "sv": "Jag går till gymmet två gånger i veckan.",
-     "h": "Ja<s class=\"sil\">g</s> går till gymmet två gånger i veckan.",
-     "en": "I go to the gym twice a week."
+     "sv": "Det är bra för hälsan.",
+     "h": "De<s class=\"sil\">t</s> är bra för hälsan.",
+     "en": "It is good for your health."
     },
     {
-     "id": "y38",
+     "id": "y44",
      "no": 32,
-     "sv": "Jag promenerar också mycket.",
-     "h": "Ja<s class=\"sil\">g</s> promenerar också mycket.",
-     "en": "I also walk a lot."
+     "sv": "Jag äter också bra.",
+     "h": "Ja<s class=\"sil\">g</s> äter också bra.",
+     "en": "I also eat well."
     },
     {
-     "id": "y39",
+     "id": "y45",
      "no": 33,
-     "sv": "Dessutom försöker jag äta bra och sova minst sju timmar.",
-     "h": "Dessutom försöker ja<s class=\"sil\">g</s> äta bra o<s class=\"sil\">ch</s> sova minst sju timmar.",
-     "en": "Besides, I try to eat well and sleep at least seven hours."
+     "sv": "Jag sover sju timmar varje natt.",
+     "h": "Ja<s class=\"sil\">g</s> sover sju timmar varje natt.",
+     "en": "I sleep seven hours every night."
     },
     {
-     "id": "y16",
+     "id": "y46",
      "no": 34,
-     "sv": "För mig handlar ett friskt liv också om att vila och träffa vänner.",
-     "h": "För mi<s class=\"sil\">g</s> handlar ett friskt liv också om att vila o<s class=\"sil\">ch</s> träffa vänner.",
-     "en": "For me a healthy life is also about resting and meeting friends."
+     "sv": "Jag promenerar eller går till gymmet.",
+     "h": "Ja<s class=\"sil\">g</s> promenerar eller går till gymmet.",
+     "en": "I go for walks or go to the gym."
     },
     {
-     "id": "y15",
+     "id": "y47",
      "no": 35,
-     "sv": "Senast jag var sjuk var i våras. Jag hade feber i fyra dagar.",
-     "h": "Senast ja<s class=\"sil\">g</s> var sjuk var i våras. Ja<s class=\"sil\">g</s> hade feber i fyra dagar.",
-     "en": "The last time I was ill was last spring. I had a fever for four days."
+     "sv": "För mig är ett bra liv ett lugnt liv.",
+     "h": "För mi<s class=\"sil\">g</s> är ett bra liv ett lugnt liv.",
+     "en": "For me a good life is a calm life."
     },
     {
-     "id": "y40",
+     "id": "y48",
      "no": 36,
-     "sv": "För att inte bli sjuk tvättar jag händerna ofta och klär mig varmt på vintern.",
-     "h": "För att inte bli sjuk tvättar ja<s class=\"sil\">g</s> händerna ofta o<s class=\"sil\">ch</s> klär mi<s class=\"sil\">g</s> varmt på vintern.",
-     "en": "To avoid getting ill I wash my hands often and dress warmly in winter."
+     "sv": "Jag träffar mina vänner på helgen.",
+     "h": "Ja<s class=\"sil\">g</s> träffar mina vänner på helgen.",
+     "en": "I meet my friends at the weekend."
     },
     {
-     "id": "y41",
+     "id": "y49",
      "no": 37,
-     "sv": "Ibland tar jag också vitaminer, eftersom det är så mörkt här.",
-     "h": "Ibland tar ja<s class=\"sil\">g</s> också vitaminer, eftersom de<s class=\"sil\">t</s> är så mörkt här.",
-     "en": "Sometimes I also take vitamins, because it is so dark here."
+     "sv": "Jag var sjuk i våras.",
+     "h": "Ja<s class=\"sil\">g</s> var sjuk i våras.",
+     "en": "I was ill last spring."
+    },
+    {
+     "id": "y50",
+     "no": 38,
+     "sv": "Jag hade feber i fyra dagar.",
+     "h": "Ja<s class=\"sil\">g</s> hade feber i fyra dagar.",
+     "en": "I had a fever for four days."
+    },
+    {
+     "id": "y51",
+     "no": 39,
+     "sv": "Nu tvättar jag händerna ofta.",
+     "h": "Nu tvättar ja<s class=\"sil\">g</s> händerna ofta.",
+     "en": "Now I wash my hands often."
+    },
+    {
+     "id": "y52",
+     "no": 40,
+     "sv": "Då blir jag inte sjuk.",
+     "h": "Då blir ja<s class=\"sil\">g</s> inte sjuk.",
+     "en": "Then I don’t get ill."
     }
    ]
   },
@@ -299,32 +320,81 @@
    "en": "Healthy food",
    "items": [
     {
-     "id": "y17",
-     "no": 38,
-     "sv": "Jag tycker att hälsosam mat är enkel mat med mycket grönsaker och fisk.",
-     "h": "Ja<s class=\"sil\">g</s> tycker att hälsosam mat är enkel mat me<s class=\"sil\">d</s> mycket grönsaker o<s class=\"sil\">ch</s> fisk.",
-     "en": "I think healthy food is simple food with lots of vegetables and fish."
-    },
-    {
-     "id": "y18",
-     "no": 39,
-     "sv": "Mat med mycket socker är inte bra om man äter den varje dag.",
-     "h": "Mat me<s class=\"sil\">d</s> mycket socker är inte bra om man äter den varje da<s class=\"sil\">g</s>.",
-     "en": "Food with a lot of sugar is not good if you eat it every day."
-    },
-    {
-     "id": "y19",
-     "no": 40,
-     "sv": "Jag vill ändra en sak i min kost: jag dricker för mycket kaffe.",
-     "h": "Ja<s class=\"sil\">g</s> vill ändra en sak i min kost: ja<s class=\"sil\">g</s> dricker för mycket kaffe.",
-     "en": "I want to change one thing in my diet: I drink too much coffee."
-    },
-    {
-     "id": "y20",
+     "id": "y53",
      "no": 41,
-     "sv": "Därför försöker jag äta frukt i stället för kakor.",
-     "h": "Därför försöker ja<s class=\"sil\">g</s> äta frukt i stället för kakor.",
-     "en": "That is why I try to eat fruit instead of cakes."
+     "sv": "Jag tycker om hälsosam mat.",
+     "h": "Ja<s class=\"sil\">g</s> tycker om hälsosam mat.",
+     "en": "I like healthy food."
+    },
+    {
+     "id": "y54",
+     "no": 42,
+     "sv": "Fisk är bra.",
+     "h": "Fisk är bra.",
+     "en": "Fish is good."
+    },
+    {
+     "id": "y55",
+     "no": 43,
+     "sv": "Grönsaker är också bra.",
+     "h": "Grönsaker är också bra.",
+     "en": "Vegetables are also good."
+    },
+    {
+     "id": "y56",
+     "no": 44,
+     "sv": "Det ger energi.",
+     "h": "De<s class=\"sil\">t</s> ger energi.",
+     "en": "It gives energy."
+    },
+    {
+     "id": "y57",
+     "no": 45,
+     "sv": "Jag äter ofta kyckling och ris.",
+     "h": "Ja<s class=\"sil\">g</s> äter ofta kyckling o<s class=\"sil\">ch</s> ris.",
+     "en": "I often eat chicken and rice."
+    },
+    {
+     "id": "y58",
+     "no": 46,
+     "sv": "Det är enkelt och gott.",
+     "h": "De<s class=\"sil\">t</s> är enkelt o<s class=\"sil\">ch</s> gott.",
+     "en": "It is simple and tasty."
+    },
+    {
+     "id": "y59",
+     "no": 47,
+     "sv": "Men jag dricker för mycket kaffe.",
+     "h": "Men ja<s class=\"sil\">g</s> dricker för mycket kaffe.",
+     "en": "But I drink too much coffee."
+    },
+    {
+     "id": "y60",
+     "no": 48,
+     "sv": "Jag vill ändra det.",
+     "h": "Ja<s class=\"sil\">g</s> vill ändra de<s class=\"sil\">t</s>.",
+     "en": "I want to change that."
+    },
+    {
+     "id": "y61",
+     "no": 49,
+     "sv": "Jag vill dricka mer vatten.",
+     "h": "Ja<s class=\"sil\">g</s> vill dricka mer vatten.",
+     "en": "I want to drink more water."
+    },
+    {
+     "id": "y62",
+     "no": 50,
+     "sv": "Och jag vill äta mer frukt.",
+     "h": "O<s class=\"sil\">ch</s> ja<s class=\"sil\">g</s> vill äta mer frukt.",
+     "en": "And I want to eat more fruit."
+    },
+    {
+     "id": "y63",
+     "no": 51,
+     "sv": "Det är bra för kroppen.",
+     "h": "De<s class=\"sil\">t</s> är bra för kroppen.",
+     "en": "It is good for the body."
     }
    ]
   }
