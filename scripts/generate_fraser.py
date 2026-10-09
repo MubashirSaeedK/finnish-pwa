@@ -5,6 +5,7 @@ Run from the "Finnish Words PWA" folder:
   python3 scripts/generate_fraser.py            # make all missing clips (asks before spending credits)
   python3 scripts/generate_fraser.py --dry-run  # show what would be made
   python3 scripts/generate_fraser.py --force    # re-make every clip
+  python3 scripts/generate_fraser.py --voice2   # also make Röst 2 (doubles the cost)
 
 Röst 1 = zyfJspwEDo0sxPeFmtsn (same voice as the Harry Potter reader) -> audio/fraser/
 Röst 2 = kPdGSxhZAqy4bmPAf9iJ                                          -> audio/fraser-2/
@@ -19,14 +20,14 @@ args = sys.argv[1:]
 data = json.load(open(os.path.join(PWA, 'fraser.json'), encoding='utf-8'))
 items = [it for s in data['sections'] for it in s['items']]
 todo = []
-for key, name, vid, d in VOICES:
+for key, name, vid, d in (VOICES if '--voice2' in args else VOICES[:1]):
     os.makedirs(os.path.join(PWA, d), exist_ok=True)
     for it in items:
         out = os.path.join(PWA, d, it['id'] + '.mp3')
         if '--force' in args or not os.path.exists(out):
             todo.append((vid, out, it['sv']))
 chars = sum(len(t) for _, _, t in todo)
-print(f'{len(items)} phrases x {len(VOICES)} voices: {len(todo)} clips to make ({chars} characters).')
+print(f'{len(items)} phrases ({"both voices" if "--voice2" in args else "Röst 1 only"}): {len(todo)} clips to make ({chars} characters).')
 def write_voices():
     have = [{'key': k, 'name': n, 'dir': d} for k, n, _, d in VOICES
             if all(os.path.exists(os.path.join(PWA, d, it['id'] + '.mp3')) for it in items)]

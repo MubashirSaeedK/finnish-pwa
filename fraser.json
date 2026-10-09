@@ -8,32 +8,81 @@
    "en": "My everyday life",
    "items": [
     {
-     "id": "y01",
+     "id": "y21",
      "no": 1,
+     "sv": "Jag vill berätta om min vardag.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om min vardag.",
+     "en": "I want to tell you about my everyday life."
+    },
+    {
+     "id": "y01",
+     "no": 2,
      "sv": "På vardagarna går jag upp klockan sju.",
      "h": "På vardagarna går ja<s class=\"sil\">g</s> upp klockan sju.",
      "en": "On weekdays I get up at seven."
     },
     {
      "id": "y02",
-     "no": 2,
+     "no": 3,
      "sv": "Först dricker jag kaffe, sedan tar jag bussen till jobbet.",
      "h": "Först dricker ja<s class=\"sil\">g</s> kaffe, se<s class=\"sil\">da</s>n tar ja<s class=\"sil\">g</s> bussen till jobbet.",
      "en": "First I drink coffee, then I take the bus to work."
     },
     {
+     "id": "y22",
+     "no": 4,
+     "sv": "Jag jobbar från åtta till fyra.",
+     "h": "Ja<s class=\"sil\">g</s> jobbar från åtta till fyra.",
+     "en": "I work from eight to four."
+    },
+    {
      "id": "y03",
-     "no": 3,
+     "no": 5,
      "sv": "Efter jobbet handlar jag mat och lagar middag.",
      "h": "Efter jobbet handlar ja<s class=\"sil\">g</s> mat o<s class=\"sil\">ch</s> lagar middag.",
      "en": "After work I buy food and cook dinner."
     },
     {
+     "id": "y23",
+     "no": 6,
+     "sv": "På kvällen ringer jag min familj eller pluggar svenska en timme.",
+     "h": "På kvällen ringer ja<s class=\"sil\">g</s> min familj eller pluggar svenska en timme.",
+     "en": "In the evening I call my family or study Swedish for an hour."
+    },
+    {
      "id": "y04",
-     "no": 4,
+     "no": 7,
      "sv": "Jag gillar rutiner, eftersom de gör livet lugnt och enkelt.",
      "h": "Ja<s class=\"sil\">g</s> gillar rutiner, eftersom de gör livet lugnt o<s class=\"sil\">ch</s> enkelt.",
      "en": "I like routines, because they make life calm and simple."
+    },
+    {
+     "id": "y24",
+     "no": 8,
+     "sv": "Då behöver jag inte tänka så mycket.",
+     "h": "Då behöver ja<s class=\"sil\">g</s> inte tänka så mycket.",
+     "en": "Then I don’t need to think so much."
+    },
+    {
+     "id": "y25",
+     "no": 9,
+     "sv": "En dålig dag är när jag sover för länge och missar bussen.",
+     "h": "En dåli<s class=\"sil\">g</s> da<s class=\"sil\">g</s> är när ja<s class=\"sil\">g</s> sover för länge o<s class=\"sil\">ch</s> missar bussen.",
+     "en": "A bad day is when I oversleep and miss the bus."
+    },
+    {
+     "id": "y26",
+     "no": 10,
+     "sv": "Då blir hela dagen stressig.",
+     "h": "Då blir hela dagen stressi<s class=\"sil\">g</s>.",
+     "en": "Then the whole day becomes stressful."
+    },
+    {
+     "id": "y27",
+     "no": 11,
+     "sv": "Men för det mesta är min vardag ganska trevlig.",
+     "h": "Men för de<s class=\"sil\">t</s> mesta är min vardag ganska trevli<s class=\"sil\">g</s>.",
+     "en": "But mostly my everyday life is quite nice."
     }
    ]
   },
@@ -44,68 +93,138 @@
    "en": "Me in traffic",
    "items": [
     {
+     "id": "y28",
+     "no": 12,
+     "sv": "Jag ska berätta hur jag tar mig till jobbet.",
+     "h": "Ja<s class=\"sil\">g</s> ska berätta hur ja<s class=\"sil\">g</s> tar mi<s class=\"sil\">g</s> till jobbet.",
+     "en": "I’ll tell you how I get to work."
+    },
+    {
+     "id": "y29",
+     "no": 13,
+     "sv": "Jag bor i Esbo och jobbar i Helsingfors.",
+     "h": "Ja<s class=\"sil\">g</s> bor i Esbo o<s class=\"sil\">ch</s> jobbar i Helsingfors.",
+     "en": "I live in Espoo and work in Helsinki."
+    },
+    {
      "id": "y05",
-     "no": 5,
+     "no": 14,
      "sv": "Jag tar bussen till jobbet, och resan tar ungefär fyrtio minuter.",
      "h": "Ja<s class=\"sil\">g</s> tar bussen till jobbet, o<s class=\"sil\">ch</s> resan tar ungefär fyrti<s class=\"sil\">o</s> minuter.",
      "en": "I take the bus to work, and the trip takes about forty minutes."
     },
     {
      "id": "y06",
-     "no": 6,
+     "no": 15,
      "sv": "Jag använder kollektivtrafiken eftersom den är billig och bekväm.",
      "h": "Ja<s class=\"sil\">g</s> använder kollektivtrafiken eftersom den är billi<s class=\"sil\">g</s> o<s class=\"sil\">ch</s> bekväm.",
      "en": "I use public transport because it is cheap and comfortable."
     },
     {
+     "id": "y30",
+     "no": 16,
+     "sv": "Jag har ingen bil, och det behövs inte heller.",
+     "h": "Ja<s class=\"sil\">g</s> har ingen bil, o<s class=\"sil\">ch</s> de<s class=\"sil\">t</s> behövs inte heller.",
+     "en": "I don’t have a car, and I don’t need one either."
+    },
+    {
      "id": "y07",
-     "no": 7,
+     "no": 17,
      "sv": "Till butiken går jag till fots, för den ligger nära.",
      "h": "Till butiken går ja<s class=\"sil\">g</s> till fots, för den ligger nära.",
      "en": "I walk to the shop, because it is close."
     },
     {
+     "id": "y31",
+     "no": 18,
+     "sv": "På sommaren cyklar jag ibland.",
+     "h": "På sommaren cyklar ja<s class=\"sil\">g</s> ibland.",
+     "en": "In summer I sometimes cycle."
+    },
+    {
      "id": "y08",
-     "no": 8,
+     "no": 19,
      "sv": "Jag är lite rädd för trafiken på vintern, när det är halt och mörkt.",
      "h": "Ja<s class=\"sil\">g</s> är lite rädd för trafiken på vintern, när de<s class=\"sil\">t</s> är halt o<s class=\"sil\">ch</s> mörkt.",
      "en": "I am a bit afraid of the traffic in winter, when it is slippery and dark."
+    },
+    {
+     "id": "y32",
+     "no": 20,
+     "sv": "Bilisterna ser inte alltid cyklisterna.",
+     "h": "Bilisterna ser inte alltid cyklisterna.",
+     "en": "Drivers don’t always see the cyclists."
+    },
+    {
+     "id": "y33",
+     "no": 21,
+     "sv": "Därför är jag extra försiktig då.",
+     "h": "Därför är ja<s class=\"sil\">g</s> extra försikti<s class=\"sil\">g</s> då.",
+     "en": "That’s why I’m extra careful then."
     }
    ]
   },
   {
    "id": "b3",
    "n": 3,
-   "sv": "Berätta 3 · Platsen där jag bor",
+   "sv": "Berätta 3 · Platsen där jag bor och naturen",
    "en": "Where I live and nature",
    "items": [
     {
      "id": "y09",
-     "no": 9,
+     "no": 22,
      "sv": "Jag bor i en lugn stadsdel i Esbo.",
      "h": "Ja<s class=\"sil\">g</s> bor i en lugn stadsdel i Esbo.",
      "en": "I live in a quiet part of Espoo."
     },
     {
+     "id": "y34",
+     "no": 23,
+     "sv": "Det är ett område med höghus, men det finns mycket grönt runt omkring.",
+     "h": "De<s class=\"sil\">t</s> är ett område me<s class=\"sil\">d</s> höghus, men de<s class=\"sil\">t</s> finns mycket grönt runt omkring.",
+     "en": "It’s an area with blocks of flats, but there is a lot of greenery around."
+    },
+    {
      "id": "y10",
-     "no": 10,
+     "no": 24,
      "sv": "Det finns en stor skog och en liten sjö nära mitt hem.",
      "h": "De<s class=\"sil\">t</s> finns en stor skog o<s class=\"sil\">ch</s> en liten sjö nära mitt hem.",
      "en": "There is a big forest and a small lake near my home."
     },
     {
+     "id": "y35",
+     "no": 25,
+     "sv": "Där kan man promenera, springa eller plocka bär på hösten.",
+     "h": "Där kan man promenera, springa eller plocka bär på hösten.",
+     "en": "There you can walk, run or pick berries in autumn."
+    },
+    {
      "id": "y11",
-     "no": 11,
+     "no": 26,
      "sv": "Naturen betyder mycket för mig.",
      "h": "Naturen betyder mycket för mi<s class=\"sil\">g</s>.",
      "en": "Nature means a lot to me."
     },
     {
      "id": "y12",
-     "no": 12,
+     "no": 27,
      "sv": "När jag är stressad går jag ut i skogen, och då känner jag mig lugn igen.",
      "h": "När ja<s class=\"sil\">g</s> är stressad går ja<s class=\"sil\">g</s> ut i skogen, o<s class=\"sil\">ch</s> då känner ja<s class=\"sil\">g</s> mi<s class=\"sil\">g</s> lugn igen.",
      "en": "When I am stressed I go out into the forest, and then I feel calm again."
+    },
+    {
+     "id": "y36",
+     "no": 28,
+     "sv": "Jag tycker bäst om havet, särskilt på sommaren när det är varmt och ljust länge.",
+     "h": "Ja<s class=\"sil\">g</s> tycker bäst om havet, särskilt på sommaren när de<s class=\"sil\">t</s> är varmt o<s class=\"sil\">ch</s> <s class=\"sil\">l</s>just länge.",
+     "en": "I like the sea best, especially in summer when it is warm and light for a long time."
+    },
+    {
+     "id": "y37",
+     "no": 29,
+     "sv": "I mitt hemland bodde jag i en stor stad, så här i Finland har jag lärt mig att uppskatta naturen.",
+     "h": "I mitt hemland bodde ja<s class=\"sil\">g</s> i en stor stad, så här i Finland har ja<s class=\"sil\">g</s> lärt mi<s class=\"sil\">g</s> att uppskatta naturen.",
+     "en": "In my home country I lived in a big city, so here in Finland I have learned to appreciate nature."
     }
    ]
   },
@@ -117,31 +236,59 @@
    "items": [
     {
      "id": "y13",
-     "no": 13,
+     "no": 30,
      "sv": "För att hålla mig frisk försöker jag röra på mig varje dag.",
      "h": "För att hålla mi<s class=\"sil\">g</s> frisk försöker ja<s class=\"sil\">g</s> röra på mi<s class=\"sil\">g</s> varje da<s class=\"sil\">g</s>.",
      "en": "To stay healthy I try to move every day."
     },
     {
      "id": "y14",
-     "no": 14,
+     "no": 31,
      "sv": "Jag går till gymmet två gånger i veckan.",
      "h": "Ja<s class=\"sil\">g</s> går till gymmet två gånger i veckan.",
      "en": "I go to the gym twice a week."
     },
     {
+     "id": "y38",
+     "no": 32,
+     "sv": "Jag promenerar också mycket.",
+     "h": "Ja<s class=\"sil\">g</s> promenerar också mycket.",
+     "en": "I also walk a lot."
+    },
+    {
+     "id": "y39",
+     "no": 33,
+     "sv": "Dessutom försöker jag äta bra och sova minst sju timmar.",
+     "h": "Dessutom försöker ja<s class=\"sil\">g</s> äta bra o<s class=\"sil\">ch</s> sova minst sju timmar.",
+     "en": "Besides, I try to eat well and sleep at least seven hours."
+    },
+    {
+     "id": "y16",
+     "no": 34,
+     "sv": "För mig handlar ett friskt liv också om att vila och träffa vänner.",
+     "h": "För mi<s class=\"sil\">g</s> handlar ett friskt liv också om att vila o<s class=\"sil\">ch</s> träffa vänner.",
+     "en": "For me a healthy life is also about resting and meeting friends."
+    },
+    {
      "id": "y15",
-     "no": 15,
+     "no": 35,
      "sv": "Senast jag var sjuk var i våras. Jag hade feber i fyra dagar.",
      "h": "Senast ja<s class=\"sil\">g</s> var sjuk var i våras. Ja<s class=\"sil\">g</s> hade feber i fyra dagar.",
      "en": "The last time I was ill was last spring. I had a fever for four days."
     },
     {
-     "id": "y16",
-     "no": 16,
-     "sv": "För mig handlar ett friskt liv också om att vila och träffa vänner.",
-     "h": "För mi<s class=\"sil\">g</s> handlar ett friskt liv också om att vila o<s class=\"sil\">ch</s> träffa vänner.",
-     "en": "For me a healthy life is also about resting and meeting friends."
+     "id": "y40",
+     "no": 36,
+     "sv": "För att inte bli sjuk tvättar jag händerna ofta och klär mig varmt på vintern.",
+     "h": "För att inte bli sjuk tvättar ja<s class=\"sil\">g</s> händerna ofta o<s class=\"sil\">ch</s> klär mi<s class=\"sil\">g</s> varmt på vintern.",
+     "en": "To avoid getting ill I wash my hands often and dress warmly in winter."
+    },
+    {
+     "id": "y41",
+     "no": 37,
+     "sv": "Ibland tar jag också vitaminer, eftersom det är så mörkt här.",
+     "h": "Ibland tar ja<s class=\"sil\">g</s> också vitaminer, eftersom de<s class=\"sil\">t</s> är så mörkt här.",
+     "en": "Sometimes I also take vitamins, because it is so dark here."
     }
    ]
   },
@@ -153,28 +300,28 @@
    "items": [
     {
      "id": "y17",
-     "no": 17,
+     "no": 38,
      "sv": "Jag tycker att hälsosam mat är enkel mat med mycket grönsaker och fisk.",
      "h": "Ja<s class=\"sil\">g</s> tycker att hälsosam mat är enkel mat me<s class=\"sil\">d</s> mycket grönsaker o<s class=\"sil\">ch</s> fisk.",
      "en": "I think healthy food is simple food with lots of vegetables and fish."
     },
     {
      "id": "y18",
-     "no": 18,
+     "no": 39,
      "sv": "Mat med mycket socker är inte bra om man äter den varje dag.",
      "h": "Mat me<s class=\"sil\">d</s> mycket socker är inte bra om man äter den varje da<s class=\"sil\">g</s>.",
      "en": "Food with a lot of sugar is not good if you eat it every day."
     },
     {
      "id": "y19",
-     "no": 19,
+     "no": 40,
      "sv": "Jag vill ändra en sak i min kost: jag dricker för mycket kaffe.",
      "h": "Ja<s class=\"sil\">g</s> vill ändra en sak i min kost: ja<s class=\"sil\">g</s> dricker för mycket kaffe.",
      "en": "I want to change one thing in my diet: I drink too much coffee."
     },
     {
      "id": "y20",
-     "no": 20,
+     "no": 41,
      "sv": "Därför försöker jag äta frukt i stället för kakor.",
      "h": "Därför försöker ja<s class=\"sil\">g</s> äta frukt i stället för kakor.",
      "en": "That is why I try to eat fruit instead of cakes."
