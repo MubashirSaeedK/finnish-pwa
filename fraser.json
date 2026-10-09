@@ -397,6 +397,424 @@
      "en": "It is good for the body."
     }
    ]
+  },
+  {
+   "id": "b6",
+   "n": 6,
+   "sv": "Berätta 6 · Min normala arbetsdag",
+   "en": "My normal working day",
+   "items": [
+    {
+     "id": "y64",
+     "no": 52,
+     "sv": "Jag jobbar på ett kontor.",
+     "h": "Ja<s class=\"sil\">g</s> jobbar på ett kontor.",
+     "en": "I work in an office."
+    },
+    {
+     "id": "y65",
+     "no": 53,
+     "sv": "Jag börjar klockan åtta.",
+     "h": "Ja<s class=\"sil\">g</s> börjar klockan åtta.",
+     "en": "I start at eight."
+    },
+    {
+     "id": "y66",
+     "no": 54,
+     "sv": "Först läser jag mina mejl.",
+     "h": "Först läser ja<s class=\"sil\">g</s> mina mejl.",
+     "en": "First I read my emails."
+    },
+    {
+     "id": "y67",
+     "no": 55,
+     "sv": "Sedan jobbar jag vid datorn.",
+     "h": "Se<s class=\"sil\">da</s>n jobbar ja<s class=\"sil\">g</s> vid datorn.",
+     "en": "Then I work at the computer."
+    },
+    {
+     "id": "y68",
+     "no": 56,
+     "sv": "Jag svarar på frågor från kunder.",
+     "h": "Ja<s class=\"sil\">g</s> svarar på frågor från kunder.",
+     "en": "I answer questions from customers."
+    },
+    {
+     "id": "y69",
+     "no": 57,
+     "sv": "Klockan elva äter jag lunch.",
+     "h": "Klockan elva äter ja<s class=\"sil\">g</s> lunch.",
+     "en": "At eleven I eat lunch."
+    },
+    {
+     "id": "y70",
+     "no": 58,
+     "sv": "Jag tar en kaffepaus klockan två.",
+     "h": "Ja<s class=\"sil\">g</s> tar en kaffepaus klockan två.",
+     "en": "I take a coffee break at two."
+    },
+    {
+     "id": "y71",
+     "no": 59,
+     "sv": "Jag slutar klockan fyra.",
+     "h": "Ja<s class=\"sil\">g</s> slutar klockan fyra.",
+     "en": "I finish at four."
+    },
+    {
+     "id": "y72",
+     "no": 60,
+     "sv": "Jag gillar mina kollegor.",
+     "h": "Ja<s class=\"sil\">g</s> gillar mina kollegor.",
+     "en": "I like my colleagues."
+    },
+    {
+     "id": "y73",
+     "no": 61,
+     "sv": "De är snälla och hjälpsamma.",
+     "h": "De är snälla o<s class=\"sil\">ch</s> <s class=\"sil\">h</s>jälpsamma.",
+     "en": "They are kind and helpful."
+    },
+    {
+     "id": "y74",
+     "no": 62,
+     "sv": "Men ibland har vi för många möten.",
+     "h": "Men ibland har vi för många möten.",
+     "en": "But sometimes we have too many meetings."
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "n": 7,
+   "sv": "Berätta 7 · Mitt första jobb",
+   "en": "My first job",
+   "items": [
+    {
+     "id": "y75",
+     "no": 63,
+     "sv": "Mitt första jobb var i en butik.",
+     "h": "Mitt första jobb var i en butik.",
+     "en": "My first job was in a shop."
+    },
+    {
+     "id": "y76",
+     "no": 64,
+     "sv": "Jag var sjutton år.",
+     "h": "Ja<s class=\"sil\">g</s> var sjutton år.",
+     "en": "I was seventeen."
+    },
+    {
+     "id": "y77",
+     "no": 65,
+     "sv": "Jag jobbade på sommaren.",
+     "h": "Ja<s class=\"sil\">g</s> jobbade på sommaren.",
+     "en": "I worked in the summer."
+    },
+    {
+     "id": "y78",
+     "no": 66,
+     "sv": "Jag hjälpte kunderna.",
+     "h": "Ja<s class=\"sil\">g</s> <s class=\"sil\">h</s>jälpte kunderna.",
+     "en": "I helped the customers."
+    },
+    {
+     "id": "y79",
+     "no": 67,
+     "sv": "Jag satt också i kassan.",
+     "h": "Ja<s class=\"sil\">g</s> satt också i kassan.",
+     "en": "I also sat at the till."
+    },
+    {
+     "id": "y80",
+     "no": 68,
+     "sv": "Jobbet var lätt.",
+     "h": "Jobbet var lätt.",
+     "en": "The job was easy."
+    },
+    {
+     "id": "y81",
+     "no": 69,
+     "sv": "Lönen var inte så bra.",
+     "h": "Lönen var inte så bra.",
+     "en": "The pay wasn’t very good."
+    },
+    {
+     "id": "y82",
+     "no": 70,
+     "sv": "Men jag var glad.",
+     "h": "Men ja<s class=\"sil\">g</s> var glad.",
+     "en": "But I was happy."
+    },
+    {
+     "id": "y83",
+     "no": 71,
+     "sv": "Jag köpte en mobiltelefon med pengarna.",
+     "h": "Ja<s class=\"sil\">g</s> köpte en mobiltelefon me<s class=\"sil\">d</s> pengarna.",
+     "en": "I bought a mobile phone with the money."
+    },
+    {
+     "id": "y84",
+     "no": 72,
+     "sv": "Jag lärde mig att prata med människor.",
+     "h": "Ja<s class=\"sil\">g</s> lärde mi<s class=\"sil\">g</s> att prata me<s class=\"sil\">d</s> människor.",
+     "en": "I learned to talk to people."
+    },
+    {
+     "id": "y85",
+     "no": 73,
+     "sv": "Det var ett bra första jobb.",
+     "h": "De<s class=\"sil\">t</s> var ett bra första jobb.",
+     "en": "It was a good first job."
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "n": 8,
+   "sv": "Berätta 8 · En bra semester",
+   "en": "A good holiday",
+   "items": [
+    {
+     "id": "y86",
+     "no": 74,
+     "sv": "Jag gillar semester.",
+     "h": "Ja<s class=\"sil\">g</s> gillar semester.",
+     "en": "I like holidays."
+    },
+    {
+     "id": "y87",
+     "no": 75,
+     "sv": "En bra semester är lugn.",
+     "h": "En bra semester är lugn.",
+     "en": "A good holiday is calm."
+    },
+    {
+     "id": "y88",
+     "no": 76,
+     "sv": "Jag sover länge.",
+     "h": "Ja<s class=\"sil\">g</s> sover länge.",
+     "en": "I sleep late."
+    },
+    {
+     "id": "y89",
+     "no": 77,
+     "sv": "Jag träffar min familj.",
+     "h": "Ja<s class=\"sil\">g</s> träffar min familj.",
+     "en": "I meet my family."
+    },
+    {
+     "id": "y90",
+     "no": 78,
+     "sv": "Förra sommaren reste jag till mitt hemland.",
+     "h": "Förra sommaren reste ja<s class=\"sil\">g</s> till mitt hemland.",
+     "en": "Last summer I travelled to my home country."
+    },
+    {
+     "id": "y91",
+     "no": 79,
+     "sv": "Vi åt god mat.",
+     "h": "Vi åt go<s class=\"sil\">d</s> mat.",
+     "en": "We ate good food."
+    },
+    {
+     "id": "y92",
+     "no": 80,
+     "sv": "Vi pratade mycket.",
+     "h": "Vi pratade mycket.",
+     "en": "We talked a lot."
+    },
+    {
+     "id": "y93",
+     "no": 81,
+     "sv": "Vi åkte till havet en helg.",
+     "h": "Vi åkte till havet en helg.",
+     "en": "We went to the sea one weekend."
+    },
+    {
+     "id": "y94",
+     "no": 82,
+     "sv": "Det var underbart.",
+     "h": "De<s class=\"sil\">t</s> var underbart.",
+     "en": "It was wonderful."
+    },
+    {
+     "id": "y95",
+     "no": 83,
+     "sv": "Att resa är roligt, men det är dyrt.",
+     "h": "Att resa är roli<s class=\"sil\">g</s>t, men de<s class=\"sil\">t</s> är dyrt.",
+     "en": "Travelling is fun, but it is expensive."
+    },
+    {
+     "id": "y96",
+     "no": 84,
+     "sv": "Att vara hemma är också bra.",
+     "h": "Att vara hemma är också bra.",
+     "en": "Being at home is also good."
+    }
+   ]
+  },
+  {
+   "id": "b9",
+   "n": 9,
+   "sv": "Berätta 9 · Min hobby",
+   "en": "My hobby",
+   "items": [
+    {
+     "id": "y97",
+     "no": 85,
+     "sv": "Min hobby är träning.",
+     "h": "Min hobby är träning.",
+     "en": "My hobby is working out."
+    },
+    {
+     "id": "y98",
+     "no": 86,
+     "sv": "Jag går till gymmet.",
+     "h": "Ja<s class=\"sil\">g</s> går till gymmet.",
+     "en": "I go to the gym."
+    },
+    {
+     "id": "y99",
+     "no": 87,
+     "sv": "Jag har gjort det i tre år.",
+     "h": "Ja<s class=\"sil\">g</s> har <s class=\"sil\">g</s>jort de<s class=\"sil\">t</s> i tre år.",
+     "en": "I have done it for three years."
+    },
+    {
+     "id": "y100",
+     "no": 88,
+     "sv": "Jag tränar efter jobbet.",
+     "h": "Ja<s class=\"sil\">g</s> tränar efter jobbet.",
+     "en": "I work out after work."
+    },
+    {
+     "id": "y101",
+     "no": 89,
+     "sv": "Jag sover också bättre.",
+     "h": "Ja<s class=\"sil\">g</s> sover också bättre.",
+     "en": "I also sleep better."
+    },
+    {
+     "id": "y102",
+     "no": 90,
+     "sv": "Men det tar mycket tid.",
+     "h": "Men de<s class=\"sil\">t</s> tar mycket tid.",
+     "en": "But it takes a lot of time."
+    },
+    {
+     "id": "y103",
+     "no": 91,
+     "sv": "Jag behöver bara bra skor och kläder.",
+     "h": "Ja<s class=\"sil\">g</s> behöver bara bra skor o<s class=\"sil\">ch</s> kläder.",
+     "en": "I only need good shoes and clothes."
+    },
+    {
+     "id": "y104",
+     "no": 92,
+     "sv": "Ett gymkort kostar fyrtio euro i månaden.",
+     "h": "Ett gymkort kostar fyrti<s class=\"sil\">o</s> euro i månaden.",
+     "en": "A gym card costs forty euros a month."
+    },
+    {
+     "id": "y105",
+     "no": 93,
+     "sv": "Det är inte så dyrt.",
+     "h": "De<s class=\"sil\">t</s> är inte så dyrt.",
+     "en": "It is not so expensive."
+    },
+    {
+     "id": "y106",
+     "no": 94,
+     "sv": "Jag rekommenderar gym till alla.",
+     "h": "Ja<s class=\"sil\">g</s> rekommenderar gym till alla.",
+     "en": "I recommend the gym to everyone."
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "n": 10,
+   "sv": "Berätta 10 · Restauranger",
+   "en": "Restaurants",
+   "items": [
+    {
+     "id": "y107",
+     "no": 95,
+     "sv": "Jag går inte ofta på restaurang.",
+     "h": "Ja<s class=\"sil\">g</s> går inte ofta på restaurang.",
+     "en": "I don’t often go to restaurants."
+    },
+    {
+     "id": "y108",
+     "no": 96,
+     "sv": "Det är dyrt i Finland.",
+     "h": "De<s class=\"sil\">t</s> är dyrt i Finland.",
+     "en": "It is expensive in Finland."
+    },
+    {
+     "id": "y109",
+     "no": 97,
+     "sv": "Jag går kanske en gång i månaden.",
+     "h": "Ja<s class=\"sil\">g</s> går kanske en gång i månaden.",
+     "en": "I go maybe once a month."
+    },
+    {
+     "id": "y110",
+     "no": 98,
+     "sv": "En bra restaurang har god mat.",
+     "h": "En bra restaurang har go<s class=\"sil\">d</s> mat.",
+     "en": "A good restaurant has good food."
+    },
+    {
+     "id": "y111",
+     "no": 99,
+     "sv": "Personalen är vänlig.",
+     "h": "Personalen är vänli<s class=\"sil\">g</s>.",
+     "en": "The staff are friendly."
+    },
+    {
+     "id": "y112",
+     "no": 100,
+     "sv": "Maten kommer snabbt.",
+     "h": "Maten kommer snabbt.",
+     "en": "The food comes quickly."
+    },
+    {
+     "id": "y113",
+     "no": 101,
+     "sv": "En dålig restaurang är smutsig.",
+     "h": "En dåli<s class=\"sil\">g</s> restaurang är smutsi<s class=\"sil\">g</s>.",
+     "en": "A bad restaurant is dirty."
+    },
+    {
+     "id": "y114",
+     "no": 102,
+     "sv": "I mitt hemland äter vi sent.",
+     "h": "I mitt hemland äter vi sent.",
+     "en": "In my home country we eat late."
+    },
+    {
+     "id": "y115",
+     "no": 103,
+     "sv": "Vi äter med hela familjen.",
+     "h": "Vi äter me<s class=\"sil\">d</s> hela familjen.",
+     "en": "We eat with the whole family."
+    },
+    {
+     "id": "y116",
+     "no": 104,
+     "sv": "Maten är kryddig och billig.",
+     "h": "Maten är kryddi<s class=\"sil\">g</s> o<s class=\"sil\">ch</s> billi<s class=\"sil\">g</s>.",
+     "en": "The food is spicy and cheap."
+    },
+    {
+     "id": "y117",
+     "no": 105,
+     "sv": "I Finland äter man tidigt.",
+     "h": "I Finland äter man tidi<s class=\"sil\">g</s>t.",
+     "en": "In Finland people eat early."
+    }
+   ]
   }
  ]
 }
