@@ -2,868 +2,182 @@
  "audioDir": "audio/fraser/",
  "sections": [
   {
-   "id": "p",
-   "n": 0,
-   "sv": "Min vanliga dag",
-   "en": "My ordinary day",
+   "id": "b1",
+   "n": 1,
+   "sv": "Berätta 1 · Min vardag",
+   "en": "My everyday life",
    "items": [
     {
-     "id": "p0",
-     "sv": "Hej! Jag heter Mubas och jag bor i Esbo.",
-     "h": "Hej! Ja<s class=\"sil\">g</s> heter Mubas o<s class=\"sil\">ch</s> ja<s class=\"sil\">g</s> bor i Esbo.",
-     "en": "Hi! My name is Mubas and I live in Espoo."
+     "id": "y01",
+     "no": 1,
+     "sv": "På vardagarna går jag upp klockan sju.",
+     "h": "På vardagarna går ja<s class=\"sil\">g</s> upp klockan sju.",
+     "en": "On weekdays I get up at seven."
     },
     {
-     "id": "p1",
-     "sv": "En vanlig dag börjar klockan sju.",
-     "h": "En vanli<s class=\"sil\">g</s> da<s class=\"sil\">g</s> börjar klockan sju.",
-     "en": "An ordinary day starts at seven."
-    },
-    {
-     "id": "p2",
+     "id": "y02",
+     "no": 2,
      "sv": "Först dricker jag kaffe, sedan tar jag bussen till jobbet.",
      "h": "Först dricker ja<s class=\"sil\">g</s> kaffe, se<s class=\"sil\">da</s>n tar ja<s class=\"sil\">g</s> bussen till jobbet.",
      "en": "First I drink coffee, then I take the bus to work."
     },
     {
-     "id": "p3",
-     "sv": "På jobbet säger jag ”Hej, hur mår du?” till mina kollegor.",
-     "h": "På jobbet säger ja<s class=\"sil\">g</s> ”Hej, hur mår du?” till mina kollegor.",
-     "en": "At work I say “Hi, how are you?” to my colleagues."
-    },
-    {
-     "id": "p4",
-     "sv": "Ibland ringer jag till en kund: ”Hej, det är Mubas. Jag ringer för att boka en tid.”",
-     "h": "Ibland ringer ja<s class=\"sil\">g</s> till en kund: ”Hej, de<s class=\"sil\">t</s> är Mubas. Ja<s class=\"sil\">g</s> ringer för att boka en tid.”",
-     "en": "Sometimes I call a customer: “Hi, it's Mubas. I'm calling to book an appointment.”"
-    },
-    {
-     "id": "p5",
-     "sv": "Om jag inte förstår säger jag: ”Kan du upprepa det, tack?”",
-     "h": "Om ja<s class=\"sil\">g</s> inte förstår säger ja<s class=\"sil\">g</s>: ”Kan du upprepa de<s class=\"sil\">t</s>, tack?”",
-     "en": "If I don't understand, I say: “Can you repeat that, please?”"
-    },
-    {
-     "id": "p6",
-     "sv": "På lunchen pratar vi om helgen.",
-     "h": "På lunchen pratar vi om helgen.",
-     "en": "At lunch we talk about the weekend."
-    },
-    {
-     "id": "p7",
-     "sv": "En kollega berättar att hon ska flytta. ”Vad kul! Lycka till!” säger jag.",
-     "h": "En kollega berättar att hon ska flytta. ”Va<s class=\"sil\">d</s> kul! Lycka till!” säger ja<s class=\"sil\">g</s>.",
-     "en": "A colleague says she is going to move. “How nice! Good luck!” I say."
-    },
-    {
-     "id": "p8",
-     "sv": "Efter jobbet handlar jag mat.",
-     "h": "Efter jobbet handlar ja<s class=\"sil\">g</s> mat.",
-     "en": "After work I buy food."
-    },
-    {
-     "id": "p9",
-     "sv": "Ibland fungerar inte kortet, och då frågar jag: ”Kan jag betala kontant i stället?”",
-     "h": "Ibland fungerar inte kortet, o<s class=\"sil\">ch</s> då frågar ja<s class=\"sil\">g</s>: ”Kan ja<s class=\"sil\">g</s> betala kontant i stället?”",
-     "en": "Sometimes the card doesn't work, and then I ask: “Can I pay in cash instead?”"
-    },
-    {
-     "id": "p10",
-     "sv": "På kvällen ringer jag min familj.",
-     "h": "På kvällen ringer ja<s class=\"sil\">g</s> min familj.",
-     "en": "In the evening I call my family."
-    },
-    {
-     "id": "p11",
-     "sv": "Vi pratar om dagen, och till sist säger jag: ”Ta hand om dig! Vi ses snart.”",
-     "h": "Vi pratar om dagen, o<s class=\"sil\">ch</s> till sist säger ja<s class=\"sil\">g</s>: ”Ta hand om di<s class=\"sil\">g</s>! Vi ses snart.”",
-     "en": "We talk about the day, and finally I say: “Take care! See you soon.”"
-    },
-    {
-     "id": "p12",
-     "sv": "Sammanfattningsvis är det en lugn och trevlig dag.",
-     "h": "Sammanfattningsvis är de<s class=\"sil\">t</s> en lugn o<s class=\"sil\">ch</s> trevli<s class=\"sil\">g</s> da<s class=\"sil\">g</s>.",
-     "en": "All in all, it's a calm and pleasant day."
-    }
-   ]
-  },
-  {
-   "id": "g0",
-   "n": 1,
-   "sv": "Hälsa och avsluta",
-   "en": "Greeting and saying goodbye",
-   "items": [
-    {
-     "id": "g0_0",
-     "no": 1,
-     "sv": "Hej, hur mår du?",
-     "h": "Hej, hur mår du?",
-     "en": "Hi, how are you?"
-    },
-    {
-     "id": "g0_1",
-     "no": 2,
-     "sv": "Tack, bara bra. Och du?",
-     "h": "Tack, bara bra. O<s class=\"sil\">ch</s> du?",
-     "en": "Fine, thanks. And you?"
-    },
-    {
-     "id": "g0_2",
+     "id": "y03",
      "no": 3,
-     "sv": "Det var länge sedan!",
-     "h": "De<s class=\"sil\">t</s> var länge se<s class=\"sil\">da</s>n!",
-     "en": "Long time no see!"
+     "sv": "Efter jobbet handlar jag mat och lagar middag.",
+     "h": "Efter jobbet handlar ja<s class=\"sil\">g</s> mat o<s class=\"sil\">ch</s> lagar middag.",
+     "en": "After work I buy food and cook dinner."
     },
     {
-     "id": "g0_3",
+     "id": "y04",
      "no": 4,
-     "sv": "Trevligt att träffas.",
-     "h": "Trevli<s class=\"sil\">g</s>t att träffas.",
-     "en": "Nice to meet you."
-    },
-    {
-     "id": "g0_4",
-     "no": 5,
-     "sv": "Vad kul att se dig!",
-     "h": "Va<s class=\"sil\">d</s> kul att se di<s class=\"sil\">g</s>!",
-     "en": "Great to see you!"
-    },
-    {
-     "id": "g0_5",
-     "no": 6,
-     "sv": "Välkommen in!",
-     "h": "Välkommen in!",
-     "en": "Come on in!"
-    },
-    {
-     "id": "g0_6",
-     "no": 7,
-     "sv": "Ha en bra dag!",
-     "h": "Ha en bra da<s class=\"sil\">g</s>!",
-     "en": "Have a nice day!"
-    },
-    {
-     "id": "g0_7",
-     "no": 8,
-     "sv": "Vi ses snart!",
-     "h": "Vi ses snart!",
-     "en": "See you soon!"
-    },
-    {
-     "id": "g0_8",
-     "no": 9,
-     "sv": "Hälsa till familjen!",
-     "h": "Hälsa till familjen!",
-     "en": "Say hi to the family!"
-    },
-    {
-     "id": "g0_9",
-     "no": 10,
-     "sv": "Ta hand om dig!",
-     "h": "Ta hand om di<s class=\"sil\">g</s>!",
-     "en": "Take care!"
+     "sv": "Jag gillar rutiner, eftersom de gör livet lugnt och enkelt.",
+     "h": "Ja<s class=\"sil\">g</s> gillar rutiner, eftersom de gör livet lugnt o<s class=\"sil\">ch</s> enkelt.",
+     "en": "I like routines, because they make life calm and simple."
     }
    ]
   },
   {
-   "id": "g1",
+   "id": "b2",
    "n": 2,
-   "sv": "I telefon",
-   "en": "On the phone",
+   "sv": "Berätta 2 · Jag i trafiken",
+   "en": "Me in traffic",
    "items": [
     {
-     "id": "g1_0",
-     "no": 11,
-     "sv": "Hej, det är Mubas.",
-     "h": "Hej, de<s class=\"sil\">t</s> är Mubas.",
-     "en": "Hi, it's Mubas."
+     "id": "y05",
+     "no": 5,
+     "sv": "Jag tar bussen till jobbet, och resan tar ungefär fyrtio minuter.",
+     "h": "Ja<s class=\"sil\">g</s> tar bussen till jobbet, o<s class=\"sil\">ch</s> resan tar ungefär fyrti<s class=\"sil\">o</s> minuter.",
+     "en": "I take the bus to work, and the trip takes about forty minutes."
     },
     {
-     "id": "g1_1",
-     "no": 12,
-     "sv": "Jag ringer för att …",
-     "h": "Ja<s class=\"sil\">g</s> ringer för att …",
-     "en": "I'm calling because …"
+     "id": "y06",
+     "no": 6,
+     "sv": "Jag använder kollektivtrafiken eftersom den är billig och bekväm.",
+     "h": "Ja<s class=\"sil\">g</s> använder kollektivtrafiken eftersom den är billi<s class=\"sil\">g</s> o<s class=\"sil\">ch</s> bekväm.",
+     "en": "I use public transport because it is cheap and comfortable."
     },
     {
-     "id": "g1_2",
-     "no": 13,
-     "sv": "Jag skulle vilja boka en tid.",
-     "h": "Ja<s class=\"sil\">g</s> skulle vilja boka en tid.",
-     "en": "I'd like to book an appointment."
+     "id": "y07",
+     "no": 7,
+     "sv": "Till butiken går jag till fots, för den ligger nära.",
+     "h": "Till butiken går ja<s class=\"sil\">g</s> till fots, för den ligger nära.",
+     "en": "I walk to the shop, because it is close."
     },
     {
-     "id": "g1_3",
-     "no": 14,
-     "sv": "Kan jag få prata med …?",
-     "h": "Kan ja<s class=\"sil\">g</s> få prata me<s class=\"sil\">d</s> …?",
-     "en": "Can I speak to …?"
-    },
-    {
-     "id": "g1_4",
-     "no": 15,
-     "sv": "Kan du upprepa det, tack?",
-     "h": "Kan du upprepa de<s class=\"sil\">t</s>, tack?",
-     "en": "Can you repeat that, please?"
-    },
-    {
-     "id": "g1_5",
-     "no": 16,
-     "sv": "Kan du tala lite långsammare?",
-     "h": "Kan du tala lite långsammare?",
-     "en": "Could you speak a bit more slowly?"
-    },
-    {
-     "id": "g1_6",
-     "no": 17,
-     "sv": "Jag hör dig dåligt.",
-     "h": "Ja<s class=\"sil\">g</s> hör di<s class=\"sil\">g</s> dåli<s class=\"sil\">g</s>t.",
-     "en": "I can't hear you well."
-    },
-    {
-     "id": "g1_7",
-     "no": 18,
-     "sv": "Mitt nummer är …",
-     "h": "Mitt nummer är …",
-     "en": "My number is …"
-    },
-    {
-     "id": "g1_8",
-     "no": 19,
-     "sv": "Du kan nå mig på det här numret.",
-     "h": "Du kan nå mi<s class=\"sil\">g</s> på de<s class=\"sil\">t</s> här numret.",
-     "en": "You can reach me on this number."
-    },
-    {
-     "id": "g1_9",
-     "no": 20,
-     "sv": "Tack för hjälpen, hej då!",
-     "h": "Tack för <s class=\"sil\">h</s>jälpen, hej då!",
-     "en": "Thanks for the help, bye!"
+     "id": "y08",
+     "no": 8,
+     "sv": "Jag är lite rädd för trafiken på vintern, när det är halt och mörkt.",
+     "h": "Ja<s class=\"sil\">g</s> är lite rädd för trafiken på vintern, när de<s class=\"sil\">t</s> är halt o<s class=\"sil\">ch</s> mörkt.",
+     "en": "I am a bit afraid of the traffic in winter, when it is slippery and dark."
     }
    ]
   },
   {
-   "id": "g2",
+   "id": "b3",
    "n": 3,
-   "sv": "Fråga och be om något",
-   "en": "Asking and requesting",
+   "sv": "Berätta 3 · Platsen där jag bor",
+   "en": "Where I live and nature",
    "items": [
     {
-     "id": "g2_0",
-     "no": 21,
-     "sv": "Ursäkta, kan du hjälpa mig?",
-     "h": "Ursäkta, kan du <s class=\"sil\">h</s>jälpa mi<s class=\"sil\">g</s>?",
-     "en": "Excuse me, can you help me?"
+     "id": "y09",
+     "no": 9,
+     "sv": "Jag bor i en lugn stadsdel i Esbo.",
+     "h": "Ja<s class=\"sil\">g</s> bor i en lugn stadsdel i Esbo.",
+     "en": "I live in a quiet part of Espoo."
     },
     {
-     "id": "g2_1",
-     "no": 22,
-     "sv": "Hur mycket kostar det?",
-     "h": "Hur mycket kostar de<s class=\"sil\">t</s>?",
-     "en": "How much does it cost?"
+     "id": "y10",
+     "no": 10,
+     "sv": "Det finns en stor skog och en liten sjö nära mitt hem.",
+     "h": "De<s class=\"sil\">t</s> finns en stor skog o<s class=\"sil\">ch</s> en liten sjö nära mitt hem.",
+     "en": "There is a big forest and a small lake near my home."
     },
     {
-     "id": "g2_2",
-     "no": 23,
-     "sv": "Var ligger närmaste apotek?",
-     "h": "Var ligger närmaste apotek?",
-     "en": "Where is the nearest pharmacy?"
+     "id": "y11",
+     "no": 11,
+     "sv": "Naturen betyder mycket för mig.",
+     "h": "Naturen betyder mycket för mi<s class=\"sil\">g</s>.",
+     "en": "Nature means a lot to me."
     },
     {
-     "id": "g2_3",
-     "no": 24,
-     "sv": "Finns det något annat alternativ?",
-     "h": "Finns de<s class=\"sil\">t</s> nå<s class=\"sil\">go</s>t annat alternativ?",
-     "en": "Is there another option?"
-    },
-    {
-     "id": "g2_4",
-     "no": 25,
-     "sv": "När öppnar ni?",
-     "h": "När öppnar ni?",
-     "en": "When do you open?"
-    },
-    {
-     "id": "g2_5",
-     "no": 26,
-     "sv": "Behöver jag boka i förväg?",
-     "h": "Behöver ja<s class=\"sil\">g</s> boka i förväg?",
-     "en": "Do I need to book in advance?"
-    },
-    {
-     "id": "g2_6",
-     "no": 27,
-     "sv": "Kan jag betala med kort?",
-     "h": "Kan ja<s class=\"sil\">g</s> betala me<s class=\"sil\">d</s> kort?",
-     "en": "Can I pay by card?"
-    },
-    {
-     "id": "g2_7",
-     "no": 28,
-     "sv": "Vad menar du med det?",
-     "h": "Va<s class=\"sil\">d</s> menar du me<s class=\"sil\">d</s> de<s class=\"sil\">t</s>?",
-     "en": "What do you mean by that?"
-    },
-    {
-     "id": "g2_8",
-     "no": 29,
-     "sv": "Hur gör man det?",
-     "h": "Hur gör man de<s class=\"sil\">t</s>?",
-     "en": "How do you do that?"
-    },
-    {
-     "id": "g2_9",
-     "no": 30,
-     "sv": "Går det bra om …?",
-     "h": "Går de<s class=\"sil\">t</s> bra om …?",
-     "en": "Is it OK if …?"
+     "id": "y12",
+     "no": 12,
+     "sv": "När jag är stressad går jag ut i skogen, och då känner jag mig lugn igen.",
+     "h": "När ja<s class=\"sil\">g</s> är stressad går ja<s class=\"sil\">g</s> ut i skogen, o<s class=\"sil\">ch</s> då känner ja<s class=\"sil\">g</s> mi<s class=\"sil\">g</s> lugn igen.",
+     "en": "When I am stressed I go out into the forest, and then I feel calm again."
     }
    ]
   },
   {
-   "id": "g3",
+   "id": "b4",
    "n": 4,
-   "sv": "Tacka och be om ursäkt",
-   "en": "Thanking and apologising",
+   "sv": "Berätta 4 · Mitt välbefinnande",
+   "en": "My well-being",
    "items": [
     {
-     "id": "g3_0",
-     "no": 31,
-     "sv": "Tack så mycket!",
-     "h": "Tack så mycket!",
-     "en": "Thank you very much!"
+     "id": "y13",
+     "no": 13,
+     "sv": "För att hålla mig frisk försöker jag röra på mig varje dag.",
+     "h": "För att hålla mi<s class=\"sil\">g</s> frisk försöker ja<s class=\"sil\">g</s> röra på mi<s class=\"sil\">g</s> varje da<s class=\"sil\">g</s>.",
+     "en": "To stay healthy I try to move every day."
     },
     {
-     "id": "g3_1",
-     "no": 32,
-     "sv": "Det var snällt av dig.",
-     "h": "De<s class=\"sil\">t</s> var snällt a<s class=\"sil\">v</s> di<s class=\"sil\">g</s>.",
-     "en": "That was kind of you."
+     "id": "y14",
+     "no": 14,
+     "sv": "Jag går till gymmet två gånger i veckan.",
+     "h": "Ja<s class=\"sil\">g</s> går till gymmet två gånger i veckan.",
+     "en": "I go to the gym twice a week."
     },
     {
-     "id": "g3_2",
-     "no": 33,
-     "sv": "Ingen orsak.",
-     "h": "Ingen orsak.",
-     "en": "Don't mention it."
+     "id": "y15",
+     "no": 15,
+     "sv": "Senast jag var sjuk var i våras. Jag hade feber i fyra dagar.",
+     "h": "Senast ja<s class=\"sil\">g</s> var sjuk var i våras. Ja<s class=\"sil\">g</s> hade feber i fyra dagar.",
+     "en": "The last time I was ill was last spring. I had a fever for four days."
     },
     {
-     "id": "g3_3",
-     "no": 34,
-     "sv": "Det var så lite.",
-     "h": "De<s class=\"sil\">t</s> var så lite.",
-     "en": "You're welcome. / It was nothing."
-    },
-    {
-     "id": "g3_4",
-     "no": 35,
-     "sv": "Förlåt att jag är sen.",
-     "h": "Förlåt att ja<s class=\"sil\">g</s> är sen.",
-     "en": "Sorry I'm late."
-    },
-    {
-     "id": "g3_5",
-     "no": 36,
-     "sv": "Jag ber om ursäkt.",
-     "h": "Ja<s class=\"sil\">g</s> ber om ursäkt.",
-     "en": "I apologise."
-    },
-    {
-     "id": "g3_6",
-     "no": 37,
-     "sv": "Det var inte meningen.",
-     "h": "De<s class=\"sil\">t</s> var inte meningen.",
-     "en": "I didn't mean to."
-    },
-    {
-     "id": "g3_7",
-     "no": 38,
-     "sv": "Ingen fara!",
-     "h": "Ingen fara!",
-     "en": "No problem!"
-    },
-    {
-     "id": "g3_8",
-     "no": 39,
-     "sv": "Det gör inget.",
-     "h": "De<s class=\"sil\">t</s> gör inget.",
-     "en": "It doesn't matter."
-    },
-    {
-     "id": "g3_9",
-     "no": 40,
-     "sv": "Tack för att du lyssnade.",
-     "h": "Tack för att du lyssnade.",
-     "en": "Thanks for listening."
+     "id": "y16",
+     "no": 16,
+     "sv": "För mig handlar ett friskt liv också om att vila och träffa vänner.",
+     "h": "För mi<s class=\"sil\">g</s> handlar ett friskt liv också om att vila o<s class=\"sil\">ch</s> träffa vänner.",
+     "en": "For me a healthy life is also about resting and meeting friends."
     }
    ]
   },
   {
-   "id": "g4",
+   "id": "b5",
    "n": 5,
-   "sv": "Reagera",
-   "en": "Reacting",
+   "sv": "Berätta 5 · Hälsosam mat",
+   "en": "Healthy food",
    "items": [
     {
-     "id": "g4_0",
-     "no": 41,
-     "sv": "Grattis! Vad roligt!",
-     "h": "Grattis! Va<s class=\"sil\">d</s> roli<s class=\"sil\">g</s>t!",
-     "en": "Congratulations! How nice!"
+     "id": "y17",
+     "no": 17,
+     "sv": "Jag tycker att hälsosam mat är enkel mat med mycket grönsaker och fisk.",
+     "h": "Ja<s class=\"sil\">g</s> tycker att hälsosam mat är enkel mat me<s class=\"sil\">d</s> mycket grönsaker o<s class=\"sil\">ch</s> fisk.",
+     "en": "I think healthy food is simple food with lots of vegetables and fish."
     },
     {
-     "id": "g4_1",
-     "no": 42,
-     "sv": "Vad tråkigt att höra.",
-     "h": "Va<s class=\"sil\">d</s> tråki<s class=\"sil\">g</s>t att höra.",
-     "en": "I'm sorry to hear that."
+     "id": "y18",
+     "no": 18,
+     "sv": "Mat med mycket socker är inte bra om man äter den varje dag.",
+     "h": "Mat me<s class=\"sil\">d</s> mycket socker är inte bra om man äter den varje da<s class=\"sil\">g</s>.",
+     "en": "Food with a lot of sugar is not good if you eat it every day."
     },
     {
-     "id": "g4_2",
-     "no": 43,
-     "sv": "Jag förstår hur du känner.",
-     "h": "Ja<s class=\"sil\">g</s> förstår hur du känner.",
-     "en": "I understand how you feel."
+     "id": "y19",
+     "no": 19,
+     "sv": "Jag vill ändra en sak i min kost: jag dricker för mycket kaffe.",
+     "h": "Ja<s class=\"sil\">g</s> vill ändra en sak i min kost: ja<s class=\"sil\">g</s> dricker för mycket kaffe.",
+     "en": "I want to change one thing in my diet: I drink too much coffee."
     },
     {
-     "id": "g4_3",
-     "no": 44,
-     "sv": "Oj, det låter jobbigt.",
-     "h": "Oj, de<s class=\"sil\">t</s> låter jobbi<s class=\"sil\">g</s>t.",
-     "en": "Oh, that sounds hard."
-    },
-    {
-     "id": "g4_4",
-     "no": 45,
-     "sv": "Krya på dig!",
-     "h": "Krya på di<s class=\"sil\">g</s>!",
-     "en": "Get well soon!"
-    },
-    {
-     "id": "g4_5",
-     "no": 46,
-     "sv": "Lycka till!",
-     "h": "Lycka till!",
-     "en": "Good luck!"
-    },
-    {
-     "id": "g4_6",
-     "no": 47,
-     "sv": "Vad bra!",
-     "h": "Va<s class=\"sil\">d</s> bra!",
-     "en": "How great!"
-    },
-    {
-     "id": "g4_7",
-     "no": 48,
-     "sv": "Det var ju synd.",
-     "h": "De<s class=\"sil\">t</s> var ju synd.",
-     "en": "What a pity."
-    },
-    {
-     "id": "g4_8",
-     "no": 49,
-     "sv": "Verkligen? Det visste jag inte.",
-     "h": "Verkli<s class=\"sil\">g</s>en? De<s class=\"sil\">t</s> visste ja<s class=\"sil\">g</s> inte.",
-     "en": "Really? I didn't know that."
-    },
-    {
-     "id": "g4_9",
-     "no": 50,
-     "sv": "Oroa dig inte, det ordnar sig.",
-     "h": "Oroa di<s class=\"sil\">g</s> inte, de<s class=\"sil\">t</s> ordnar si<s class=\"sil\">g</s>.",
-     "en": "Don't worry, it'll work out."
-    }
-   ]
-  },
-  {
-   "id": "g5",
-   "n": 6,
-   "sv": "Säga sin åsikt",
-   "en": "Giving your opinion",
-   "items": [
-    {
-     "id": "g5_0",
-     "no": 51,
-     "sv": "Jag tycker att …",
-     "h": "Ja<s class=\"sil\">g</s> tycker att …",
-     "en": "I think that …"
-    },
-    {
-     "id": "g5_1",
-     "no": 52,
-     "sv": "Enligt min åsikt …",
-     "h": "Enli<s class=\"sil\">g</s>t min åsikt …",
-     "en": "In my opinion …"
-    },
-    {
-     "id": "g5_2",
-     "no": 53,
-     "sv": "Jag tror att …",
-     "h": "Ja<s class=\"sil\">g</s> tror att …",
-     "en": "I believe that …"
-    },
-    {
-     "id": "g5_3",
-     "no": 54,
-     "sv": "Det beror på.",
-     "h": "De<s class=\"sil\">t</s> beror på.",
-     "en": "It depends."
-    },
-    {
-     "id": "g5_4",
-     "no": 55,
-     "sv": "För mig är det viktigt att …",
-     "h": "För mi<s class=\"sil\">g</s> är de<s class=\"sil\">t</s> vikti<s class=\"sil\">g</s>t att …",
-     "en": "For me it's important that …"
-    },
-    {
-     "id": "g5_5",
-     "no": 56,
-     "sv": "Å ena sidan …, å andra sidan …",
-     "h": "Å ena sidan …, å andra sidan …",
-     "en": "On the one hand …, on the other hand …"
-    },
-    {
-     "id": "g5_6",
-     "no": 57,
-     "sv": "Fördelen är att …",
-     "h": "Fördelen är att …",
-     "en": "The advantage is that …"
-    },
-    {
-     "id": "g5_7",
-     "no": 58,
-     "sv": "Nackdelen är att …",
-     "h": "Nackdelen är att …",
-     "en": "The disadvantage is that …"
-    },
-    {
-     "id": "g5_8",
-     "no": 59,
-     "sv": "Till exempel …",
-     "h": "Till exempel …",
-     "en": "For example …"
-    },
-    {
-     "id": "g5_9",
-     "no": 60,
-     "sv": "Sammanfattningsvis …",
-     "h": "Sammanfattningsvis …",
-     "en": "To sum up …"
-    }
-   ]
-  },
-  {
-   "id": "g6",
-   "n": 7,
-   "sv": "Hålla med eller inte",
-   "en": "Agreeing and disagreeing",
-   "items": [
-    {
-     "id": "g6_0",
-     "no": 61,
-     "sv": "Jag håller med dig.",
-     "h": "Ja<s class=\"sil\">g</s> håller me<s class=\"sil\">d</s> di<s class=\"sil\">g</s>.",
-     "en": "I agree with you."
-    },
-    {
-     "id": "g6_1",
-     "no": 62,
-     "sv": "Precis så!",
-     "h": "Precis så!",
-     "en": "Exactly!"
-    },
-    {
-     "id": "g6_2",
-     "no": 63,
-     "sv": "Du har rätt.",
-     "h": "Du har rätt.",
-     "en": "You're right."
-    },
-    {
-     "id": "g6_3",
-     "no": 64,
-     "sv": "Det är en bra idé.",
-     "h": "De<s class=\"sil\">t</s> är en bra idé.",
-     "en": "That's a good idea."
-    },
-    {
-     "id": "g6_4",
-     "no": 65,
-     "sv": "Jag håller inte med.",
-     "h": "Ja<s class=\"sil\">g</s> håller inte me<s class=\"sil\">d</s>.",
-     "en": "I don't agree."
-    },
-    {
-     "id": "g6_5",
-     "no": 66,
-     "sv": "Jag ser det på ett annat sätt.",
-     "h": "Ja<s class=\"sil\">g</s> ser de<s class=\"sil\">t</s> på ett annat sätt.",
-     "en": "I see it differently."
-    },
-    {
-     "id": "g6_6",
-     "no": 67,
-     "sv": "Det stämmer inte riktigt.",
-     "h": "De<s class=\"sil\">t</s> stämmer inte rikti<s class=\"sil\">g</s>t.",
-     "en": "That's not quite right."
-    },
-    {
-     "id": "g6_7",
-     "no": 68,
-     "sv": "Kanske, men …",
-     "h": "Kanske, men …",
-     "en": "Maybe, but …"
-    },
-    {
-     "id": "g6_8",
-     "no": 69,
-     "sv": "Jag är inte säker på det.",
-     "h": "Ja<s class=\"sil\">g</s> är inte säker på de<s class=\"sil\">t</s>.",
-     "en": "I'm not sure about that."
-    },
-    {
-     "id": "g6_9",
-     "no": 70,
-     "sv": "Det har du nog rätt i.",
-     "h": "De<s class=\"sil\">t</s> har du nog rätt i.",
-     "en": "You're probably right about that."
-    }
-   ]
-  },
-  {
-   "id": "g7",
-   "n": 8,
-   "sv": "Föreslå och bestämma tid",
-   "en": "Suggesting and agreeing on a time",
-   "items": [
-    {
-     "id": "g7_0",
-     "no": 71,
-     "sv": "Ska vi ses i morgon?",
-     "h": "Ska vi ses i morgon?",
-     "en": "Shall we meet tomorrow?"
-    },
-    {
-     "id": "g7_1",
-     "no": 72,
-     "sv": "Vad sägs om lördag?",
-     "h": "Va<s class=\"sil\">d</s> sägs om lördag?",
-     "en": "How about Saturday?"
-    },
-    {
-     "id": "g7_2",
-     "no": 73,
-     "sv": "Passar det dig?",
-     "h": "Passar de<s class=\"sil\">t</s> di<s class=\"sil\">g</s>?",
-     "en": "Does that suit you?"
-    },
-    {
-     "id": "g7_3",
-     "no": 74,
-     "sv": "Tyvärr passar det inte.",
-     "h": "Tyvärr passar de<s class=\"sil\">t</s> inte.",
-     "en": "Unfortunately that doesn't suit me."
-    },
-    {
-     "id": "g7_4",
-     "no": 75,
-     "sv": "Jag har inte tid då.",
-     "h": "Ja<s class=\"sil\">g</s> har inte tid då.",
-     "en": "I don't have time then."
-    },
-    {
-     "id": "g7_5",
-     "no": 76,
-     "sv": "Kan vi flytta mötet?",
-     "h": "Kan vi flytta mötet?",
-     "en": "Can we move the meeting?"
-    },
-    {
-     "id": "g7_6",
-     "no": 77,
-     "sv": "Hur dags ska vi träffas?",
-     "h": "Hur dags ska vi träffas?",
-     "en": "What time shall we meet?"
-    },
-    {
-     "id": "g7_7",
-     "no": 78,
-     "sv": "Klockan sju går bra.",
-     "h": "Klockan sju går bra.",
-     "en": "Seven o'clock is fine."
-    },
-    {
-     "id": "g7_8",
-     "no": 79,
-     "sv": "Jag kommer om tio minuter.",
-     "h": "Ja<s class=\"sil\">g</s> kommer om tio minuter.",
-     "en": "I'll be there in ten minutes."
-    },
-    {
-     "id": "g7_9",
-     "no": 80,
-     "sv": "Jag hör av mig.",
-     "h": "Ja<s class=\"sil\">g</s> hör a<s class=\"sil\">v</s> mi<s class=\"sil\">g</s>.",
-     "en": "I'll be in touch."
-    }
-   ]
-  },
-  {
-   "id": "g8",
-   "n": 9,
-   "sv": "Klaga och lösa problem",
-   "en": "Complaining and solving problems",
-   "items": [
-    {
-     "id": "g8_0",
-     "no": 81,
-     "sv": "Jag har ett problem med …",
-     "h": "Ja<s class=\"sil\">g</s> har ett problem me<s class=\"sil\">d</s> …",
-     "en": "I have a problem with …"
-    },
-    {
-     "id": "g8_1",
-     "no": 82,
-     "sv": "Det fungerar inte.",
-     "h": "De<s class=\"sil\">t</s> fungerar inte.",
-     "en": "It doesn't work."
-    },
-    {
-     "id": "g8_2",
-     "no": 83,
-     "sv": "Den har gått sönder.",
-     "h": "Den har gått sönder.",
-     "en": "It has broken."
-    },
-    {
-     "id": "g8_3",
-     "no": 84,
-     "sv": "Jag skulle vilja reklamera den här.",
-     "h": "Ja<s class=\"sil\">g</s> skulle vilja reklamera den här.",
-     "en": "I'd like to return this (as faulty)."
-    },
-    {
-     "id": "g8_4",
-     "no": 85,
-     "sv": "Jag är inte nöjd med …",
-     "h": "Ja<s class=\"sil\">g</s> är inte nöjd me<s class=\"sil\">d</s> …",
-     "en": "I'm not satisfied with …"
-    },
-    {
-     "id": "g8_5",
-     "no": 86,
-     "sv": "Kan ni fixa det?",
-     "h": "Kan ni fixa de<s class=\"sil\">t</s>?",
-     "en": "Can you fix it?"
-    },
-    {
-     "id": "g8_6",
-     "no": 87,
-     "sv": "Jag vill ha pengarna tillbaka.",
-     "h": "Ja<s class=\"sil\">g</s> vill ha pengarna tillbaka.",
-     "en": "I want my money back."
-    },
-    {
-     "id": "g8_7",
-     "no": 88,
-     "sv": "Kan jag byta den?",
-     "h": "Kan ja<s class=\"sil\">g</s> byta den?",
-     "en": "Can I exchange it?"
-    },
-    {
-     "id": "g8_8",
-     "no": 89,
-     "sv": "Det här är inte okej.",
-     "h": "De<s class=\"sil\">t</s> här är inte okej.",
-     "en": "This is not OK."
-    },
-    {
-     "id": "g8_9",
-     "no": 90,
-     "sv": "Vad kan ni göra åt det?",
-     "h": "Va<s class=\"sil\">d</s> kan ni göra åt de<s class=\"sil\">t</s>?",
-     "en": "What can you do about it?"
-    }
-   ]
-  },
-  {
-   "id": "g9",
-   "n": 10,
-   "sv": "Vinna tid och binda ihop",
-   "en": "Buying time and linking ideas",
-   "items": [
-    {
-     "id": "g9_0",
-     "no": 91,
-     "sv": "Hmm, låt mig tänka.",
-     "h": "Hmm, låt mi<s class=\"sil\">g</s> tänka.",
-     "en": "Hmm, let me think."
-    },
-    {
-     "id": "g9_1",
-     "no": 92,
-     "sv": "Det är en bra fråga.",
-     "h": "De<s class=\"sil\">t</s> är en bra fråga.",
-     "en": "That's a good question."
-    },
-    {
-     "id": "g9_2",
-     "no": 93,
-     "sv": "Hur ska jag säga …",
-     "h": "Hur ska ja<s class=\"sil\">g</s> säga …",
-     "en": "How shall I put it …"
-    },
-    {
-     "id": "g9_3",
-     "no": 94,
-     "sv": "Alltså …",
-     "h": "Alltså …",
-     "en": "Well … / So …"
-    },
-    {
-     "id": "g9_4",
-     "no": 95,
-     "sv": "Först … sedan … till sist …",
-     "h": "Först … se<s class=\"sil\">da</s>n … till sist …",
-     "en": "First … then … finally …"
-    },
-    {
-     "id": "g9_5",
-     "no": 96,
-     "sv": "Dessutom …",
-     "h": "Dessutom …",
-     "en": "Moreover … / Also …"
-    },
-    {
-     "id": "g9_6",
-     "no": 97,
-     "sv": "Därför …",
-     "h": "Därför …",
-     "en": "That's why … / Therefore …"
-    },
-    {
-     "id": "g9_7",
-     "no": 98,
-     "sv": "Men i alla fall …",
-     "h": "Men i alla fall …",
-     "en": "But anyway …"
-    },
-    {
-     "id": "g9_8",
-     "no": 99,
-     "sv": "Jag menar att …",
-     "h": "Ja<s class=\"sil\">g</s> menar att …",
-     "en": "I mean that …"
-    },
-    {
-     "id": "g9_9",
-     "no": 100,
-     "sv": "Med andra ord …",
-     "h": "Me<s class=\"sil\">d</s> andra ord …",
-     "en": "In other words …"
+     "id": "y20",
+     "no": 20,
+     "sv": "Därför försöker jag äta frukt i stället för kakor.",
+     "h": "Därför försöker ja<s class=\"sil\">g</s> äta frukt i stället för kakor.",
+     "en": "That is why I try to eat fruit instead of cakes."
     }
    ]
   }

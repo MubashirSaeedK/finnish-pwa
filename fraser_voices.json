@@ -8,10 +8,5 @@
   "key": "2",
   "name": "Röst 2",
   "dir": "audio/fraser-2/"
- },
- {
-  "key": "3",
-  "name": "Röst 3",
-  "dir": "audio/fraser-3/"
  }
 ]

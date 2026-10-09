@@ -1,5 +1,5 @@
 'use strict';
-/* Fraser — 100 YKI phrases + "Min vanliga dag", with ElevenLabs audio in audio/fraser/ */
+/* Fraser — 20 YKI phrases for Berätta 1–5, ElevenLabs eleven_v4 audio in audio/fraser/ (+ fraser-2/) */
 const $ = (s, r = document) => r.querySelector(s);
 const player = $('#player');
 const KEY = 'fraser-pwa';
