@@ -2,7 +2,7 @@
  "audioDir": "audio/fraser/",
  "sections": [
   {
-   "id": "b1",
+   "id": "b01",
    "n": 1,
    "sv": "Berätta 1 · Min vardag",
    "en": "My everyday life",
@@ -87,7 +87,7 @@
    ]
   },
   {
-   "id": "b2",
+   "id": "b02",
    "n": 2,
    "sv": "Berätta 2 · Jag i trafiken",
    "en": "Me in traffic",
@@ -165,7 +165,7 @@
    ]
   },
   {
-   "id": "b3",
+   "id": "b03",
    "n": 3,
    "sv": "Berätta 3 · Platsen där jag bor och naturen",
    "en": "Where I live and nature",
@@ -229,7 +229,7 @@
    ]
   },
   {
-   "id": "b4",
+   "id": "b04",
    "n": 4,
    "sv": "Berätta 4 · Mitt välbefinnande",
    "en": "My well-being",
@@ -314,7 +314,7 @@
    ]
   },
   {
-   "id": "b5",
+   "id": "b05",
    "n": 5,
    "sv": "Berätta 5 · Hälsosam mat",
    "en": "Healthy food",
@@ -399,7 +399,7 @@
    ]
   },
   {
-   "id": "b6",
+   "id": "b06",
    "n": 6,
    "sv": "Berätta 6 · Min normala arbetsdag",
    "en": "My normal working day",
@@ -484,7 +484,7 @@
    ]
   },
   {
-   "id": "b7",
+   "id": "b07",
    "n": 7,
    "sv": "Berätta 7 · Mitt första jobb",
    "en": "My first job",
@@ -569,7 +569,7 @@
    ]
   },
   {
-   "id": "b8",
+   "id": "b08",
    "n": 8,
    "sv": "Berätta 8 · En bra semester",
    "en": "A good holiday",
@@ -654,7 +654,7 @@
    ]
   },
   {
-   "id": "b9",
+   "id": "b09",
    "n": 9,
    "sv": "Berätta 9 · Min hobby",
    "en": "My hobby",
@@ -813,6 +813,396 @@
      "sv": "I Finland äter man tidigt.",
      "h": "I Finland äter man tidi<s class=\"sil\">g</s>t.",
      "en": "In Finland people eat early."
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "n": 11,
+   "sv": "Berätta 11 · En person jag aldrig kommer att glömma",
+   "en": "A person I will never forget",
+   "items": [
+    {
+     "id": "y118",
+     "no": 106,
+     "sv": "Jag vill berätta om min gamla lärare.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om min gamla lärare.",
+     "en": "I want to tell you about my old teacher."
+    },
+    {
+     "id": "y119",
+     "no": 107,
+     "sv": "Vi träffades i skolan.",
+     "h": "Vi träffades i skolan.",
+     "en": "We met at school."
+    },
+    {
+     "id": "y120",
+     "no": 108,
+     "sv": "Jag var tolv år.",
+     "h": "Ja<s class=\"sil\">g</s> var tolv år.",
+     "en": "I was twelve."
+    },
+    {
+     "id": "y121",
+     "no": 109,
+     "sv": "Han var min lärare i matematik.",
+     "h": "Han var min lärare i matematik.",
+     "en": "He was my maths teacher."
+    },
+    {
+     "id": "y122",
+     "no": 110,
+     "sv": "Matematik var svårt för mig.",
+     "h": "Matematik var svårt för mi<s class=\"sil\">g</s>.",
+     "en": "Maths was difficult for me."
+    },
+    {
+     "id": "y123",
+     "no": 111,
+     "sv": "Men han var snäll och lugn.",
+     "h": "Men han var snäll o<s class=\"sil\">ch</s> lugn.",
+     "en": "But he was kind and calm."
+    },
+    {
+     "id": "y124",
+     "no": 112,
+     "sv": "Han förklarade allt två gånger.",
+     "h": "Han förklarade allt två gånger.",
+     "en": "He explained everything twice."
+    },
+    {
+     "id": "y125",
+     "no": 113,
+     "sv": "Efter ett år blev matematik lätt.",
+     "h": "Efter ett år blev matematik lätt.",
+     "en": "After a year maths became easy."
+    },
+    {
+     "id": "y126",
+     "no": 114,
+     "sv": "Han hjälpte mig mycket.",
+     "h": "Han <s class=\"sil\">h</s>jälpte mi<s class=\"sil\">g</s> mycket.",
+     "en": "He helped me a lot."
+    },
+    {
+     "id": "y127",
+     "no": 115,
+     "sv": "Därför kan jag inte glömma honom.",
+     "h": "Därför kan ja<s class=\"sil\">g</s> inte glömma honom.",
+     "en": "That’s why I can’t forget him."
+    },
+    {
+     "id": "y128",
+     "no": 116,
+     "sv": "Det var allt om min lärare.",
+     "h": "De<s class=\"sil\">t</s> var allt om min lärare.",
+     "en": "That was all about my teacher."
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "n": 12,
+   "sv": "Berätta 12 · Mina nordiska vänner",
+   "en": "My Nordic friends",
+   "items": [
+    {
+     "id": "y129",
+     "no": 117,
+     "sv": "Ja, jag har några finska vänner.",
+     "h": "Ja, ja<s class=\"sil\">g</s> har nå<s class=\"sil\">g</s>ra finska vänner.",
+     "en": "Yes, I have some Finnish friends."
+    },
+    {
+     "id": "y130",
+     "no": 118,
+     "sv": "Jag träffade dem på jobbet.",
+     "h": "Ja<s class=\"sil\">g</s> träffade dem på jobbet.",
+     "en": "I met them at work."
+    },
+    {
+     "id": "y131",
+     "no": 119,
+     "sv": "En vän träffade jag på gymmet.",
+     "h": "En vän träffade ja<s class=\"sil\">g</s> på gymmet.",
+     "en": "One friend I met at the gym."
+    },
+    {
+     "id": "y132",
+     "no": 120,
+     "sv": "De är lugna och snälla.",
+     "h": "De är lugna o<s class=\"sil\">ch</s> snälla.",
+     "en": "They are calm and kind."
+    },
+    {
+     "id": "y133",
+     "no": 121,
+     "sv": "Det sägs att finländare är tysta.",
+     "h": "De<s class=\"sil\">t</s> sägs att finländare är tysta.",
+     "en": "It is said that Finns are quiet."
+    },
+    {
+     "id": "y134",
+     "no": 122,
+     "sv": "Jag håller delvis med.",
+     "h": "Ja<s class=\"sil\">g</s> håller delvis me<s class=\"sil\">d</s>.",
+     "en": "I partly agree."
+    },
+    {
+     "id": "y135",
+     "no": 123,
+     "sv": "I början pratar de inte mycket.",
+     "h": "I början pratar de inte mycket.",
+     "en": "At first they don’t talk much."
+    },
+    {
+     "id": "y136",
+     "no": 124,
+     "sv": "Men sedan är de väldigt varma.",
+     "h": "Men se<s class=\"sil\">da</s>n är de väldi<s class=\"sil\">g</s>t varma.",
+     "en": "But then they are very warm."
+    },
+    {
+     "id": "y137",
+     "no": 125,
+     "sv": "Ett bra sätt att träffa nya människor är en hobby.",
+     "h": "Ett bra sätt att träffa nya människor är en hobby.",
+     "en": "A good way to meet new people is a hobby."
+    },
+    {
+     "id": "y138",
+     "no": 126,
+     "sv": "Till exempel en språkkurs eller ett gym.",
+     "h": "Till exempel en språkkurs eller ett gym.",
+     "en": "For example a language course or a gym."
+    },
+    {
+     "id": "y139",
+     "no": 127,
+     "sv": "Det var allt om mina finska vänner.",
+     "h": "De<s class=\"sil\">t</s> var allt om mina finska vänner.",
+     "en": "That was all about my Finnish friends."
+    }
+   ]
+  },
+  {
+   "id": "a01",
+   "n": 13,
+   "sv": "Åsikt 1 · Cykel eller bil?",
+   "en": "Bike or car?",
+   "items": [
+    {
+     "id": "y140",
+     "no": 128,
+     "sv": "Jag tycker att cykel är bättre i staden.",
+     "h": "Ja<s class=\"sil\">g</s> tycker att cykel är bättre i staden.",
+     "en": "I think a bike is better in the city."
+    },
+    {
+     "id": "y141",
+     "no": 129,
+     "sv": "För det första är det billigt.",
+     "h": "För de<s class=\"sil\">t</s> första är de<s class=\"sil\">t</s> billi<s class=\"sil\">g</s>t.",
+     "en": "Firstly, it is cheap."
+    },
+    {
+     "id": "y142",
+     "no": 130,
+     "sv": "För det andra är det bra för hälsan.",
+     "h": "För de<s class=\"sil\">t</s> andra är de<s class=\"sil\">t</s> bra för hälsan.",
+     "en": "Secondly, it is good for your health."
+    },
+    {
+     "id": "y143",
+     "no": 131,
+     "sv": "Men bilen är också bra.",
+     "h": "Men bilen är också bra.",
+     "en": "But the car is also good."
+    },
+    {
+     "id": "y144",
+     "no": 132,
+     "sv": "Med bil kan man åka långt.",
+     "h": "Me<s class=\"sil\">d</s> bil kan man åka långt.",
+     "en": "With a car you can travel far."
+    },
+    {
+     "id": "y145",
+     "no": 133,
+     "sv": "På vintern är det kallt och mörkt.",
+     "h": "På vintern är de<s class=\"sil\">t</s> kallt o<s class=\"sil\">ch</s> mörkt.",
+     "en": "In winter it is cold and dark."
+    },
+    {
+     "id": "y146",
+     "no": 134,
+     "sv": "Då är bilen bättre.",
+     "h": "Då är bilen bättre.",
+     "en": "Then the car is better."
+    },
+    {
+     "id": "y147",
+     "no": 135,
+     "sv": "Så jag tycker att man ska cykla när man kan.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att man ska cykla när man kan.",
+     "en": "So I think you should cycle when you can."
+    },
+    {
+     "id": "y148",
+     "no": 136,
+     "sv": "Det var min åsikt.",
+     "h": "De<s class=\"sil\">t</s> var min åsikt.",
+     "en": "That was my opinion."
+    }
+   ]
+  },
+  {
+   "id": "a02",
+   "n": 14,
+   "sv": "Åsikt 2 · Kollektivtrafiken bör vara gratis.",
+   "en": "Public transport should be free.",
+   "items": [
+    {
+     "id": "y149",
+     "no": 137,
+     "sv": "Jag tycker att bussen ska vara billig, men inte gratis.",
+     "h": "Ja<s class=\"sil\">g</s> tycker att bussen ska vara billi<s class=\"sil\">g</s>, men inte gratis.",
+     "en": "I think the bus should be cheap, but not free."
+    },
+    {
+     "id": "y150",
+     "no": 138,
+     "sv": "Just nu är det ganska dyrt.",
+     "h": "Just nu är de<s class=\"sil\">t</s> ganska dyrt.",
+     "en": "Right now it is quite expensive."
+    },
+    {
+     "id": "y151",
+     "no": 139,
+     "sv": "Ett månadskort kostar mycket.",
+     "h": "Ett månadskort kostar mycket.",
+     "en": "A monthly ticket costs a lot."
+    },
+    {
+     "id": "y152",
+     "no": 140,
+     "sv": "Billiga bussar är bra för miljön.",
+     "h": "Billi<s class=\"sil\">g</s>a bussar är bra för miljön.",
+     "en": "Cheap buses are good for the environment."
+    },
+    {
+     "id": "y153",
+     "no": 141,
+     "sv": "Då tar fler människor bussen.",
+     "h": "Då tar fler människor bussen.",
+     "en": "Then more people take the bus."
+    },
+    {
+     "id": "y154",
+     "no": 142,
+     "sv": "Det blir mindre trafik.",
+     "h": "De<s class=\"sil\">t</s> blir mindre trafik.",
+     "en": "There will be less traffic."
+    },
+    {
+     "id": "y155",
+     "no": 143,
+     "sv": "Men någon måste betala för bussarna.",
+     "h": "Men nå<s class=\"sil\">go</s>n måste betala för bussarna.",
+     "en": "But someone has to pay for the buses."
+    },
+    {
+     "id": "y156",
+     "no": 144,
+     "sv": "Gratis betyder att vi betalar med skatt.",
+     "h": "Gratis betyder att vi betalar me<s class=\"sil\">d</s> skatt.",
+     "en": "Free means that we pay with taxes."
+    },
+    {
+     "id": "y157",
+     "no": 145,
+     "sv": "Så jag tycker att billig är bättre än gratis.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att billi<s class=\"sil\">g</s> är bättre än gratis.",
+     "en": "So I think cheap is better than free."
+    }
+   ]
+  },
+  {
+   "id": "a03",
+   "n": 15,
+   "sv": "Åsikt 3 · Folk köper för mycket onödiga saker.",
+   "en": "People buy too many unnecessary things.",
+   "items": [
+    {
+     "id": "y158",
+     "no": 146,
+     "sv": "Ja, jag håller med.",
+     "h": "Ja, ja<s class=\"sil\">g</s> håller me<s class=\"sil\">d</s>.",
+     "en": "Yes, I agree."
+    },
+    {
+     "id": "y159",
+     "no": 147,
+     "sv": "Många köper för mycket saker.",
+     "h": "Många köper för mycket saker.",
+     "en": "Many people buy too many things."
+    },
+    {
+     "id": "y160",
+     "no": 148,
+     "sv": "Vi behöver mat, kläder och ett hem.",
+     "h": "Vi behöver mat, kläder o<s class=\"sil\">ch</s> ett hem.",
+     "en": "We need food, clothes and a home."
+    },
+    {
+     "id": "y161",
+     "no": 149,
+     "sv": "Mycket annat är onödigt.",
+     "h": "Mycket annat är onödi<s class=\"sil\">g</s>t.",
+     "en": "A lot of other things are unnecessary."
+    },
+    {
+     "id": "y162",
+     "no": 150,
+     "sv": "Jag har också onödiga saker.",
+     "h": "Ja<s class=\"sil\">g</s> har också onödi<s class=\"sil\">g</s>a saker.",
+     "en": "I also have unnecessary things."
+    },
+    {
+     "id": "y163",
+     "no": 151,
+     "sv": "Till exempel kläder som jag aldrig använder.",
+     "h": "Till exempel kläder som ja<s class=\"sil\">g</s> aldri<s class=\"sil\">g</s> använder.",
+     "en": "For example clothes that I never use."
+    },
+    {
+     "id": "y164",
+     "no": 152,
+     "sv": "Varför köper vi så mycket?",
+     "h": "Varför köper vi så mycket?",
+     "en": "Why do we buy so much?"
+    },
+    {
+     "id": "y165",
+     "no": 153,
+     "sv": "Reklamen är överallt.",
+     "h": "Reklamen är överallt.",
+     "en": "Advertising is everywhere."
+    },
+    {
+     "id": "y166",
+     "no": 154,
+     "sv": "Och det är lätt att handla på nätet.",
+     "h": "O<s class=\"sil\">ch</s> de<s class=\"sil\">t</s> är lätt att handla på nätet.",
+     "en": "And it is easy to shop online."
+    },
+    {
+     "id": "y167",
+     "no": 155,
+     "sv": "Så jag tycker att man ska tänka innan man köper.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att man ska tänka innan man köper.",
+     "en": "So I think you should think before you buy."
     }
    ]
   }
