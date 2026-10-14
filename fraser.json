@@ -987,70 +987,708 @@
    ]
   },
   {
-   "id": "a01",
+   "id": "b13",
    "n": 13,
+   "sv": "Berätta 13 · Jag i skolan",
+   "en": "Me at school",
+   "items": [
+    {
+     "id": "y230",
+     "no": 128,
+     "sv": "Jag vill berätta om min skoltid.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om min skoltid.",
+     "en": "I want to tell you about my school days."
+    },
+    {
+     "id": "y231",
+     "no": 129,
+     "sv": "Jag var en lugn elev.",
+     "h": "Ja<s class=\"sil\">g</s> var en lugn elev.",
+     "en": "I was a calm pupil."
+    },
+    {
+     "id": "y232",
+     "no": 130,
+     "sv": "Jag gillade matematik och idrott.",
+     "h": "Ja<s class=\"sil\">g</s> gillade matematik o<s class=\"sil\">ch</s> idrott.",
+     "en": "I liked maths and PE."
+    },
+    {
+     "id": "y233",
+     "no": 131,
+     "sv": "Jag gillade inte läxor.",
+     "h": "Ja<s class=\"sil\">g</s> gillade inte läxor.",
+     "en": "I didn’t like homework."
+    },
+    {
+     "id": "y234",
+     "no": 132,
+     "sv": "Mitt bästa minne är en skolresa.",
+     "h": "Mitt bästa minne är en skolresa.",
+     "en": "My best memory is a school trip."
+    },
+    {
+     "id": "y235",
+     "no": 133,
+     "sv": "Vi åkte till bergen.",
+     "h": "Vi åkte till bergen.",
+     "en": "We went to the mountains."
+    },
+    {
+     "id": "y236",
+     "no": 134,
+     "sv": "Det var jätteroligt.",
+     "h": "De<s class=\"sil\">t</s> var jätteroli<s class=\"sil\">g</s>t.",
+     "en": "It was great fun."
+    },
+    {
+     "id": "y237",
+     "no": 135,
+     "sv": "Min favoritlärare var min mattelärare.",
+     "h": "Min favoritlärare var min mattelärare.",
+     "en": "My favourite teacher was my maths teacher."
+    },
+    {
+     "id": "y238",
+     "no": 136,
+     "sv": "Det var allt om min skoltid.",
+     "h": "De<s class=\"sil\">t</s> var allt om min skoltid.",
+     "en": "That was all about my school days."
+    }
+   ]
+  },
+  {
+   "id": "b14",
+   "n": 14,
+   "sv": "Berätta 14 · Husdjur",
+   "en": "Pets",
+   "items": [
+    {
+     "id": "y239",
+     "no": 137,
+     "sv": "Jag har inget husdjur nu.",
+     "h": "Ja<s class=\"sil\">g</s> har inget husdjur nu.",
+     "en": "I don’t have a pet now."
+    },
+    {
+     "id": "y240",
+     "no": 138,
+     "sv": "Men när jag var liten hade vi en katt.",
+     "h": "Men när ja<s class=\"sil\">g</s> var liten hade vi en katt.",
+     "en": "But when I was little we had a cat."
+    },
+    {
+     "id": "y241",
+     "no": 139,
+     "sv": "Den var vit och mycket söt.",
+     "h": "Den var vit o<s class=\"sil\">ch</s> mycket söt.",
+     "en": "It was white and very cute."
+    },
+    {
+     "id": "y242",
+     "no": 140,
+     "sv": "Många människor har husdjur.",
+     "h": "Många människor har husdjur.",
+     "en": "Many people have pets."
+    },
+    {
+     "id": "y243",
+     "no": 141,
+     "sv": "Ett husdjur är en bra vän.",
+     "h": "Ett husdjur är en bra vän.",
+     "en": "A pet is a good friend."
+    },
+    {
+     "id": "y244",
+     "no": 142,
+     "sv": "Då är man inte ensam.",
+     "h": "Då är man inte ensam.",
+     "en": "Then you are not alone."
+    },
+    {
+     "id": "y245",
+     "no": 143,
+     "sv": "Ett barn lär sig ansvar.",
+     "h": "Ett barn lär si<s class=\"sil\">g</s> ansvar.",
+     "en": "A child learns responsibility."
+    },
+    {
+     "id": "y246",
+     "no": 144,
+     "sv": "Barnet måste ge djuret mat varje dag.",
+     "h": "Barnet måste ge <s class=\"sil\">d</s>juret mat varje da<s class=\"sil\">g</s>.",
+     "en": "The child must feed the animal every day."
+    },
+    {
+     "id": "y247",
+     "no": 145,
+     "sv": "Jag vill ha en hund i framtiden.",
+     "h": "Ja<s class=\"sil\">g</s> vill ha en hund i framtiden.",
+     "en": "I want a dog in the future."
+    },
+    {
+     "id": "y248",
+     "no": 146,
+     "sv": "Det var allt om husdjur.",
+     "h": "De<s class=\"sil\">t</s> var allt om husdjur.",
+     "en": "That was all about pets."
+    }
+   ]
+  },
+  {
+   "id": "b15",
+   "n": 15,
+   "sv": "Berätta 15 · Jag och sociala medier",
+   "en": "Me and social media",
+   "items": [
+    {
+     "id": "y249",
+     "no": 147,
+     "sv": "Jag använder Instagram och WhatsApp.",
+     "h": "Ja<s class=\"sil\">g</s> använder Instagram o<s class=\"sil\">ch</s> WhatsApp.",
+     "en": "I use Instagram and WhatsApp."
+    },
+    {
+     "id": "y250",
+     "no": 148,
+     "sv": "Jag använder dem varje dag.",
+     "h": "Ja<s class=\"sil\">g</s> använder dem varje da<s class=\"sil\">g</s>.",
+     "en": "I use them every day."
+    },
+    {
+     "id": "y251",
+     "no": 149,
+     "sv": "Kanske två timmar om dagen.",
+     "h": "Kanske två timmar om dagen.",
+     "en": "Maybe two hours a day."
+    },
+    {
+     "id": "y252",
+     "no": 150,
+     "sv": "Det bästa är att jag kan prata med min familj.",
+     "h": "De<s class=\"sil\">t</s> bästa är att ja<s class=\"sil\">g</s> kan prata me<s class=\"sil\">d</s> min familj.",
+     "en": "The best thing is that I can talk to my family."
+    },
+    {
+     "id": "y253",
+     "no": 151,
+     "sv": "De bor långt borta.",
+     "h": "De bor långt borta.",
+     "en": "They live far away."
+    },
+    {
+     "id": "y254",
+     "no": 152,
+     "sv": "Jag kan också lära mig nya saker.",
+     "h": "Ja<s class=\"sil\">g</s> kan också lära mi<s class=\"sil\">g</s> nya saker.",
+     "en": "I can also learn new things."
+    },
+    {
+     "id": "y255",
+     "no": 153,
+     "sv": "Det sämsta är att det tar mycket tid.",
+     "h": "De<s class=\"sil\">t</s> sämsta är att de<s class=\"sil\">t</s> tar mycket tid.",
+     "en": "The worst thing is that it takes a lot of time."
+    },
+    {
+     "id": "y256",
+     "no": 154,
+     "sv": "Ibland sover jag för sent.",
+     "h": "Ibland sover ja<s class=\"sil\">g</s> för sent.",
+     "en": "Sometimes I go to sleep too late."
+    },
+    {
+     "id": "y257",
+     "no": 155,
+     "sv": "Därför försöker jag använda telefonen mindre.",
+     "h": "Därför försöker ja<s class=\"sil\">g</s> använda telefonen mindre.",
+     "en": "That’s why I try to use my phone less."
+    },
+    {
+     "id": "y258",
+     "no": 156,
+     "sv": "Det var allt om mig och sociala medier.",
+     "h": "De<s class=\"sil\">t</s> var allt om mi<s class=\"sil\">g</s> o<s class=\"sil\">ch</s> sociala medier.",
+     "en": "That was all about me and social media."
+    }
+   ]
+  },
+  {
+   "id": "b16",
+   "n": 16,
+   "sv": "Berätta 16 · Det är trevligt i stugan",
+   "en": "It’s nice at the cottage",
+   "items": [
+    {
+     "id": "y259",
+     "no": 157,
+     "sv": "Jag har ingen stuga.",
+     "h": "Ja<s class=\"sil\">g</s> har ingen stuga.",
+     "en": "I don’t have a cottage."
+    },
+    {
+     "id": "y260",
+     "no": 158,
+     "sv": "Men min vän har en stuga vid en sjö.",
+     "h": "Men min vän har en stuga vid en sjö.",
+     "en": "But my friend has a cottage by a lake."
+    },
+    {
+     "id": "y261",
+     "no": 159,
+     "sv": "Den ligger två timmar från Helsingfors.",
+     "h": "Den ligger två timmar från Helsingfors.",
+     "en": "It is two hours from Helsinki."
+    },
+    {
+     "id": "y262",
+     "no": 160,
+     "sv": "Jag åker dit ibland på sommaren.",
+     "h": "Ja<s class=\"sil\">g</s> åker dit ibland på sommaren.",
+     "en": "I go there sometimes in summer."
+    },
+    {
+     "id": "y263",
+     "no": 161,
+     "sv": "Det är lugnt och tyst där.",
+     "h": "De<s class=\"sil\">t</s> är lugnt o<s class=\"sil\">ch</s> tyst där.",
+     "en": "It is calm and quiet there."
+    },
+    {
+     "id": "y264",
+     "no": 162,
+     "sv": "Vi bastar och simmar i sjön.",
+     "h": "Vi bastar o<s class=\"sil\">ch</s> simmar i sjön.",
+     "en": "We take a sauna and swim in the lake."
+    },
+    {
+     "id": "y265",
+     "no": 163,
+     "sv": "På kvällen grillar vi korv.",
+     "h": "På kvällen grillar vi korv.",
+     "en": "In the evening we grill sausages."
+    },
+    {
+     "id": "y266",
+     "no": 164,
+     "sv": "Det bästa är naturen.",
+     "h": "De<s class=\"sil\">t</s> bästa är naturen.",
+     "en": "The best thing is the nature."
+    },
+    {
+     "id": "y267",
+     "no": 165,
+     "sv": "Det sämsta är myggorna.",
+     "h": "De<s class=\"sil\">t</s> sämsta är myggorna.",
+     "en": "The worst thing is the mosquitoes."
+    },
+    {
+     "id": "y268",
+     "no": 166,
+     "sv": "Och det finns ingen dusch.",
+     "h": "O<s class=\"sil\">ch</s> de<s class=\"sil\">t</s> finns ingen dusch.",
+     "en": "And there is no shower."
+    },
+    {
+     "id": "y269",
+     "no": 167,
+     "sv": "Det var allt om stugan.",
+     "h": "De<s class=\"sil\">t</s> var allt om stugan.",
+     "en": "That was all about the cottage."
+    }
+   ]
+  },
+  {
+   "id": "b17",
+   "n": 17,
+   "sv": "Berätta 17 · Jag och mina kläder",
+   "en": "Me and my clothes",
+   "items": [
+    {
+     "id": "y270",
+     "no": 168,
+     "sv": "Jag gillar enkla kläder.",
+     "h": "Ja<s class=\"sil\">g</s> gillar enkla kläder.",
+     "en": "I like simple clothes."
+    },
+    {
+     "id": "y271",
+     "no": 169,
+     "sv": "Oftast har jag jeans och en tröja.",
+     "h": "Oftast har ja<s class=\"sil\">g</s> jeans o<s class=\"sil\">ch</s> en tröja.",
+     "en": "Most often I wear jeans and a jumper."
+    },
+    {
+     "id": "y272",
+     "no": 170,
+     "sv": "På jobbet har jag en skjorta.",
+     "h": "På jobbet har ja<s class=\"sil\">g</s> en skjorta.",
+     "en": "At work I wear a shirt."
+    },
+    {
+     "id": "y273",
+     "no": 171,
+     "sv": "Jag har ingen speciell stil.",
+     "h": "Ja<s class=\"sil\">g</s> har ingen speciell stil.",
+     "en": "I don’t have a special style."
+    },
+    {
+     "id": "y274",
+     "no": 172,
+     "sv": "Jag följer inte mode så mycket.",
+     "h": "Ja<s class=\"sil\">g</s> följer inte mode så mycket.",
+     "en": "I don’t follow fashion much."
+    },
+    {
+     "id": "y275",
+     "no": 173,
+     "sv": "Det är dyrt att köpa nya kläder hela tiden.",
+     "h": "De<s class=\"sil\">t</s> är dyrt att köpa nya kläder hela tiden.",
+     "en": "It is expensive to buy new clothes all the time."
+    },
+    {
+     "id": "y276",
+     "no": 174,
+     "sv": "Bekväma kläder är viktigast för mig.",
+     "h": "Bekväma kläder är viktigast för mi<s class=\"sil\">g</s>.",
+     "en": "Comfortable clothes are most important to me."
+    },
+    {
+     "id": "y277",
+     "no": 175,
+     "sv": "På vintern klär jag mig varmt.",
+     "h": "På vintern klär ja<s class=\"sil\">g</s> mi<s class=\"sil\">g</s> varmt.",
+     "en": "In winter I dress warmly."
+    },
+    {
+     "id": "y278",
+     "no": 176,
+     "sv": "Jag har en tjock jacka och bra skor.",
+     "h": "Ja<s class=\"sil\">g</s> har en tjock jacka o<s class=\"sil\">ch</s> bra skor.",
+     "en": "I have a thick jacket and good shoes."
+    },
+    {
+     "id": "y279",
+     "no": 177,
+     "sv": "Det var allt om mina kläder.",
+     "h": "De<s class=\"sil\">t</s> var allt om mina kläder.",
+     "en": "That was all about my clothes."
+    }
+   ]
+  },
+  {
+   "id": "b18",
+   "n": 18,
+   "sv": "Berätta 18 · Skolan i mitt hemland",
+   "en": "School in my home country",
+   "items": [
+    {
+     "id": "y280",
+     "no": 178,
+     "sv": "Jag vill berätta om skolan i mitt hemland.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om skolan i mitt hemland.",
+     "en": "I want to tell you about school in my home country."
+    },
+    {
+     "id": "y281",
+     "no": 179,
+     "sv": "Barnen börjar skolan när de är fem eller sex år.",
+     "h": "Barnen börjar skolan när de är fem eller sex år.",
+     "en": "Children start school when they are five or six."
+    },
+    {
+     "id": "y282",
+     "no": 180,
+     "sv": "Många skolor är privata.",
+     "h": "Många skolor är privata.",
+     "en": "Many schools are private."
+    },
+    {
+     "id": "y283",
+     "no": 181,
+     "sv": "Det kostar pengar.",
+     "h": "De<s class=\"sil\">t</s> kostar pengar.",
+     "en": "It costs money."
+    },
+    {
+     "id": "y284",
+     "no": 182,
+     "sv": "Klasserna är stora.",
+     "h": "Klasserna är stora.",
+     "en": "The classes are big."
+    },
+    {
+     "id": "y285",
+     "no": 183,
+     "sv": "Ofta finns det fyrtio elever i en klass.",
+     "h": "Ofta finns de<s class=\"sil\">t</s> fyrti<s class=\"sil\">o</s> elever i en klass.",
+     "en": "There are often forty pupils in a class."
+    },
+    {
+     "id": "y286",
+     "no": 184,
+     "sv": "Lärarna är stränga.",
+     "h": "Lärarna är stränga.",
+     "en": "The teachers are strict."
+    },
+    {
+     "id": "y287",
+     "no": 185,
+     "sv": "I Finland är skolan gratis.",
+     "h": "I Finland är skolan gratis.",
+     "en": "In Finland school is free."
+    },
+    {
+     "id": "y288",
+     "no": 186,
+     "sv": "Barnen får också gratis lunch.",
+     "h": "Barnen får också gratis lunch.",
+     "en": "The children also get free lunch."
+    },
+    {
+     "id": "y289",
+     "no": 187,
+     "sv": "Det tycker jag är mycket bra.",
+     "h": "De<s class=\"sil\">t</s> tycker ja<s class=\"sil\">g</s> är mycket bra.",
+     "en": "I think that is very good."
+    },
+    {
+     "id": "y290",
+     "no": 188,
+     "sv": "Det var allt om skolan i mitt hemland.",
+     "h": "De<s class=\"sil\">t</s> var allt om skolan i mitt hemland.",
+     "en": "That was all about school in my home country."
+    }
+   ]
+  },
+  {
+   "id": "b19",
+   "n": 19,
+   "sv": "Berätta 19 · En bok som är viktig för mig",
+   "en": "A book that is important to me",
+   "items": [
+    {
+     "id": "y291",
+     "no": 189,
+     "sv": "Jag vill berätta om en bok.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om en bok.",
+     "en": "I want to tell you about a book."
+    },
+    {
+     "id": "y292",
+     "no": 190,
+     "sv": "Boken heter Harry Potter och de vises sten.",
+     "h": "Boken heter Harry Potter o<s class=\"sil\">ch</s> de vises sten.",
+     "en": "The book is called Harry Potter and the Philosopher’s Stone."
+    },
+    {
+     "id": "y293",
+     "no": 191,
+     "sv": "Författaren heter Rowling.",
+     "h": "Författaren heter Rowling.",
+     "en": "The author’s name is Rowling."
+    },
+    {
+     "id": "y294",
+     "no": 192,
+     "sv": "Det är en fantasybok.",
+     "h": "De<s class=\"sil\">t</s> är en fantasybok.",
+     "en": "It is a fantasy book."
+    },
+    {
+     "id": "y295",
+     "no": 193,
+     "sv": "Den handlar om en pojke som är trollkarl.",
+     "h": "Den handlar om en pojke som är trollkarl.",
+     "en": "It is about a boy who is a wizard."
+    },
+    {
+     "id": "y296",
+     "no": 194,
+     "sv": "Jag läser den nu på svenska.",
+     "h": "Ja<s class=\"sil\">g</s> läser den nu på svenska.",
+     "en": "I am reading it in Swedish now."
+    },
+    {
+     "id": "y297",
+     "no": 195,
+     "sv": "Det är svårt, men det är roligt.",
+     "h": "De<s class=\"sil\">t</s> är svårt, men de<s class=\"sil\">t</s> är roli<s class=\"sil\">g</s>t.",
+     "en": "It is hard, but it is fun."
+    },
+    {
+     "id": "y298",
+     "no": 196,
+     "sv": "Boken är viktig för mig, eftersom den hjälper mig med svenska.",
+     "h": "Boken är vikti<s class=\"sil\">g</s> för mi<s class=\"sil\">g</s>, eftersom den <s class=\"sil\">h</s>jälper mi<s class=\"sil\">g</s> me<s class=\"sil\">d</s> svenska.",
+     "en": "The book is important to me, because it helps me with Swedish."
+    },
+    {
+     "id": "y299",
+     "no": 197,
+     "sv": "Jag lär mig nya ord varje dag.",
+     "h": "Ja<s class=\"sil\">g</s> lär mi<s class=\"sil\">g</s> nya ord varje da<s class=\"sil\">g</s>.",
+     "en": "I learn new words every day."
+    },
+    {
+     "id": "y300",
+     "no": 198,
+     "sv": "Jag rekommenderar den till alla.",
+     "h": "Ja<s class=\"sil\">g</s> rekommenderar den till alla.",
+     "en": "I recommend it to everyone."
+    },
+    {
+     "id": "y301",
+     "no": 199,
+     "sv": "Det var allt om min bok.",
+     "h": "De<s class=\"sil\">t</s> var allt om min bok.",
+     "en": "That was all about my book."
+    }
+   ]
+  },
+  {
+   "id": "b20",
+   "n": 20,
+   "sv": "Berätta 20 · Vilken typ av tidshanterare är du?",
+   "en": "How do you manage your time?",
+   "items": [
+    {
+     "id": "y302",
+     "no": 200,
+     "sv": "Jag är oftast i tid.",
+     "h": "Ja<s class=\"sil\">g</s> är oftast i tid.",
+     "en": "I am usually on time."
+    },
+    {
+     "id": "y303",
+     "no": 201,
+     "sv": "Jag tycker inte om att vara sen.",
+     "h": "Ja<s class=\"sil\">g</s> tycker inte om att vara sen.",
+     "en": "I don’t like being late."
+    },
+    {
+     "id": "y304",
+     "no": 202,
+     "sv": "Jag använder kalendern i telefonen.",
+     "h": "Ja<s class=\"sil\">g</s> använder kalendern i telefonen.",
+     "en": "I use the calendar in my phone."
+    },
+    {
+     "id": "y305",
+     "no": 203,
+     "sv": "Där skriver jag alla möten.",
+     "h": "Där skriver ja<s class=\"sil\">g</s> alla möten.",
+     "en": "There I write all my meetings."
+    },
+    {
+     "id": "y306",
+     "no": 204,
+     "sv": "På morgonen planerar jag dagen.",
+     "h": "På morgonen planerar ja<s class=\"sil\">g</s> dagen.",
+     "en": "In the morning I plan the day."
+    },
+    {
+     "id": "y307",
+     "no": 205,
+     "sv": "Jag gillar scheman, eftersom de hjälper mig.",
+     "h": "Ja<s class=\"sil\">g</s> gillar scheman, eftersom de <s class=\"sil\">h</s>jälper mi<s class=\"sil\">g</s>.",
+     "en": "I like schedules, because they help me."
+    },
+    {
+     "id": "y308",
+     "no": 206,
+     "sv": "Men ibland tar telefonen mycket tid.",
+     "h": "Men ibland tar telefonen mycket tid.",
+     "en": "But sometimes the phone takes a lot of time."
+    },
+    {
+     "id": "y309",
+     "no": 207,
+     "sv": "Då tittar jag på videor för länge.",
+     "h": "Då tittar ja<s class=\"sil\">g</s> på videor för länge.",
+     "en": "Then I watch videos for too long."
+    },
+    {
+     "id": "y310",
+     "no": 208,
+     "sv": "Jag vill använda tiden bättre.",
+     "h": "Ja<s class=\"sil\">g</s> vill använda tiden bättre.",
+     "en": "I want to use my time better."
+    },
+    {
+     "id": "y311",
+     "no": 209,
+     "sv": "Det var allt om min tid.",
+     "h": "De<s class=\"sil\">t</s> var allt om min tid.",
+     "en": "That was all about my time."
+    }
+   ]
+  },
+  {
+   "id": "a01",
+   "n": 21,
    "sv": "Åsikt 1 · Cykel eller bil?",
    "en": "Bike or car?",
    "items": [
     {
      "id": "y140",
-     "no": 128,
+     "no": 210,
      "sv": "Jag tycker att cykel är bättre i staden.",
      "h": "Ja<s class=\"sil\">g</s> tycker att cykel är bättre i staden.",
      "en": "I think a bike is better in the city."
     },
     {
      "id": "y141",
-     "no": 129,
+     "no": 211,
      "sv": "För det första är det billigt.",
      "h": "För de<s class=\"sil\">t</s> första är de<s class=\"sil\">t</s> billi<s class=\"sil\">g</s>t.",
      "en": "Firstly, it is cheap."
     },
     {
      "id": "y142",
-     "no": 130,
+     "no": 212,
      "sv": "För det andra är det bra för hälsan.",
      "h": "För de<s class=\"sil\">t</s> andra är de<s class=\"sil\">t</s> bra för hälsan.",
      "en": "Secondly, it is good for your health."
     },
     {
      "id": "y143",
-     "no": 131,
+     "no": 213,
      "sv": "Men bilen är också bra.",
      "h": "Men bilen är också bra.",
      "en": "But the car is also good."
     },
     {
      "id": "y144",
-     "no": 132,
+     "no": 214,
      "sv": "Med bil kan man åka långt.",
      "h": "Me<s class=\"sil\">d</s> bil kan man åka långt.",
      "en": "With a car you can travel far."
     },
     {
      "id": "y145",
-     "no": 133,
+     "no": 215,
      "sv": "På vintern är det kallt och mörkt.",
      "h": "På vintern är de<s class=\"sil\">t</s> kallt o<s class=\"sil\">ch</s> mörkt.",
      "en": "In winter it is cold and dark."
     },
     {
      "id": "y146",
-     "no": 134,
+     "no": 216,
      "sv": "Då är bilen bättre.",
      "h": "Då är bilen bättre.",
      "en": "Then the car is better."
     },
     {
      "id": "y147",
-     "no": 135,
+     "no": 217,
      "sv": "Så jag tycker att man ska cykla när man kan.",
      "h": "Så ja<s class=\"sil\">g</s> tycker att man ska cykla när man kan.",
      "en": "So I think you should cycle when you can."
     },
     {
      "id": "y148",
-     "no": 136,
+     "no": 218,
      "sv": "Det var min åsikt.",
      "h": "De<s class=\"sil\">t</s> var min åsikt.",
      "en": "That was my opinion."
@@ -1059,69 +1697,69 @@
   },
   {
    "id": "a02",
-   "n": 14,
+   "n": 22,
    "sv": "Åsikt 2 · Kollektivtrafiken bör vara gratis.",
    "en": "Public transport should be free.",
    "items": [
     {
      "id": "y149",
-     "no": 137,
+     "no": 219,
      "sv": "Jag tycker att bussen ska vara billig, men inte gratis.",
      "h": "Ja<s class=\"sil\">g</s> tycker att bussen ska vara billi<s class=\"sil\">g</s>, men inte gratis.",
      "en": "I think the bus should be cheap, but not free."
     },
     {
      "id": "y150",
-     "no": 138,
+     "no": 220,
      "sv": "Just nu är det ganska dyrt.",
      "h": "Just nu är de<s class=\"sil\">t</s> ganska dyrt.",
      "en": "Right now it is quite expensive."
     },
     {
      "id": "y151",
-     "no": 139,
+     "no": 221,
      "sv": "Ett månadskort kostar mycket.",
      "h": "Ett månadskort kostar mycket.",
      "en": "A monthly ticket costs a lot."
     },
     {
      "id": "y152",
-     "no": 140,
+     "no": 222,
      "sv": "Billiga bussar är bra för miljön.",
      "h": "Billi<s class=\"sil\">g</s>a bussar är bra för miljön.",
      "en": "Cheap buses are good for the environment."
     },
     {
      "id": "y153",
-     "no": 141,
+     "no": 223,
      "sv": "Då tar fler människor bussen.",
      "h": "Då tar fler människor bussen.",
      "en": "Then more people take the bus."
     },
     {
      "id": "y154",
-     "no": 142,
+     "no": 224,
      "sv": "Det blir mindre trafik.",
      "h": "De<s class=\"sil\">t</s> blir mindre trafik.",
      "en": "There will be less traffic."
     },
     {
      "id": "y155",
-     "no": 143,
+     "no": 225,
      "sv": "Men någon måste betala för bussarna.",
      "h": "Men nå<s class=\"sil\">go</s>n måste betala för bussarna.",
      "en": "But someone has to pay for the buses."
     },
     {
      "id": "y156",
-     "no": 144,
+     "no": 226,
      "sv": "Gratis betyder att vi betalar med skatt.",
      "h": "Gratis betyder att vi betalar me<s class=\"sil\">d</s> skatt.",
      "en": "Free means that we pay with taxes."
     },
     {
      "id": "y157",
-     "no": 145,
+     "no": 227,
      "sv": "Så jag tycker att billig är bättre än gratis.",
      "h": "Så ja<s class=\"sil\">g</s> tycker att billi<s class=\"sil\">g</s> är bättre än gratis.",
      "en": "So I think cheap is better than free."
@@ -1130,79 +1768,1635 @@
   },
   {
    "id": "a03",
-   "n": 15,
+   "n": 23,
    "sv": "Åsikt 3 · Folk köper för mycket onödiga saker.",
    "en": "People buy too many unnecessary things.",
    "items": [
     {
      "id": "y158",
-     "no": 146,
+     "no": 228,
      "sv": "Ja, jag håller med.",
      "h": "Ja, ja<s class=\"sil\">g</s> håller me<s class=\"sil\">d</s>.",
      "en": "Yes, I agree."
     },
     {
      "id": "y159",
-     "no": 147,
+     "no": 229,
      "sv": "Många köper för mycket saker.",
      "h": "Många köper för mycket saker.",
      "en": "Many people buy too many things."
     },
     {
      "id": "y160",
-     "no": 148,
+     "no": 230,
      "sv": "Vi behöver mat, kläder och ett hem.",
      "h": "Vi behöver mat, kläder o<s class=\"sil\">ch</s> ett hem.",
      "en": "We need food, clothes and a home."
     },
     {
      "id": "y161",
-     "no": 149,
+     "no": 231,
      "sv": "Mycket annat är onödigt.",
      "h": "Mycket annat är onödi<s class=\"sil\">g</s>t.",
      "en": "A lot of other things are unnecessary."
     },
     {
      "id": "y162",
-     "no": 150,
+     "no": 232,
      "sv": "Jag har också onödiga saker.",
      "h": "Ja<s class=\"sil\">g</s> har också onödi<s class=\"sil\">g</s>a saker.",
      "en": "I also have unnecessary things."
     },
     {
      "id": "y163",
-     "no": 151,
+     "no": 233,
      "sv": "Till exempel kläder som jag aldrig använder.",
      "h": "Till exempel kläder som ja<s class=\"sil\">g</s> aldri<s class=\"sil\">g</s> använder.",
      "en": "For example clothes that I never use."
     },
     {
      "id": "y164",
-     "no": 152,
+     "no": 234,
      "sv": "Varför köper vi så mycket?",
      "h": "Varför köper vi så mycket?",
      "en": "Why do we buy so much?"
     },
     {
      "id": "y165",
-     "no": 153,
+     "no": 235,
      "sv": "Reklamen är överallt.",
      "h": "Reklamen är överallt.",
      "en": "Advertising is everywhere."
     },
     {
      "id": "y166",
-     "no": 154,
+     "no": 236,
      "sv": "Och det är lätt att handla på nätet.",
      "h": "O<s class=\"sil\">ch</s> de<s class=\"sil\">t</s> är lätt att handla på nätet.",
      "en": "And it is easy to shop online."
     },
     {
      "id": "y167",
-     "no": 155,
+     "no": 237,
      "sv": "Så jag tycker att man ska tänka innan man köper.",
      "h": "Så ja<s class=\"sil\">g</s> tycker att man ska tänka innan man köper.",
      "en": "So I think you should think before you buy."
+    }
+   ]
+  },
+  {
+   "id": "a04",
+   "n": 24,
+   "sv": "Åsikt 4 · Ett barn under skolåldern behöver ännu inte en telefon.",
+   "en": "A child under school age doesn’t need a phone yet.",
+   "items": [
+    {
+     "id": "y312",
+     "no": 238,
+     "sv": "Små barn behöver inte en telefon.",
+     "h": "Små barn behöver inte en telefon.",
+     "en": "Small children don’t need a phone."
+    },
+    {
+     "id": "y313",
+     "no": 239,
+     "sv": "De ska leka och vara ute.",
+     "h": "De ska leka o<s class=\"sil\">ch</s> vara ute.",
+     "en": "They should play and be outside."
+    },
+    {
+     "id": "y314",
+     "no": 240,
+     "sv": "En telefon tar mycket tid.",
+     "h": "En telefon tar mycket tid.",
+     "en": "A phone takes a lot of time."
+    },
+    {
+     "id": "y315",
+     "no": 241,
+     "sv": "Barn sover sämre med telefon.",
+     "h": "Barn sover sämre me<s class=\"sil\">d</s> telefon.",
+     "en": "Children sleep worse with a phone."
+    },
+    {
+     "id": "y316",
+     "no": 242,
+     "sv": "Men en telefon kan vara bra i skolan.",
+     "h": "Men en telefon kan vara bra i skolan.",
+     "en": "But a phone can be good at school."
+    },
+    {
+     "id": "y317",
+     "no": 243,
+     "sv": "Då kan barnet ringa mamma eller pappa.",
+     "h": "Då kan barnet ringa mamma eller pappa.",
+     "en": "Then the child can call mum or dad."
+    },
+    {
+     "id": "y318",
+     "no": 244,
+     "sv": "Så jag tycker att sju år är en bra ålder.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att sju år är en bra ålder.",
+     "en": "So I think seven is a good age."
+    }
+   ]
+  },
+  {
+   "id": "a05",
+   "n": 25,
+   "sv": "Åsikt 5 · Vardagslivet i Finland är enkelt.",
+   "en": "Everyday life in Finland is easy.",
+   "items": [
+    {
+     "id": "y319",
+     "no": 245,
+     "sv": "När jag kom till Finland var allt svårt.",
+     "h": "När ja<s class=\"sil\">g</s> kom till Finland var allt svårt.",
+     "en": "When I came to Finland everything was difficult."
+    },
+    {
+     "id": "y320",
+     "no": 246,
+     "sv": "Jag förstod inte språket.",
+     "h": "Ja<s class=\"sil\">g</s> förstod inte språket.",
+     "en": "I didn’t understand the language."
+    },
+    {
+     "id": "y321",
+     "no": 247,
+     "sv": "Nu är det mycket lättare.",
+     "h": "Nu är de<s class=\"sil\">t</s> mycket lättare.",
+     "en": "Now it is much easier."
+    },
+    {
+     "id": "y322",
+     "no": 248,
+     "sv": "Allt fungerar bra här.",
+     "h": "Allt fungerar bra här.",
+     "en": "Everything works well here."
+    },
+    {
+     "id": "y323",
+     "no": 249,
+     "sv": "Bussarna går i tid.",
+     "h": "Bussarna går i tid.",
+     "en": "The buses run on time."
+    },
+    {
+     "id": "y324",
+     "no": 250,
+     "sv": "Man kan göra mycket på nätet.",
+     "h": "Man kan göra mycket på nätet.",
+     "en": "You can do a lot online."
+    },
+    {
+     "id": "y325",
+     "no": 251,
+     "sv": "Men vintern är mörk och lång.",
+     "h": "Men vintern är mörk o<s class=\"sil\">ch</s> lång.",
+     "en": "But the winter is dark and long."
+    },
+    {
+     "id": "y326",
+     "no": 252,
+     "sv": "Så jag tycker att vardagen är ganska enkel.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att vardagen är ganska enkel.",
+     "en": "So I think everyday life is quite easy."
+    }
+   ]
+  },
+  {
+   "id": "a06",
+   "n": 26,
+   "sv": "Åsikt 6 · Bästa sättet att bo",
+   "en": "The best way to live",
+   "items": [
+    {
+     "id": "y327",
+     "no": 253,
+     "sv": "Jag tycker att ett höghus är bra för mig.",
+     "h": "Ja<s class=\"sil\">g</s> tycker att ett höghus är bra för mi<s class=\"sil\">g</s>.",
+     "en": "I think a block of flats is good for me."
+    },
+    {
+     "id": "y328",
+     "no": 254,
+     "sv": "Jag bor i ett höghus nu.",
+     "h": "Ja<s class=\"sil\">g</s> bor i ett höghus nu.",
+     "en": "I live in a block of flats now."
+    },
+    {
+     "id": "y329",
+     "no": 255,
+     "sv": "Det är nära till bussen och butiken.",
+     "h": "De<s class=\"sil\">t</s> är nära till bussen o<s class=\"sil\">ch</s> butiken.",
+     "en": "It is close to the bus and the shop."
+    },
+    {
+     "id": "y330",
+     "no": 256,
+     "sv": "Jag behöver inte skotta snö.",
+     "h": "Ja<s class=\"sil\">g</s> behöver inte skotta snö.",
+     "en": "I don’t need to shovel snow."
+    },
+    {
+     "id": "y331",
+     "no": 257,
+     "sv": "Men för en familj med barn är ett radhus bättre.",
+     "h": "Men för en familj me<s class=\"sil\">d</s> barn är ett radhus bättre.",
+     "en": "But for a family with children a terraced house is better."
+    },
+    {
+     "id": "y332",
+     "no": 258,
+     "sv": "Barnen kan leka på gården.",
+     "h": "Barnen kan leka på gården.",
+     "en": "The children can play in the yard."
+    },
+    {
+     "id": "y333",
+     "no": 259,
+     "sv": "Det är bäst att äga en bostad.",
+     "h": "De<s class=\"sil\">t</s> är bäst att äga en bostad.",
+     "en": "It is best to own a home."
+    },
+    {
+     "id": "y334",
+     "no": 260,
+     "sv": "Men först är det smart att hyra.",
+     "h": "Men först är de<s class=\"sil\">t</s> smart att hyra.",
+     "en": "But first it is smart to rent."
+    }
+   ]
+  },
+  {
+   "id": "a07",
+   "n": 27,
+   "sv": "Åsikt 7 · Sociala medier förstör relationer.",
+   "en": "Social media ruins relationships.",
+   "items": [
+    {
+     "id": "y335",
+     "no": 261,
+     "sv": "Jag håller inte med.",
+     "h": "Ja<s class=\"sil\">g</s> håller inte me<s class=\"sil\">d</s>.",
+     "en": "I don’t agree."
+    },
+    {
+     "id": "y336",
+     "no": 262,
+     "sv": "Sociala medier kan vara bra.",
+     "h": "Sociala medier kan vara bra.",
+     "en": "Social media can be good."
+    },
+    {
+     "id": "y337",
+     "no": 263,
+     "sv": "Jag pratar med min familj varje dag.",
+     "h": "Ja<s class=\"sil\">g</s> pratar me<s class=\"sil\">d</s> min familj varje da<s class=\"sil\">g</s>.",
+     "en": "I talk to my family every day."
+    },
+    {
+     "id": "y338",
+     "no": 264,
+     "sv": "Men det finns också problem.",
+     "h": "Men de<s class=\"sil\">t</s> finns också problem.",
+     "en": "But there are also problems."
+    },
+    {
+     "id": "y339",
+     "no": 265,
+     "sv": "Folk tittar för mycket på telefonen.",
+     "h": "Folk tittar för mycket på telefonen.",
+     "en": "People look at their phones too much."
+    },
+    {
+     "id": "y340",
+     "no": 266,
+     "sv": "De pratar inte med varandra.",
+     "h": "De pratar inte me<s class=\"sil\">d</s> varandra.",
+     "en": "They don’t talk to each other."
+    },
+    {
+     "id": "y341",
+     "no": 267,
+     "sv": "Så jag tycker att man ska använda telefonen mindre.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att man ska använda telefonen mindre.",
+     "en": "So I think we should use our phones less."
+    }
+   ]
+  },
+  {
+   "id": "a08",
+   "n": 28,
+   "sv": "Åsikt 8 · Arbetet ska vara roligt.",
+   "en": "Work should be fun.",
+   "items": [
+    {
+     "id": "y342",
+     "no": 268,
+     "sv": "Jag tycker att arbetet ska vara roligt.",
+     "h": "Ja<s class=\"sil\">g</s> tycker att arbetet ska vara roli<s class=\"sil\">g</s>t.",
+     "en": "I think work should be fun."
+    },
+    {
+     "id": "y343",
+     "no": 269,
+     "sv": "Vi jobbar åtta timmar om dagen.",
+     "h": "Vi jobbar åtta timmar om dagen.",
+     "en": "We work eight hours a day."
+    },
+    {
+     "id": "y344",
+     "no": 270,
+     "sv": "Det är en stor del av livet.",
+     "h": "De<s class=\"sil\">t</s> är en stor del a<s class=\"sil\">v</s> livet.",
+     "en": "It is a big part of life."
+    },
+    {
+     "id": "y345",
+     "no": 271,
+     "sv": "Om jobbet är tråkigt, blir man trött.",
+     "h": "Om jobbet är tråki<s class=\"sil\">g</s>t, blir man trött.",
+     "en": "If the job is boring, you get tired."
+    },
+    {
+     "id": "y346",
+     "no": 272,
+     "sv": "Men pengar är också viktiga.",
+     "h": "Men pengar är också vikti<s class=\"sil\">g</s>a.",
+     "en": "But money is also important."
+    },
+    {
+     "id": "y347",
+     "no": 273,
+     "sv": "Alla kan inte ha ett drömjobb.",
+     "h": "Alla kan inte ha ett drömjobb.",
+     "en": "Not everyone can have a dream job."
+    },
+    {
+     "id": "y348",
+     "no": 274,
+     "sv": "Jag gillar mitt jobb, eftersom kollegorna är snälla.",
+     "h": "Ja<s class=\"sil\">g</s> gillar mitt jobb, eftersom kollegorna är snälla.",
+     "en": "I like my job, because my colleagues are kind."
+    },
+    {
+     "id": "y349",
+     "no": 275,
+     "sv": "Så jag tycker att roligt är viktigare än pengar.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att roli<s class=\"sil\">g</s>t är viktigare än pengar.",
+     "en": "So I think fun is more important than money."
+    }
+   ]
+  },
+  {
+   "id": "a09",
+   "n": 29,
+   "sv": "Åsikt 9 · Motion är ett måste, inte ett alternativ.",
+   "en": "Exercise is a must, not an option.",
+   "items": [
+    {
+     "id": "y350",
+     "no": 276,
+     "sv": "Motion är viktigt för alla.",
+     "h": "Motion är vikti<s class=\"sil\">g</s>t för alla.",
+     "en": "Exercise is important for everyone."
+    },
+    {
+     "id": "y351",
+     "no": 277,
+     "sv": "Man sover bättre och mår bättre.",
+     "h": "Man sover bättre o<s class=\"sil\">ch</s> mår bättre.",
+     "en": "You sleep better and feel better."
+    },
+    {
+     "id": "y352",
+     "no": 278,
+     "sv": "Jag tränar två gånger i veckan.",
+     "h": "Ja<s class=\"sil\">g</s> tränar två gånger i veckan.",
+     "en": "I exercise twice a week."
+    },
+    {
+     "id": "y353",
+     "no": 279,
+     "sv": "Men man kan inte tvinga människor.",
+     "h": "Men man kan inte tvinga människor.",
+     "en": "But you can’t force people."
+    },
+    {
+     "id": "y354",
+     "no": 280,
+     "sv": "Det måste vara roligt.",
+     "h": "De<s class=\"sil\">t</s> måste vara roli<s class=\"sil\">g</s>t.",
+     "en": "It has to be fun."
+    },
+    {
+     "id": "y355",
+     "no": 281,
+     "sv": "Man kan till exempel promenera eller cykla.",
+     "h": "Man kan till exempel promenera eller cykla.",
+     "en": "You can for example walk or cycle."
+    },
+    {
+     "id": "y356",
+     "no": 282,
+     "sv": "Så jag tycker att alla ska röra på sig.",
+     "h": "Så ja<s class=\"sil\">g</s> tycker att alla ska röra på si<s class=\"sil\">g</s>.",
+     "en": "So I think everyone should move."
+    }
+   ]
+  },
+  {
+   "id": "a10",
+   "n": 30,
+   "sv": "Åsikt 10 · I framtiden kommer robotar att göra människans arbete.",
+   "en": "In the future robots will do people’s work.",
+   "items": [
+    {
+     "id": "y357",
+     "no": 283,
+     "sv": "Jag tror att robotar kommer att göra en del jobb.",
+     "h": "Ja<s class=\"sil\">g</s> tror att robotar kommer att göra en del jobb.",
+     "en": "I believe robots will do some jobs."
+    },
+    {
+     "id": "y358",
+     "no": 284,
+     "sv": "Robotar kan göra tunga och enkla saker.",
+     "h": "Robotar kan göra tunga o<s class=\"sil\">ch</s> enkla saker.",
+     "en": "Robots can do heavy and simple things."
+    },
+    {
+     "id": "y359",
+     "no": 285,
+     "sv": "Till exempel i fabriker.",
+     "h": "Till exempel i fabriker.",
+     "en": "For example in factories."
+    },
+    {
+     "id": "y360",
+     "no": 286,
+     "sv": "Det är bra, eftersom det blir säkrare.",
+     "h": "De<s class=\"sil\">t</s> är bra, eftersom de<s class=\"sil\">t</s> blir säkrare.",
+     "en": "That is good, because it becomes safer."
+    },
+    {
+     "id": "y361",
+     "no": 287,
+     "sv": "Men många kan förlora sina jobb.",
+     "h": "Men många kan förlora sina jobb.",
+     "en": "But many can lose their jobs."
+    },
+    {
+     "id": "y362",
+     "no": 288,
+     "sv": "Det är ett problem.",
+     "h": "De<s class=\"sil\">t</s> är ett problem.",
+     "en": "That is a problem."
+    },
+    {
+     "id": "y363",
+     "no": 289,
+     "sv": "Robotar kan inte vara som en sjuksköterska.",
+     "h": "Robotar kan inte vara som en sjuksköterska.",
+     "en": "Robots can’t be like a nurse."
+    },
+    {
+     "id": "y364",
+     "no": 290,
+     "sv": "Människor behöver andra människor.",
+     "h": "Människor behöver andra människor.",
+     "en": "People need other people."
+    },
+    {
+     "id": "y365",
+     "no": 291,
+     "sv": "Så jag tror att vi kommer att jobba tillsammans med robotar.",
+     "h": "Så ja<s class=\"sil\">g</s> tror att vi kommer att jobba tillsammans me<s class=\"sil\">d</s> robotar.",
+     "en": "So I believe we will work together with robots."
+    }
+   ]
+  },
+  {
+   "id": "r01",
+   "n": 31,
+   "sv": "Reagera 1 · Din väns pappa har dött",
+   "en": "Comfort a friend",
+   "items": [
+    {
+     "id": "y168",
+     "no": 292,
+     "sv": "Åh nej, jag beklagar sorgen.",
+     "h": "Åh nej, ja<s class=\"sil\">g</s> beklagar sorgen.",
+     "en": "Oh no, I’m sorry for your loss."
+    },
+    {
+     "id": "y169",
+     "no": 293,
+     "sv": "Det är så tråkigt.",
+     "h": "De<s class=\"sil\">t</s> är så tråki<s class=\"sil\">g</s>t.",
+     "en": "It is so sad."
+    },
+    {
+     "id": "y170",
+     "no": 294,
+     "sv": "Jag tänker på dig.",
+     "h": "Ja<s class=\"sil\">g</s> tänker på di<s class=\"sil\">g</s>.",
+     "en": "I’m thinking of you."
+    },
+    {
+     "id": "y171",
+     "no": 295,
+     "sv": "Säg till om du behöver hjälp.",
+     "h": "Säg till om du behöver <s class=\"sil\">h</s>jälp.",
+     "en": "Tell me if you need help."
+    }
+   ]
+  },
+  {
+   "id": "r02",
+   "n": 32,
+   "sv": "Reagera 2 · En gammal vän på stan",
+   "en": "Meeting an old friend",
+   "items": [
+    {
+     "id": "y172",
+     "no": 296,
+     "sv": "Hej!",
+     "h": "Hej!",
+     "en": "Hi!"
+    },
+    {
+     "id": "y173",
+     "no": 297,
+     "sv": "Vad roligt att se dig!",
+     "h": "Va<s class=\"sil\">d</s> roli<s class=\"sil\">g</s>t att se di<s class=\"sil\">g</s>!",
+     "en": "How nice to see you!"
+    },
+    {
+     "id": "y174",
+     "no": 298,
+     "sv": "Det var länge sedan.",
+     "h": "De<s class=\"sil\">t</s> var länge se<s class=\"sil\">da</s>n.",
+     "en": "Long time no see."
+    },
+    {
+     "id": "y175",
+     "no": 299,
+     "sv": "Hur mår du?",
+     "h": "Hur mår du?",
+     "en": "How are you?"
+    },
+    {
+     "id": "y176",
+     "no": 300,
+     "sv": "Vi måste ta en kaffe snart.",
+     "h": "Vi måste ta en kaffe snart.",
+     "en": "We must have a coffee soon."
+    }
+   ]
+  },
+  {
+   "id": "r03",
+   "n": 33,
+   "sv": "Reagera 3 · Tacka nej till en inbjudan",
+   "en": "Declining an invitation",
+   "items": [
+    {
+     "id": "y177",
+     "no": 301,
+     "sv": "Tack för inbjudan, det är snällt av dig.",
+     "h": "Tack för inbjudan, de<s class=\"sil\">t</s> är snällt a<s class=\"sil\">v</s> di<s class=\"sil\">g</s>.",
+     "en": "Thanks for the invitation, that’s kind of you."
+    },
+    {
+     "id": "y178",
+     "no": 302,
+     "sv": "Men tyvärr kan jag inte komma.",
+     "h": "Men tyvärr kan ja<s class=\"sil\">g</s> inte komma.",
+     "en": "But unfortunately I can’t come."
+    },
+    {
+     "id": "y179",
+     "no": 303,
+     "sv": "Jag jobbar hela helgen.",
+     "h": "Ja<s class=\"sil\">g</s> jobbar hela helgen.",
+     "en": "I’m working all weekend."
+    },
+    {
+     "id": "y180",
+     "no": 304,
+     "sv": "Kanske en annan gång?",
+     "h": "Kanske en annan gång?",
+     "en": "Maybe another time?"
+    }
+   ]
+  },
+  {
+   "id": "r04",
+   "n": 34,
+   "sv": "Reagera 4 · Din vän har fått ett nytt jobb",
+   "en": "Congratulating a friend",
+   "items": [
+    {
+     "id": "y181",
+     "no": 305,
+     "sv": "Grattis till det nya jobbet!",
+     "h": "Grattis till de<s class=\"sil\">t</s> nya jobbet!",
+     "en": "Congratulations on the new job!"
+    },
+    {
+     "id": "y182",
+     "no": 306,
+     "sv": "Vad roligt för dig!",
+     "h": "Va<s class=\"sil\">d</s> roli<s class=\"sil\">g</s>t för di<s class=\"sil\">g</s>!",
+     "en": "How nice for you!"
+    },
+    {
+     "id": "y183",
+     "no": 307,
+     "sv": "Jag är glad för din skull.",
+     "h": "Ja<s class=\"sil\">g</s> är glad för din skull.",
+     "en": "I’m happy for you."
+    },
+    {
+     "id": "y184",
+     "no": 308,
+     "sv": "Vi måste fira det!",
+     "h": "Vi måste fira de<s class=\"sil\">t</s>!",
+     "en": "We must celebrate it!"
+    }
+   ]
+  },
+  {
+   "id": "r05",
+   "n": 35,
+   "sv": "Reagera 5 · Smutsiga bord på caféet",
+   "en": "Complaining in a café",
+   "items": [
+    {
+     "id": "y185",
+     "no": 309,
+     "sv": "Ursäkta, alla bord är smutsiga.",
+     "h": "Ursäkta, alla bord är smutsi<s class=\"sil\">g</s>a.",
+     "en": "Excuse me, all the tables are dirty."
+    },
+    {
+     "id": "y186",
+     "no": 310,
+     "sv": "Kan du torka ett bord, tack?",
+     "h": "Kan du torka ett bord, tack?",
+     "en": "Can you wipe a table, please?"
+    },
+    {
+     "id": "y187",
+     "no": 311,
+     "sv": "Jag vill gärna sitta här.",
+     "h": "Ja<s class=\"sil\">g</s> vill gärna sitta här.",
+     "en": "I would like to sit here."
+    },
+    {
+     "id": "y188",
+     "no": 312,
+     "sv": "Tack så mycket.",
+     "h": "Tack så mycket.",
+     "en": "Thank you very much."
+    }
+   ]
+  },
+  {
+   "id": "r06",
+   "n": 36,
+   "sv": "Reagera 6 · Långsam service på restaurangen",
+   "en": "Slow service",
+   "items": [
+    {
+     "id": "y189",
+     "no": 313,
+     "sv": "Ursäkta, vi har väntat länge.",
+     "h": "Ursäkta, vi har väntat länge.",
+     "en": "Excuse me, we have waited a long time."
+    },
+    {
+     "id": "y190",
+     "no": 314,
+     "sv": "Vi har väntat i fyrtio minuter.",
+     "h": "Vi har väntat i fyrti<s class=\"sil\">o</s> minuter.",
+     "en": "We have waited for forty minutes."
+    },
+    {
+     "id": "y191",
+     "no": 315,
+     "sv": "Kan du kolla vår mat?",
+     "h": "Kan du kolla vår mat?",
+     "en": "Can you check our food?"
+    },
+    {
+     "id": "y192",
+     "no": 316,
+     "sv": "Vi har lite bråttom.",
+     "h": "Vi har lite bråttom.",
+     "en": "We’re in a bit of a hurry."
+    }
+   ]
+  },
+  {
+   "id": "r07",
+   "n": 37,
+   "sv": "Reagera 7 · Datorn är trasig",
+   "en": "Calling about a broken laptop",
+   "items": [
+    {
+     "id": "y193",
+     "no": 317,
+     "sv": "Hej, jag heter Mubas.",
+     "h": "Hej, ja<s class=\"sil\">g</s> heter Mubas.",
+     "en": "Hi, my name is Mubas."
+    },
+    {
+     "id": "y194",
+     "no": 318,
+     "sv": "Jag köpte en dator hos er.",
+     "h": "Ja<s class=\"sil\">g</s> köpte en dator hos er.",
+     "en": "I bought a computer from you."
+    },
+    {
+     "id": "y195",
+     "no": 319,
+     "sv": "Den fungerar inte.",
+     "h": "Den fungerar inte.",
+     "en": "It doesn’t work."
+    },
+    {
+     "id": "y196",
+     "no": 320,
+     "sv": "Garantin gäller fortfarande.",
+     "h": "Garantin gäller fortfarande.",
+     "en": "The warranty is still valid."
+    },
+    {
+     "id": "y197",
+     "no": 321,
+     "sv": "Kan jag lämna den till er?",
+     "h": "Kan ja<s class=\"sil\">g</s> lämna den till er?",
+     "en": "Can I bring it to you?"
+    }
+   ]
+  },
+  {
+   "id": "r08",
+   "n": 38,
+   "sv": "Reagera 8 · På bussen",
+   "en": "Asking the bus driver",
+   "items": [
+    {
+     "id": "y198",
+     "no": 322,
+     "sv": "Ursäkta, jag vill åka till sjukhuset.",
+     "h": "Ursäkta, ja<s class=\"sil\">g</s> vill åka till sjukhuset.",
+     "en": "Excuse me, I want to go to the hospital."
+    },
+    {
+     "id": "y199",
+     "no": 323,
+     "sv": "Var ska jag kliva av?",
+     "h": "Var ska ja<s class=\"sil\">g</s> kliva a<s class=\"sil\">v</s>?",
+     "en": "Where should I get off?"
+    },
+    {
+     "id": "y200",
+     "no": 324,
+     "sv": "Kan du säga till när vi är där?",
+     "h": "Kan du säga till när vi är där?",
+     "en": "Can you tell me when we are there?"
+    },
+    {
+     "id": "y201",
+     "no": 325,
+     "sv": "Tack så mycket!",
+     "h": "Tack så mycket!",
+     "en": "Thank you very much!"
+    }
+   ]
+  },
+  {
+   "id": "r09",
+   "n": 39,
+   "sv": "Reagera 9 · Du är sjuk och kan inte komma",
+   "en": "Cancelling a meeting",
+   "items": [
+    {
+     "id": "y202",
+     "no": 326,
+     "sv": "Hej, det är Mubas.",
+     "h": "Hej, de<s class=\"sil\">t</s> är Mubas.",
+     "en": "Hi, it’s Mubas."
+    },
+    {
+     "id": "y203",
+     "no": 327,
+     "sv": "Tyvärr är jag sjuk i dag.",
+     "h": "Tyvärr är ja<s class=\"sil\">g</s> sjuk i da<s class=\"sil\">g</s>.",
+     "en": "Unfortunately I’m ill today."
+    },
+    {
+     "id": "y204",
+     "no": 328,
+     "sv": "Jag har feber.",
+     "h": "Ja<s class=\"sil\">g</s> har feber.",
+     "en": "I have a fever."
+    },
+    {
+     "id": "y205",
+     "no": 329,
+     "sv": "Jag kan inte träffa dig.",
+     "h": "Ja<s class=\"sil\">g</s> kan inte träffa di<s class=\"sil\">g</s>.",
+     "en": "I can’t meet you."
+    },
+    {
+     "id": "y206",
+     "no": 330,
+     "sv": "Kan vi ses nästa vecka?",
+     "h": "Kan vi ses nästa vecka?",
+     "en": "Can we meet next week?"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "n": 40,
+   "sv": "Reagera 10 · Hämta barnet från dagis",
+   "en": "Asking a friend for help",
+   "items": [
+    {
+     "id": "y207",
+     "no": 331,
+     "sv": "Jag har feber i dag.",
+     "h": "Ja<s class=\"sil\">g</s> har feber i da<s class=\"sil\">g</s>.",
+     "en": "I have a fever today."
+    },
+    {
+     "id": "y208",
+     "no": 332,
+     "sv": "Kan du hämta mitt barn från dagis?",
+     "h": "Kan du hämta mitt barn från dagis?",
+     "en": "Can you pick up my child from daycare?"
+    },
+    {
+     "id": "y209",
+     "no": 333,
+     "sv": "Dagis stänger klockan fem.",
+     "h": "Dagis stänger klockan fem.",
+     "en": "Daycare closes at five."
+    },
+    {
+     "id": "y210",
+     "no": 334,
+     "sv": "Tack, du är snäll!",
+     "h": "Tack, du är snäll!",
+     "en": "Thanks, you’re kind!"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "n": 41,
+   "sv": "Reagera 11 · En bilolycka",
+   "en": "Telling the police what happened",
+   "items": [
+    {
+     "id": "y211",
+     "no": 335,
+     "sv": "Jag såg allt.",
+     "h": "Ja<s class=\"sil\">g</s> såg allt.",
+     "en": "I saw everything."
+    },
+    {
+     "id": "y212",
+     "no": 336,
+     "sv": "En bil körde mot rött ljus.",
+     "h": "En bil körde mot rött <s class=\"sil\">l</s>jus.",
+     "en": "A car drove through a red light."
+    },
+    {
+     "id": "y213",
+     "no": 337,
+     "sv": "Den körde på en annan bil.",
+     "h": "Den körde på en annan bil.",
+     "en": "It hit another car."
+    },
+    {
+     "id": "y214",
+     "no": 338,
+     "sv": "Ingen blev skadad, tror jag.",
+     "h": "Ingen blev skadad, tror ja<s class=\"sil\">g</s>.",
+     "en": "Nobody was hurt, I think."
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "n": 42,
+   "sv": "Reagera 12 · Boka ett mötesrum",
+   "en": "Booking a meeting room",
+   "items": [
+    {
+     "id": "y215",
+     "no": 339,
+     "sv": "Hej, jag vill boka ett mötesrum.",
+     "h": "Hej, ja<s class=\"sil\">g</s> vill boka ett mötesrum.",
+     "en": "Hi, I want to book a meeting room."
+    },
+    {
+     "id": "y216",
+     "no": 340,
+     "sv": "Vi är tio personer.",
+     "h": "Vi är tio personer.",
+     "en": "We are ten people."
+    },
+    {
+     "id": "y217",
+     "no": 341,
+     "sv": "Vi behöver rummet på torsdag.",
+     "h": "Vi behöver rummet på torsdag.",
+     "en": "We need the room on Thursday."
+    },
+    {
+     "id": "y218",
+     "no": 342,
+     "sv": "Från klockan nio till elva.",
+     "h": "Från klockan nio till elva.",
+     "en": "From nine to eleven."
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "n": 43,
+   "sv": "Reagera 13 · Gymkortet fungerar inte",
+   "en": "Reporting a problem at the gym",
+   "items": [
+    {
+     "id": "y219",
+     "no": 343,
+     "sv": "Hej, mitt kort fungerade inte i morse.",
+     "h": "Hej, mitt kort fungerade inte i morse.",
+     "en": "Hi, my card didn’t work this morning."
+    },
+    {
+     "id": "y220",
+     "no": 344,
+     "sv": "Jag kom inte in på gymmet.",
+     "h": "Ja<s class=\"sil\">g</s> kom inte in på gymmet.",
+     "en": "I couldn’t get into the gym."
+    },
+    {
+     "id": "y221",
+     "no": 345,
+     "sv": "Kan ni kolla kortet?",
+     "h": "Kan ni kolla kortet?",
+     "en": "Can you check the card?"
+    },
+    {
+     "id": "y222",
+     "no": 346,
+     "sv": "Tack.",
+     "h": "Tack.",
+     "en": "Thanks."
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "n": 44,
+   "sv": "Reagera 14 · Någon sitter på din plats",
+   "en": "Someone is in your seat",
+   "items": [
+    {
+     "id": "y223",
+     "no": 347,
+     "sv": "Ursäkta, jag tror att det är min plats.",
+     "h": "Ursäkta, ja<s class=\"sil\">g</s> tror att de<s class=\"sil\">t</s> är min plats.",
+     "en": "Excuse me, I think this is my seat."
+    },
+    {
+     "id": "y224",
+     "no": 348,
+     "sv": "Här är min biljett.",
+     "h": "Här är min biljett.",
+     "en": "Here is my ticket."
+    },
+    {
+     "id": "y225",
+     "no": 349,
+     "sv": "Plats nummer tolv.",
+     "h": "Plats nummer tolv.",
+     "en": "Seat number twelve."
+    },
+    {
+     "id": "y226",
+     "no": 350,
+     "sv": "Kan du kolla din biljett?",
+     "h": "Kan du kolla din biljett?",
+     "en": "Can you check your ticket?"
+    }
+   ]
+  },
+  {
+   "id": "r15",
+   "n": 45,
+   "sv": "Reagera 15 · Hög musik på bussen",
+   "en": "Loud music on the bus",
+   "items": [
+    {
+     "id": "y227",
+     "no": 351,
+     "sv": "Ursäkta, kan du sänka musiken?",
+     "h": "Ursäkta, kan du sänka musiken?",
+     "en": "Excuse me, can you turn the music down?"
+    },
+    {
+     "id": "y228",
+     "no": 352,
+     "sv": "Jag har ont i huvudet.",
+     "h": "Ja<s class=\"sil\">g</s> har ont i huvudet.",
+     "en": "I have a headache."
+    },
+    {
+     "id": "y229",
+     "no": 353,
+     "sv": "Du kan använda hörlurar.",
+     "h": "Du kan använda hörlurar.",
+     "en": "You can use headphones."
+    }
+   ]
+  },
+  {
+   "id": "r16",
+   "n": 46,
+   "sv": "Reagera 16 · Din vän är allvarligt sjuk",
+   "en": "A friend is seriously ill",
+   "items": [
+    {
+     "id": "y366",
+     "no": 354,
+     "sv": "Åh nej, vad tråkigt att höra.",
+     "h": "Åh nej, va<s class=\"sil\">d</s> tråki<s class=\"sil\">g</s>t att höra.",
+     "en": "Oh no, how sad to hear."
+    },
+    {
+     "id": "y367",
+     "no": 355,
+     "sv": "Jag är så ledsen.",
+     "h": "Ja<s class=\"sil\">g</s> är så ledsen.",
+     "en": "I am so sorry."
+    },
+    {
+     "id": "y368",
+     "no": 356,
+     "sv": "Hur mår du nu?",
+     "h": "Hur mår du nu?",
+     "en": "How are you now?"
+    },
+    {
+     "id": "y369",
+     "no": 357,
+     "sv": "Jag kan komma och hälsa på.",
+     "h": "Ja<s class=\"sil\">g</s> kan komma o<s class=\"sil\">ch</s> hälsa på.",
+     "en": "I can come and visit."
+    }
+   ]
+  },
+  {
+   "id": "r17",
+   "n": 47,
+   "sv": "Reagera 17 · Din väninna ska få barn",
+   "en": "A friend is expecting a baby",
+   "items": [
+    {
+     "id": "y370",
+     "no": 358,
+     "sv": "Grattis!",
+     "h": "Grattis!",
+     "en": "Congratulations!"
+    },
+    {
+     "id": "y371",
+     "no": 359,
+     "sv": "Vad roligt!",
+     "h": "Va<s class=\"sil\">d</s> roli<s class=\"sil\">g</s>t!",
+     "en": "How nice!"
+    },
+    {
+     "id": "y372",
+     "no": 360,
+     "sv": "När ska barnet komma?",
+     "h": "När ska barnet komma?",
+     "en": "When is the baby due?"
+    },
+    {
+     "id": "y373",
+     "no": 361,
+     "sv": "Ta hand om dig!",
+     "h": "Ta hand om di<s class=\"sil\">g</s>!",
+     "en": "Take care!"
+    }
+   ]
+  },
+  {
+   "id": "r18",
+   "n": 48,
+   "sv": "Reagera 18 · Bilen har gått sönder",
+   "en": "Asking a friend for a lift",
+   "items": [
+    {
+     "id": "y374",
+     "no": 362,
+     "sv": "Min bil har gått sönder.",
+     "h": "Min bil har gått sönder.",
+     "en": "My car has broken down."
+    },
+    {
+     "id": "y375",
+     "no": 363,
+     "sv": "Kan du skjutsa mig till jobbet i morgon?",
+     "h": "Kan du skjutsa mi<s class=\"sil\">g</s> till jobbet i morgon?",
+     "en": "Can you give me a lift to work tomorrow?"
+    }
+   ]
+  },
+  {
+   "id": "r19",
+   "n": 49,
+   "sv": "Reagera 19 · Delar saknas i paketet",
+   "en": "Missing parts",
+   "items": [
+    {
+     "id": "y376",
+     "no": 364,
+     "sv": "Hej, jag köpte en hylla hos er i går.",
+     "h": "Hej, ja<s class=\"sil\">g</s> köpte en hylla hos er i går.",
+     "en": "Hi, I bought a shelf from you yesterday."
+    },
+    {
+     "id": "y377",
+     "no": 365,
+     "sv": "Men alla delar finns inte i paketet.",
+     "h": "Men alla delar finns inte i paketet.",
+     "en": "But not all the parts are in the package."
+    },
+    {
+     "id": "y378",
+     "no": 366,
+     "sv": "Två skruvar saknas.",
+     "h": "Två skruvar saknas.",
+     "en": "Two screws are missing."
+    },
+    {
+     "id": "y379",
+     "no": 367,
+     "sv": "Kan ni skicka delarna till mig?",
+     "h": "Kan ni skicka delarna till mi<s class=\"sil\">g</s>?",
+     "en": "Can you send the parts to me?"
+    }
+   ]
+  },
+  {
+   "id": "r20",
+   "n": 50,
+   "sv": "Reagera 20 · Blommor i present",
+   "en": "Buying flowers",
+   "items": [
+    {
+     "id": "y380",
+     "no": 368,
+     "sv": "Hej, jag vill köpa blommor.",
+     "h": "Hej, ja<s class=\"sil\">g</s> vill köpa blommor.",
+     "en": "Hi, I want to buy flowers."
+    },
+    {
+     "id": "y381",
+     "no": 369,
+     "sv": "De är till min kollega.",
+     "h": "De är till min kollega.",
+     "en": "They are for my colleague."
+    },
+    {
+     "id": "y382",
+     "no": 370,
+     "sv": "Hon fyller femtio år.",
+     "h": "Hon fyller femti<s class=\"sil\">o</s> år.",
+     "en": "She is turning fifty."
+    },
+    {
+     "id": "y383",
+     "no": 371,
+     "sv": "Jag vill ha något färgglatt.",
+     "h": "Ja<s class=\"sil\">g</s> vill ha nå<s class=\"sil\">go</s>t färgglatt.",
+     "en": "I would like something colourful."
+    },
+    {
+     "id": "y384",
+     "no": 372,
+     "sv": "Vad kostar de här?",
+     "h": "Va<s class=\"sil\">d</s> kostar de här?",
+     "en": "How much are these?"
+    }
+   ]
+  },
+  {
+   "id": "r21",
+   "n": 51,
+   "sv": "Reagera 21 · En begagnad tvättmaskin",
+   "en": "Calling about a used washing machine",
+   "items": [
+    {
+     "id": "y385",
+     "no": 373,
+     "sv": "Hej, jag ringer om tvättmaskinen.",
+     "h": "Hej, ja<s class=\"sil\">g</s> ringer om tvättmaskinen.",
+     "en": "Hi, I’m calling about the washing machine."
+    },
+    {
+     "id": "y386",
+     "no": 374,
+     "sv": "Är den fortfarande till salu?",
+     "h": "Är den fortfarande till salu?",
+     "en": "Is it still for sale?"
+    },
+    {
+     "id": "y387",
+     "no": 375,
+     "sv": "Hur gammal är den?",
+     "h": "Hur gammal är den?",
+     "en": "How old is it?"
+    },
+    {
+     "id": "y388",
+     "no": 376,
+     "sv": "Fungerar den bra?",
+     "h": "Fungerar den bra?",
+     "en": "Does it work well?"
+    },
+    {
+     "id": "y389",
+     "no": 377,
+     "sv": "Kan jag komma och titta på den i kväll?",
+     "h": "Kan ja<s class=\"sil\">g</s> komma o<s class=\"sil\">ch</s> titta på den i kväll?",
+     "en": "Can I come and look at it tonight?"
+    }
+   ]
+  },
+  {
+   "id": "r22",
+   "n": 52,
+   "sv": "Reagera 22 · Vägen hem till dig",
+   "en": "Giving directions",
+   "items": [
+    {
+     "id": "y390",
+     "no": 378,
+     "sv": "Du kan ta buss nummer tjugo från centrum.",
+     "h": "Du kan ta buss nummer tjugo från centrum.",
+     "en": "You can take bus number twenty from the centre."
+    },
+    {
+     "id": "y391",
+     "no": 379,
+     "sv": "Den går var tionde minut.",
+     "h": "Den går var tionde minut.",
+     "en": "It goes every ten minutes."
+    },
+    {
+     "id": "y392",
+     "no": 380,
+     "sv": "Kliv av vid Solvägen.",
+     "h": "Kliv a<s class=\"sil\">v</s> vid Solvägen.",
+     "en": "Get off at Solvägen."
+    },
+    {
+     "id": "y393",
+     "no": 381,
+     "sv": "Sedan går du två minuter till höger.",
+     "h": "Se<s class=\"sil\">da</s>n går du två minuter till höger.",
+     "en": "Then you walk two minutes to the right."
+    },
+    {
+     "id": "y394",
+     "no": 382,
+     "sv": "Mitt hus är det gula huset.",
+     "h": "Mitt hus är de<s class=\"sil\">t</s> gula huset.",
+     "en": "My house is the yellow house."
+    }
+   ]
+  },
+  {
+   "id": "r23",
+   "n": 53,
+   "sv": "Reagera 23 · Hjälp från apoteket",
+   "en": "Asking for help from the pharmacy",
+   "items": [
+    {
+     "id": "y395",
+     "no": 383,
+     "sv": "Jag är sjuk i dag.",
+     "h": "Ja<s class=\"sil\">g</s> är sjuk i da<s class=\"sil\">g</s>.",
+     "en": "I am ill today."
+    },
+    {
+     "id": "y396",
+     "no": 384,
+     "sv": "Kan du gå till apoteket åt mig?",
+     "h": "Kan du gå till apoteket åt mi<s class=\"sil\">g</s>?",
+     "en": "Can you go to the pharmacy for me?"
+    },
+    {
+     "id": "y397",
+     "no": 385,
+     "sv": "Jag behöver medicin mot feber.",
+     "h": "Ja<s class=\"sil\">g</s> behöver medicin mot feber.",
+     "en": "I need medicine for a fever."
+    },
+    {
+     "id": "y398",
+     "no": 386,
+     "sv": "Jag betalar dig sedan.",
+     "h": "Ja<s class=\"sil\">g</s> betalar di<s class=\"sil\">g</s> se<s class=\"sil\">da</s>n.",
+     "en": "I’ll pay you back later."
+    },
+    {
+     "id": "y399",
+     "no": 387,
+     "sv": "Tack!",
+     "h": "Tack!",
+     "en": "Thanks!"
+    }
+   ]
+  },
+  {
+   "id": "r24",
+   "n": 54,
+   "sv": "Reagera 24 · Ett träningsprogram",
+   "en": "Asking for a training programme",
+   "items": [
+    {
+     "id": "y400",
+     "no": 388,
+     "sv": "Hej, jag vill ha ett träningsprogram.",
+     "h": "Hej, ja<s class=\"sil\">g</s> vill ha ett träningsprogram.",
+     "en": "Hi, I would like a training programme."
+    },
+    {
+     "id": "y401",
+     "no": 389,
+     "sv": "Jag vill gå ner i vikt.",
+     "h": "Ja<s class=\"sil\">g</s> vill gå ner i vikt.",
+     "en": "I want to lose weight."
+    },
+    {
+     "id": "y402",
+     "no": 390,
+     "sv": "Kan ni också hjälpa mig med maten?",
+     "h": "Kan ni också <s class=\"sil\">h</s>jälpa mi<s class=\"sil\">g</s> me<s class=\"sil\">d</s> maten?",
+     "en": "Can you also help me with food?"
+    },
+    {
+     "id": "y403",
+     "no": 391,
+     "sv": "Jag kan träna tre gånger i veckan.",
+     "h": "Ja<s class=\"sil\">g</s> kan träna tre gånger i veckan.",
+     "en": "I can train three times a week."
+    },
+    {
+     "id": "y404",
+     "no": 392,
+     "sv": "Vad kostar det?",
+     "h": "Va<s class=\"sil\">d</s> kostar de<s class=\"sil\">t</s>?",
+     "en": "How much does it cost?"
+    }
+   ]
+  },
+  {
+   "id": "r25",
+   "n": 55,
+   "sv": "Reagera 25 · En ny kollega",
+   "en": "Helping a new colleague",
+   "items": [
+    {
+     "id": "y405",
+     "no": 393,
+     "sv": "Hej och välkommen!",
+     "h": "Hej o<s class=\"sil\">ch</s> välkommen!",
+     "en": "Hi and welcome!"
+    },
+    {
+     "id": "y406",
+     "no": 394,
+     "sv": "Jag heter Mubas.",
+     "h": "Ja<s class=\"sil\">g</s> heter Mubas.",
+     "en": "My name is Mubas."
+    },
+    {
+     "id": "y407",
+     "no": 395,
+     "sv": "Jag kan visa dig allt.",
+     "h": "Ja<s class=\"sil\">g</s> kan visa di<s class=\"sil\">g</s> allt.",
+     "en": "I can show you everything."
+    },
+    {
+     "id": "y408",
+     "no": 396,
+     "sv": "Här är ditt skrivbord.",
+     "h": "Här är ditt skrivbord.",
+     "en": "Here is your desk."
+    },
+    {
+     "id": "y409",
+     "no": 397,
+     "sv": "Fråga mig om du behöver hjälp.",
+     "h": "Fråga mi<s class=\"sil\">g</s> om du behöver <s class=\"sil\">h</s>jälp.",
+     "en": "Ask me if you need help."
+    }
+   ]
+  },
+  {
+   "id": "r26",
+   "n": 56,
+   "sv": "Reagera 26 · Kollegan går på mammaledighet",
+   "en": "A colleague goes on maternity leave",
+   "items": [
+    {
+     "id": "y410",
+     "no": 398,
+     "sv": "Vi kommer att sakna dig.",
+     "h": "Vi kommer att sakna di<s class=\"sil\">g</s>.",
+     "en": "We will miss you."
+    },
+    {
+     "id": "y411",
+     "no": 399,
+     "sv": "Lycka till med barnet!",
+     "h": "Lycka till me<s class=\"sil\">d</s> barnet!",
+     "en": "Good luck with the baby!"
+    }
+   ]
+  },
+  {
+   "id": "r27",
+   "n": 57,
+   "sv": "Reagera 27 · Din vän har fått sparken",
+   "en": "A friend has been fired",
+   "items": [
+    {
+     "id": "y412",
+     "no": 400,
+     "sv": "Åh nej, vad tråkigt.",
+     "h": "Åh nej, va<s class=\"sil\">d</s> tråki<s class=\"sil\">g</s>t.",
+     "en": "Oh no, how sad."
+    },
+    {
+     "id": "y413",
+     "no": 401,
+     "sv": "Det är inte ditt fel.",
+     "h": "De<s class=\"sil\">t</s> är inte ditt fel.",
+     "en": "It is not your fault."
+    },
+    {
+     "id": "y414",
+     "no": 402,
+     "sv": "Du hittar säkert ett nytt jobb snart.",
+     "h": "Du hittar säkert ett nytt jobb snart.",
+     "en": "You will surely find a new job soon."
+    },
+    {
+     "id": "y415",
+     "no": 403,
+     "sv": "Kan jag hjälpa dig?",
+     "h": "Kan ja<s class=\"sil\">g</s> <s class=\"sil\">h</s>jälpa di<s class=\"sil\">g</s>?",
+     "en": "Can I help you?"
+    },
+    {
+     "id": "y416",
+     "no": 404,
+     "sv": "Vi kan ta en kaffe och prata.",
+     "h": "Vi kan ta en kaffe o<s class=\"sil\">ch</s> prata.",
+     "en": "We can have a coffee and talk."
+    }
+   ]
+  },
+  {
+   "id": "r28",
+   "n": 58,
+   "sv": "Reagera 28 · En trasig biblioteksbok",
+   "en": "Returning a damaged library book",
+   "items": [
+    {
+     "id": "y417",
+     "no": 405,
+     "sv": "Hej, jag vill lämna tillbaka den här boken.",
+     "h": "Hej, ja<s class=\"sil\">g</s> vill lämna tillbaka den här boken.",
+     "en": "Hi, I want to return this book."
+    },
+    {
+     "id": "y418",
+     "no": 406,
+     "sv": "Tyvärr är den trasig.",
+     "h": "Tyvärr är den trasi<s class=\"sil\">g</s>.",
+     "en": "Unfortunately it is damaged."
+    },
+    {
+     "id": "y419",
+     "no": 407,
+     "sv": "Min son spillde juice på den.",
+     "h": "Min son spillde juice på den.",
+     "en": "My son spilled juice on it."
+    },
+    {
+     "id": "y420",
+     "no": 408,
+     "sv": "Jag är verkligen ledsen.",
+     "h": "Ja<s class=\"sil\">g</s> är verkli<s class=\"sil\">g</s>en ledsen.",
+     "en": "I am really sorry."
+    },
+    {
+     "id": "y421",
+     "no": 409,
+     "sv": "Måste jag betala för boken?",
+     "h": "Måste ja<s class=\"sil\">g</s> betala för boken?",
+     "en": "Do I have to pay for the book?"
+    }
+   ]
+  },
+  {
+   "id": "r29",
+   "n": 59,
+   "sv": "Reagera 29 · Din vän tittar bara på telefonen",
+   "en": "A friend is always on the phone",
+   "items": [
+    {
+     "id": "y422",
+     "no": 410,
+     "sv": "Du, kan du lägga bort telefonen?",
+     "h": "Du, kan du lägga bort telefonen?",
+     "en": "Hey, can you put the phone away?"
+    },
+    {
+     "id": "y423",
+     "no": 411,
+     "sv": "Vi träffas inte så ofta.",
+     "h": "Vi träffas inte så ofta.",
+     "en": "We don’t meet that often."
+    },
+    {
+     "id": "y424",
+     "no": 412,
+     "sv": "Jag vill gärna prata med dig.",
+     "h": "Ja<s class=\"sil\">g</s> vill gärna prata me<s class=\"sil\">d</s> di<s class=\"sil\">g</s>.",
+     "en": "I would like to talk to you."
+    },
+    {
+     "id": "y425",
+     "no": 413,
+     "sv": "Hur har du det?",
+     "h": "Hur har du de<s class=\"sil\">t</s>?",
+     "en": "How are you doing?"
+    }
+   ]
+  },
+  {
+   "id": "r30",
+   "n": 60,
+   "sv": "Reagera 30 · Boka en taxi till flygplatsen",
+   "en": "Booking a taxi to the airport",
+   "items": [
+    {
+     "id": "y426",
+     "no": 414,
+     "sv": "Hej, kan du hjälpa mig att boka en taxi?",
+     "h": "Hej, kan du <s class=\"sil\">h</s>jälpa mi<s class=\"sil\">g</s> att boka en taxi?",
+     "en": "Hi, can you help me book a taxi?"
+    },
+    {
+     "id": "y427",
+     "no": 415,
+     "sv": "Jag ska till flygplatsen i morgon.",
+     "h": "Ja<s class=\"sil\">g</s> ska till flygplatsen i morgon.",
+     "en": "I’m going to the airport tomorrow."
+    },
+    {
+     "id": "y428",
+     "no": 416,
+     "sv": "Flyget går klockan nio.",
+     "h": "Flyget går klockan nio.",
+     "en": "The flight leaves at nine."
+    },
+    {
+     "id": "y429",
+     "no": 417,
+     "sv": "Taxin kan komma klockan sex.",
+     "h": "Taxin kan komma klockan sex.",
+     "en": "The taxi can come at six."
     }
    ]
   }
