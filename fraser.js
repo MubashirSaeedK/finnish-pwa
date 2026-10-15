@@ -1,5 +1,5 @@
 'use strict';
-/* Fraser — 20 YKI phrases for Berätta 1–5, ElevenLabs eleven_v4 audio in audio/fraser/ (+ fraser-2/) */
+/* Fraser — YKI model-answer phrases (Berätta + Reagera) with the task question in a fold-out, ElevenLabs eleven_v4 audio in audio/fraser/ (+ fraser-2/) */
 const $ = (s, r = document) => r.querySelector(s);
 const player = $('#player');
 const KEY = 'fraser-pwa';
@@ -26,7 +26,10 @@ async function load() {
         <span class="fr-sec-n">${s.n || '★'}</span>
         <div class="fr-sec-t"><b>${esc(s.sv)}</b><span>${esc(s.en)} · <em class="fr-cnt" id="cnt-${s.id}"></em></span></div>
         <button type="button" class="fr-pb" data-sec="${s.id}" aria-label="Play section">▶</button>
-      </div>
+      </div>${s.q && s.q.length ? `
+      <details class="fr-q"><summary>Frågan</summary>
+        ${s.q.length > 1 ? `<ul>${s.q.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<p>${esc(s.q[0])}</p>`}
+      </details>` : ''}
       <ul class="fr-items">${s.items.map(it => `
         <li class="fr-it" id="it-${it.id}">
           <input type="checkbox" class="fr-cb" data-id="${it.id}" aria-label="Include in playback">

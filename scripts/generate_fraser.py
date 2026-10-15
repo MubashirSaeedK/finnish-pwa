@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Voice the phrases in fraser.json with ElevenLabs (eleven_v4, Swedish).
+Only makes clips that are missing, so it voices exactly the sections now in fraser.json
+(Berätta 1-20 + Reagera 1-16). Task questions are text only (no audio).
 
 Run from the "Finnish Words PWA" folder:
   python3 scripts/generate_fraser.py            # make all missing clips (asks before spending credits)
@@ -27,6 +29,9 @@ for key, name, vid, d in (VOICES if '--voice2' in args else VOICES[:1]):
         if '--force' in args or not os.path.exists(out):
             todo.append((vid, out, it['sv']))
 chars = sum(len(t) for _, _, t in todo)
+_miss = {os.path.basename(o)[:-4] for _, o, _ in todo}
+_secs = [s['sv'].split(' · ')[0] for s in data['sections'] if any(it['id'] in _miss for it in s['items'])]
+if _secs: print('Sections that get audio:', ', '.join(_secs))
 print(f'{len(items)} phrases ({"both voices" if "--voice2" in args else "Röst 1 only"}): {len(todo)} clips to make ({chars} characters).')
 def write_voices():
     have = [{'key': k, 'name': n, 'dir': d} for k, n, _, d in VOICES

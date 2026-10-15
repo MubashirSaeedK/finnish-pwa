@@ -64,3 +64,13 @@ body.hide-known .fr-it.known { display: none; }
 .fr-voices:has(#voiceSeg[hidden]) { display: none; }
 .fr-lbl { color: var(--text-dim); font-size: .8rem; font-weight: 700; }
 #voiceSeg[hidden] { display: none; }
+
+/* task question, folded away */
+.fr-q { border-bottom: 1px solid var(--border); background: var(--surface); }
+.fr-q summary { cursor: pointer; padding: 9px 14px; font-weight: 700; font-size: .85rem; color: var(--primary); list-style: none; }
+.fr-q summary::-webkit-details-marker { display: none; }
+.fr-q summary::before { content: '▸ '; }
+.fr-q[open] summary::before { content: '▾ '; }
+.fr-q ul, .fr-q p { margin: 0; padding: 0 14px 12px 34px; font-size: .95rem; line-height: 1.55; }
+.fr-q p { padding-left: 14px; }
+.fr-q li { margin: 2px 0; }
