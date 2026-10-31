@@ -1732,6 +1732,96 @@
    ]
   },
   {
+   "id": "b21",
+   "n": 21,
+   "sv": "Berätta 21 · Naturskydd – är du miljövänlig?",
+   "en": "Protecting nature – are you eco-friendly?",
+   "items": [
+    {
+     "id": "y430",
+     "no": 210,
+     "sv": "Jag vill berätta om naturen och miljön.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om naturen o<s class=\"sil\">ch</s> miljön.",
+     "en": "I want to talk about nature and the environment."
+    },
+    {
+     "id": "y431",
+     "no": 211,
+     "sv": "Naturen är viktig för mig.",
+     "h": "Naturen är vikti<s class=\"sil\">g</s> för mi<s class=\"sil\">g</s>.",
+     "en": "Nature is important to me."
+    },
+    {
+     "id": "y432",
+     "no": 212,
+     "sv": "Vi måste skydda naturen.",
+     "h": "Vi måste skydda naturen.",
+     "en": "We must protect nature."
+    },
+    {
+     "id": "y433",
+     "no": 213,
+     "sv": "Jag försöker vara miljövänlig.",
+     "h": "Ja<s class=\"sil\">g</s> försöker vara miljövänlig.",
+     "en": "I try to be environmentally friendly."
+    },
+    {
+     "id": "y434",
+     "no": 214,
+     "sv": "Jag sorterar soporna hemma.",
+     "h": "Ja<s class=\"sil\">g</s> sorterar soporna hemma.",
+     "en": "I sort the rubbish at home."
+    },
+    {
+     "id": "y435",
+     "no": 215,
+     "sv": "Jag återvinner plast, papper och glas.",
+     "h": "Ja<s class=\"sil\">g</s> återvinner plast, papper o<s class=\"sil\">ch</s> glas.",
+     "en": "I recycle plastic, paper and glass."
+    },
+    {
+     "id": "y436",
+     "no": 216,
+     "sv": "Jag åker ofta buss och tåg.",
+     "h": "Ja<s class=\"sil\">g</s> åker ofta buss o<s class=\"sil\">ch</s> tåg.",
+     "en": "I often go by bus and train."
+    },
+    {
+     "id": "y437",
+     "no": 217,
+     "sv": "Jag köper inte så mycket nya saker.",
+     "h": "Ja<s class=\"sil\">g</s> köper inte så mycket nya saker.",
+     "en": "I don't buy so many new things."
+    },
+    {
+     "id": "y438",
+     "no": 218,
+     "sv": "Ibland köper jag begagnade kläder.",
+     "h": "Ibland köper ja<s class=\"sil\">g</s> begagnade kläder.",
+     "en": "Sometimes I buy second-hand clothes."
+    },
+    {
+     "id": "y439",
+     "no": 219,
+     "sv": "Det är bra för miljön och billigt.",
+     "h": "De<s class=\"sil\">t</s> är bra för miljön o<s class=\"sil\">ch</s> billi<s class=\"sil\">g</s>t.",
+     "en": "It is good for the environment and cheap."
+    },
+    {
+     "id": "y440",
+     "no": 220,
+     "sv": "Det var allt om naturen och miljön.",
+     "h": "De<s class=\"sil\">t</s> var allt om naturen o<s class=\"sil\">ch</s> miljön.",
+     "en": "That was all about nature and the environment."
+    }
+   ],
+   "q": [
+    "Vad tycker du om att skydda naturen?",
+    "Hur kan vi skydda naturen?",
+    "Är du själv miljövänlig? Hur och på vilket sätt?"
+   ]
+  },
+  {
    "id": "r01",
    "n": 31,
    "sv": "Reagera 1 · Din väns pappa har dött",
