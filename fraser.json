@@ -1822,6 +1822,723 @@
    ]
   },
   {
+   "id": "b22",
+   "n": 22,
+   "sv": "Berätta 22 · En släktings liv",
+   "en": "A relative's life",
+   "items": [
+    {
+     "id": "y441",
+     "no": 221,
+     "sv": "Jag vill berätta om min mormor.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om min mormor.",
+     "en": "I want to tell you about my grandmother."
+    },
+    {
+     "id": "y442",
+     "no": 222,
+     "sv": "Hon föddes i en liten by.",
+     "h": "Hon föddes i en liten by.",
+     "en": "She was born in a small village."
+    },
+    {
+     "id": "y443",
+     "no": 223,
+     "sv": "Hon hade sju syskon.",
+     "h": "Hon hade sju syskon.",
+     "en": "She had seven siblings."
+    },
+    {
+     "id": "y444",
+     "no": 224,
+     "sv": "Hennes familj var fattig.",
+     "h": "Hennes familj var fattig.",
+     "en": "Her family was poor."
+    },
+    {
+     "id": "y445",
+     "no": 225,
+     "sv": "Som ung arbetade hon mycket.",
+     "h": "Som ung arbetade hon mycket.",
+     "en": "As a young woman she worked a lot."
+    },
+    {
+     "id": "y446",
+     "no": 226,
+     "sv": "Sedan gifte hon sig och fick fem barn.",
+     "h": "Se<s class=\"sil\">da</s>n gifte hon si<s class=\"sil\">g</s> o<s class=\"sil\">ch</s> fick fem barn.",
+     "en": "Then she got married and had five children."
+    },
+    {
+     "id": "y447",
+     "no": 227,
+     "sv": "Nu är hon gammal.",
+     "h": "Nu är hon gammal.",
+     "en": "Now she is old."
+    },
+    {
+     "id": "y448",
+     "no": 228,
+     "sv": "Hon är åttio år gammal.",
+     "h": "Hon är åtti<s class=\"sil\">o</s> år gammal.",
+     "en": "She is eighty years old."
+    },
+    {
+     "id": "y449",
+     "no": 229,
+     "sv": "Hon är snäll och rolig.",
+     "h": "Hon är snäll o<s class=\"sil\">ch</s> rolig.",
+     "en": "She is kind and funny."
+    },
+    {
+     "id": "y450",
+     "no": 230,
+     "sv": "Jag ville berätta om henne, eftersom hon är stark.",
+     "h": "Ja<s class=\"sil\">g</s> ville berätta om henne, eftersom hon är stark.",
+     "en": "I wanted to tell about her because she is strong."
+    },
+    {
+     "id": "y451",
+     "no": 231,
+     "sv": "Det var allt om min mormor.",
+     "h": "De<s class=\"sil\">t</s> var allt om min mormor.",
+     "en": "That was all about my grandmother."
+    }
+   ],
+   "q": [
+    "Var och när föddes hen?",
+    "Hur såg hens barndom ut?",
+    "Vad gjorde hen som ung eller vuxen?",
+    "Var är hen nu?",
+    "Varför ville du berätta om honom/henne?"
+   ]
+  },
+  {
+   "id": "b23",
+   "n": 23,
+   "sv": "Berätta 23 · Mitt hem",
+   "en": "My home",
+   "items": [
+    {
+     "id": "y452",
+     "no": 232,
+     "sv": "Jag vill berätta om mitt hem.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om mitt hem.",
+     "en": "I want to tell you about my home."
+    },
+    {
+     "id": "y453",
+     "no": 233,
+     "sv": "Jag bor i en lägenhet i Esbo.",
+     "h": "Ja<s class=\"sil\">g</s> bor i en lägenhet i Esbo.",
+     "en": "I live in a flat in Espoo."
+    },
+    {
+     "id": "y454",
+     "no": 234,
+     "sv": "Lägenheten har två rum och kök.",
+     "h": "Lägenheten har två rum o<s class=\"sil\">ch</s> kök.",
+     "en": "The flat has two rooms and a kitchen."
+    },
+    {
+     "id": "y455",
+     "no": 235,
+     "sv": "Den är sextio kvadratmeter.",
+     "h": "Den är sextio kvadratmeter.",
+     "en": "It is sixty square metres."
+    },
+    {
+     "id": "y456",
+     "no": 236,
+     "sv": "Jag hyr lägenheten.",
+     "h": "Ja<s class=\"sil\">g</s> hyr lägenheten.",
+     "en": "I rent the flat."
+    },
+    {
+     "id": "y457",
+     "no": 237,
+     "sv": "Det bästa är att den är ljus.",
+     "h": "De<s class=\"sil\">t</s> bästa är att den är <s class=\"sil\">l</s>jus.",
+     "en": "The best thing is that it is bright."
+    },
+    {
+     "id": "y458",
+     "no": 238,
+     "sv": "Den har också en balkong.",
+     "h": "Den har också en balkong.",
+     "en": "It also has a balcony."
+    },
+    {
+     "id": "y459",
+     "no": 239,
+     "sv": "Det är nära till affären och bussen.",
+     "h": "De<s class=\"sil\">t</s> är nära till affären o<s class=\"sil\">ch</s> bussen.",
+     "en": "It is close to the shop and the bus."
+    },
+    {
+     "id": "y460",
+     "no": 240,
+     "sv": "Men köket är lite litet.",
+     "h": "Men köket är lite litet.",
+     "en": "But the kitchen is a bit small."
+    },
+    {
+     "id": "y461",
+     "no": 241,
+     "sv": "Jag vill ha ett större kök.",
+     "h": "Ja<s class=\"sil\">g</s> vill ha ett större kök.",
+     "en": "I want a bigger kitchen."
+    },
+    {
+     "id": "y462",
+     "no": 242,
+     "sv": "Det var allt om mitt hem.",
+     "h": "De<s class=\"sil\">t</s> var allt om mitt hem.",
+     "en": "That was all about my home."
+    }
+   ],
+   "q": [
+    "Hur ser ditt hem ut?",
+    "Hyr du eller äger du bostaden?",
+    "Vad är bra i lägenheten?",
+    "Vad kunde vara bättre?"
+   ]
+  },
+  {
+   "id": "b24",
+   "n": 24,
+   "sv": "Berätta 24 · Jag som konsument",
+   "en": "Me as a consumer",
+   "items": [
+    {
+     "id": "y463",
+     "no": 243,
+     "sv": "Jag vill berätta om mig som konsument.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om mi<s class=\"sil\">g</s> som konsument.",
+     "en": "I want to tell you about me as a consumer."
+    },
+    {
+     "id": "y464",
+     "no": 244,
+     "sv": "Jag köper mat i en stor affär.",
+     "h": "Ja<s class=\"sil\">g</s> köper mat i en stor affär.",
+     "en": "I buy food in a big shop."
+    },
+    {
+     "id": "y465",
+     "no": 245,
+     "sv": "Jag handlar en gång i veckan.",
+     "h": "Ja<s class=\"sil\">g</s> handlar en gång i veckan.",
+     "en": "I go shopping once a week."
+    },
+    {
+     "id": "y466",
+     "no": 246,
+     "sv": "Kläder köper jag ofta på nätet.",
+     "h": "Kläder köper ja<s class=\"sil\">g</s> ofta på nätet.",
+     "en": "I often buy clothes online."
+    },
+    {
+     "id": "y467",
+     "no": 247,
+     "sv": "Det är enkelt och snabbt.",
+     "h": "De<s class=\"sil\">t</s> är enkelt o<s class=\"sil\">ch</s> snabbt.",
+     "en": "It is easy and quick."
+    },
+    {
+     "id": "y468",
+     "no": 248,
+     "sv": "Mina pengar går till hyra och mat.",
+     "h": "Mina pengar går till hyra o<s class=\"sil\">ch</s> mat.",
+     "en": "My money goes to rent and food."
+    },
+    {
+     "id": "y469",
+     "no": 249,
+     "sv": "Jag är ganska sparsam.",
+     "h": "Ja<s class=\"sil\">g</s> är ganska sparsam.",
+     "en": "I am quite thrifty."
+    },
+    {
+     "id": "y470",
+     "no": 250,
+     "sv": "Jag köper inte saker som jag inte behöver.",
+     "h": "Ja<s class=\"sil\">g</s> köper inte saker som ja<s class=\"sil\">g</s> inte behöver.",
+     "en": "I don't buy things that I don't need."
+    },
+    {
+     "id": "y471",
+     "no": 251,
+     "sv": "Pengar är viktiga, men inte allt.",
+     "h": "Pengar är vikti<s class=\"sil\">g</s>a, men inte allt.",
+     "en": "Money is important, but not everything."
+    },
+    {
+     "id": "y472",
+     "no": 252,
+     "sv": "Jag vill spara mer pengar.",
+     "h": "Ja<s class=\"sil\">g</s> vill spara mer pengar.",
+     "en": "I want to save more money."
+    },
+    {
+     "id": "y473",
+     "no": 253,
+     "sv": "Det var allt om mig som konsument.",
+     "h": "De<s class=\"sil\">t</s> var allt om mi<s class=\"sil\">g</s> som konsument.",
+     "en": "That was all about me as a consumer."
+    }
+   ],
+   "q": [
+    "Var köper du mat, kläder och andra saker? Hur ofta?",
+    "Vad går dina pengar till?",
+    "Är du sparsam eller slösaktig?",
+    "Är pengar viktiga för dig?"
+   ]
+  },
+  {
+   "id": "b25",
+   "n": 25,
+   "sv": "Berätta 25 · En olycka eller sjukdom",
+   "en": "An accident or illness",
+   "items": [
+    {
+     "id": "y474",
+     "no": 254,
+     "sv": "Jag vill berätta om en olycka.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om en olycka.",
+     "en": "I want to tell you about an accident."
+    },
+    {
+     "id": "y475",
+     "no": 255,
+     "sv": "För två år sedan cyklade jag till jobbet.",
+     "h": "För två år se<s class=\"sil\">da</s>n cyklade ja<s class=\"sil\">g</s> till jobbet.",
+     "en": "Two years ago I was cycling to work."
+    },
+    {
+     "id": "y476",
+     "no": 256,
+     "sv": "Det var halt på vägen.",
+     "h": "De<s class=\"sil\">t</s> var halt på vägen.",
+     "en": "The road was slippery."
+    },
+    {
+     "id": "y477",
+     "no": 257,
+     "sv": "Jag föll och bröt armen.",
+     "h": "Ja<s class=\"sil\">g</s> föll o<s class=\"sil\">ch</s> bröt armen.",
+     "en": "I fell and broke my arm."
+    },
+    {
+     "id": "y478",
+     "no": 258,
+     "sv": "Jag åkte till sjukhuset.",
+     "h": "Ja<s class=\"sil\">g</s> åkte till sjukhuset.",
+     "en": "I went to the hospital."
+    },
+    {
+     "id": "y479",
+     "no": 259,
+     "sv": "Läkaren var mycket snäll.",
+     "h": "Läkaren var mycket snäll.",
+     "en": "The doctor was very kind."
+    },
+    {
+     "id": "y480",
+     "no": 260,
+     "sv": "Jag kunde inte arbeta i en månad.",
+     "h": "Ja<s class=\"sil\">g</s> kunde inte aRBETA i en månad.",
+     "en": "I couldn't work for a month."
+    },
+    {
+     "id": "y481",
+     "no": 261,
+     "sv": "Det var en svår tid.",
+     "h": "De<s class=\"sil\">t</s> var en svår tid.",
+     "en": "It was a hard time."
+    },
+    {
+     "id": "y482",
+     "no": 262,
+     "sv": "En olycka kan förändra livet.",
+     "h": "En olycka kan förändra livet.",
+     "en": "An accident can change your life."
+    },
+    {
+     "id": "y483",
+     "no": 263,
+     "sv": "Nu är jag mer försiktig.",
+     "h": "Nu är ja<s class=\"sil\">g</s> mer försikti<s class=\"sil\">g</s>.",
+     "en": "Now I am more careful."
+    },
+    {
+     "id": "y484",
+     "no": 264,
+     "sv": "Det var allt om min olycka.",
+     "h": "De<s class=\"sil\">t</s> var allt om min olycka.",
+     "en": "That was all about my accident."
+    }
+   ],
+   "q": [
+    "Har du eller en närstående haft en olycka? Vad hände?",
+    "Hur kan en olycka eller sjukdom förändra ditt liv?",
+    "Är du rädd för olyckor eller sjukdomar? Varför/varför inte?"
+   ]
+  },
+  {
+   "id": "b26",
+   "n": 26,
+   "sv": "Berätta 26 · Barer och kaféer",
+   "en": "Bars and cafés",
+   "items": [
+    {
+     "id": "y485",
+     "no": 265,
+     "sv": "Jag vill berätta om barer och kaféer.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om barer o<s class=\"sil\">ch</s> kaféer.",
+     "en": "I want to talk about bars and cafés."
+    },
+    {
+     "id": "y486",
+     "no": 266,
+     "sv": "Jag går sällan till en bar.",
+     "h": "Ja<s class=\"sil\">g</s> går sällan till en bar.",
+     "en": "I rarely go to a bar."
+    },
+    {
+     "id": "y487",
+     "no": 267,
+     "sv": "Jag dricker inte så mycket alkohol.",
+     "h": "Ja<s class=\"sil\">g</s> dricker inte så mycket alkohol.",
+     "en": "I don't drink much alcohol."
+    },
+    {
+     "id": "y488",
+     "no": 268,
+     "sv": "Jag gillar kaféer mer.",
+     "h": "Ja<s class=\"sil\">g</s> gillar kaféer mer.",
+     "en": "I like cafés more."
+    },
+    {
+     "id": "y489",
+     "no": 269,
+     "sv": "På ett kafé kan man prata i lugn och ro.",
+     "h": "På ett kafé kan man prata i lugn o<s class=\"sil\">ch</s> ro.",
+     "en": "In a café you can talk in peace and quiet."
+    },
+    {
+     "id": "y490",
+     "no": 270,
+     "sv": "Jag träffar mina vänner där på helgen.",
+     "h": "Ja<s class=\"sil\">g</s> träffar mina vänner där på helgen.",
+     "en": "I meet my friends there at the weekend."
+    },
+    {
+     "id": "y491",
+     "no": 271,
+     "sv": "Barer passar för unga människor.",
+     "h": "Barer passar för unga människor.",
+     "en": "Bars suit young people."
+    },
+    {
+     "id": "y492",
+     "no": 272,
+     "sv": "Det bästa är att man träffar nya människor.",
+     "h": "De<s class=\"sil\">t</s> bästa är att man träffar nya människor.",
+     "en": "The best thing is that you meet new people."
+    },
+    {
+     "id": "y493",
+     "no": 273,
+     "sv": "Det dåliga är att det är dyrt.",
+     "h": "De<s class=\"sil\">t</s> dåliga är att de<s class=\"sil\">t</s> är dyrt.",
+     "en": "The bad thing is that it is expensive."
+    },
+    {
+     "id": "y494",
+     "no": 274,
+     "sv": "Det var allt om barer och kaféer.",
+     "h": "De<s class=\"sil\">t</s> var allt om barer o<s class=\"sil\">ch</s> kaféer.",
+     "en": "That was all about bars and cafés."
+    }
+   ],
+   "q": [
+    "Går du någonsin till en bar? Varför/varför inte?",
+    "Vilken åldersgrupp passar barkulturen för? Varför?",
+    "Vad är bra och dåligt med att människor går på barer?"
+   ]
+  },
+  {
+   "id": "b27",
+   "n": 27,
+   "sv": "Berätta 27 · Att spendera pengar på resor",
+   "en": "Spending money when travelling",
+   "items": [
+    {
+     "id": "y495",
+     "no": 275,
+     "sv": "Jag vill berätta om pengar och resor.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om pengar o<s class=\"sil\">ch</s> resor.",
+     "en": "I want to talk about money and travel."
+    },
+    {
+     "id": "y496",
+     "no": 276,
+     "sv": "När jag reser spenderar jag mest på mat.",
+     "h": "När ja<s class=\"sil\">g</s> reser spenderar ja<s class=\"sil\">g</s> mest på mat.",
+     "en": "When I travel, I spend most on food."
+    },
+    {
+     "id": "y497",
+     "no": 277,
+     "sv": "Jag äter gärna på restauranger.",
+     "h": "Ja<s class=\"sil\">g</s> äter gärna på restauranger.",
+     "en": "I like eating at restaurants."
+    },
+    {
+     "id": "y498",
+     "no": 278,
+     "sv": "Jag bor på billiga hotell.",
+     "h": "Ja<s class=\"sil\">g</s> bor på billi<s class=\"sil\">g</s>a hotell.",
+     "en": "I stay at cheap hotels."
+    },
+    {
+     "id": "y499",
+     "no": 279,
+     "sv": "Jag och min familj bestämmer tillsammans.",
+     "h": "Ja<s class=\"sil\">g</s> o<s class=\"sil\">ch</s> min familj bestämmer tillsammans.",
+     "en": "My family and I decide together."
+    },
+    {
+     "id": "y500",
+     "no": 280,
+     "sv": "Man behöver inte mycket pengar.",
+     "h": "Man behöver inte mycket pengar.",
+     "en": "You don't need a lot of money."
+    },
+    {
+     "id": "y501",
+     "no": 281,
+     "sv": "Jag gillar inte shopping.",
+     "h": "Ja<s class=\"sil\">g</s> gillar inte shopping.",
+     "en": "I don't like shopping."
+    },
+    {
+     "id": "y502",
+     "no": 282,
+     "sv": "Jag gillar äventyr mer.",
+     "h": "Ja<s class=\"sil\">g</s> gillar äventyr mer.",
+     "en": "I like adventure more."
+    },
+    {
+     "id": "y503",
+     "no": 283,
+     "sv": "Till exempel vandring i bergen.",
+     "h": "Till exempel vandring i bergen.",
+     "en": "For example hiking in the mountains."
+    },
+    {
+     "id": "y504",
+     "no": 284,
+     "sv": "Det är billigt och roligt.",
+     "h": "De<s class=\"sil\">t</s> är billi<s class=\"sil\">g</s>t o<s class=\"sil\">ch</s> roli<s class=\"sil\">g</s>t.",
+     "en": "It is cheap and fun."
+    },
+    {
+     "id": "y505",
+     "no": 285,
+     "sv": "Det var allt om pengar och resor.",
+     "h": "De<s class=\"sil\">t</s> var allt om pengar o<s class=\"sil\">ch</s> resor.",
+     "en": "That was all about money and travel."
+    }
+   ],
+   "q": [
+    "Vad spenderar du dina pengar på när du reser?",
+    "Vem bestämmer vad pengarna ska användas till?",
+    "Är det viktigt att ha mycket pengar med sig på resan?",
+    "Gillar du shopping eller äventyr? Varför?"
+   ]
+  },
+  {
+   "id": "b28",
+   "n": 28,
+   "sv": "Berätta 28 · Mitt landskap",
+   "en": "My landscape",
+   "items": [
+    {
+     "id": "y506",
+     "no": 286,
+     "sv": "Jag vill berätta om mitt landskap.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om mitt landskap.",
+     "en": "I want to tell you about my landscape."
+    },
+    {
+     "id": "y507",
+     "no": 287,
+     "sv": "Mitt landskap är en sjö i skogen.",
+     "h": "Mitt landskap är en sjö i skogen.",
+     "en": "My landscape is a lake in the forest."
+    },
+    {
+     "id": "y508",
+     "no": 288,
+     "sv": "Sjön ligger nära mitt hem.",
+     "h": "Sjön ligger nära mitt hem.",
+     "en": "The lake is near my home."
+    },
+    {
+     "id": "y509",
+     "no": 289,
+     "sv": "Vattnet är lugnt och klart.",
+     "h": "Vattnet är lugnt o<s class=\"sil\">ch</s> klart.",
+     "en": "The water is calm and clear."
+    },
+    {
+     "id": "y510",
+     "no": 290,
+     "sv": "Runt sjön finns det höga träd.",
+     "h": "Runt sjön finns de<s class=\"sil\">t</s> höga träd.",
+     "en": "Around the lake there are tall trees."
+    },
+    {
+     "id": "y511",
+     "no": 291,
+     "sv": "På sommaren simmar jag där.",
+     "h": "På sommaren simmar ja<s class=\"sil\">g</s> där.",
+     "en": "In summer I swim there."
+    },
+    {
+     "id": "y512",
+     "no": 292,
+     "sv": "På vintern är allt vitt.",
+     "h": "På vintern är allt vitt.",
+     "en": "In winter everything is white."
+    },
+    {
+     "id": "y513",
+     "no": 293,
+     "sv": "Jag går dit när jag är stressad.",
+     "h": "Ja<s class=\"sil\">g</s> går dit när ja<s class=\"sil\">g</s> är stressad.",
+     "en": "I go there when I am stressed."
+    },
+    {
+     "id": "y514",
+     "no": 294,
+     "sv": "Där blir jag lugn.",
+     "h": "Där blir ja<s class=\"sil\">g</s> lugn.",
+     "en": "There I become calm."
+    },
+    {
+     "id": "y515",
+     "no": 295,
+     "sv": "Därför är sjön viktig för mig.",
+     "h": "Därför är sjön vikti<s class=\"sil\">g</s> för mi<s class=\"sil\">g</s>.",
+     "en": "That is why the lake is important to me."
+    },
+    {
+     "id": "y516",
+     "no": 296,
+     "sv": "Det var allt om mitt landskap.",
+     "h": "De<s class=\"sil\">t</s> var allt om mitt landskap.",
+     "en": "That was all about my landscape."
+    }
+   ],
+   "q": [
+    "Beskriv ett landskap som är viktigt för dig.",
+    "Varför är det viktigt för dig?"
+   ]
+  },
+  {
+   "id": "b29",
+   "n": 29,
+   "sv": "Berätta 29 · Var jag kommer ifrån",
+   "en": "Where I come from",
+   "items": [
+    {
+     "id": "y517",
+     "no": 297,
+     "sv": "Jag vill berätta om var jag kommer ifrån.",
+     "h": "Ja<s class=\"sil\">g</s> vill berätta om var ja<s class=\"sil\">g</s> kommer ifrån.",
+     "en": "I want to tell you about where I come from."
+    },
+    {
+     "id": "y518",
+     "no": 298,
+     "sv": "Jag föddes i ett annat land.",
+     "h": "Ja<s class=\"sil\">g</s> föddes i ett annat land.",
+     "en": "I was born in another country."
+    },
+    {
+     "id": "y519",
+     "no": 299,
+     "sv": "Men nu bor jag i Finland.",
+     "h": "Men nu bor ja<s class=\"sil\">g</s> i Finland.",
+     "en": "But now I live in Finland."
+    },
+    {
+     "id": "y520",
+     "no": 300,
+     "sv": "Mitt hemland är viktigt för mig.",
+     "h": "Mitt hemland är vikti<s class=\"sil\">g</s>t för mi<s class=\"sil\">g</s>.",
+     "en": "My home country is important to me."
+    },
+    {
+     "id": "y521",
+     "no": 301,
+     "sv": "Min familj bor där.",
+     "h": "Min familj bor där.",
+     "en": "My family lives there."
+    },
+    {
+     "id": "y522",
+     "no": 302,
+     "sv": "Jag pratar med dem varje vecka.",
+     "h": "Ja<s class=\"sil\">g</s> pratar me<s class=\"sil\">d</s> dem varje vecka.",
+     "en": "I talk to them every week."
+    },
+    {
+     "id": "y523",
+     "no": 303,
+     "sv": "Men Finland är också mitt hem nu.",
+     "h": "Men Finland är också mitt hem nu.",
+     "en": "But Finland is also my home now."
+    },
+    {
+     "id": "y524",
+     "no": 304,
+     "sv": "Jag vill bli finsk medborgare.",
+     "h": "Ja<s class=\"sil\">g</s> vill bli finsk medborgare.",
+     "en": "I want to become a Finnish citizen."
+    },
+    {
+     "id": "y525",
+     "no": 305,
+     "sv": "Medborgarskap betyder trygghet för mig.",
+     "h": "Medborgarskap betyder trygghet för mi<s class=\"sil\">g</s>.",
+     "en": "Citizenship means security to me."
+    },
+    {
+     "id": "y526",
+     "no": 306,
+     "sv": "Jag känner mig hemma i båda länderna.",
+     "h": "Ja<s class=\"sil\">g</s> känner mi<s class=\"sil\">g</s> hemma i båda länderna.",
+     "en": "I feel at home in both countries."
+    },
+    {
+     "id": "y527",
+     "no": 307,
+     "sv": "Det var allt om var jag kommer ifrån.",
+     "h": "De<s class=\"sil\">t</s> var allt om var ja<s class=\"sil\">g</s> kommer ifrån.",
+     "en": "That was all about where I come from."
+    }
+   ],
+   "q": [
+    "Det är viktigt för mig var jag kommer ifrån.",
+    "Vad betyder medborgarskap för dig?",
+    "Vilket är ditt ursprungsland? Varför tänker du så?"
+   ]
+  },
+  {
    "id": "r01",
    "n": 31,
    "sv": "Reagera 1 · Din väns pappa har dött",
